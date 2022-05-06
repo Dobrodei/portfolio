@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Marketplace</title>
+  <link rel="preload" as="font" href="./fonts/Lato-Regular.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Lato-Semibold.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Lato-Semibold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Lato-Bold.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Lato-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body">
+  <header class="header">
+  <div class="container header__container">
+    <div class="header__left">
+      <a class="logo header__logo" href="#">
+        <img src="./images/logo.svg" loading="lazy" alt="Логотип" width="240" height="60">
+      </a>
+      <span class="header__descr">
+        Надежный сервис аналитики для поставщиков на маркетплейсы
+      </span>
+    </div>
+    <div class="header__inner">
+      <nav class="nav" title="навигация">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--arrow" data-dropdown>
+              Аналитика
+              <button class="toggle-btn" aria-label="Кнопка закрытия и открытия выпадающего меню"></button>
+            </a>
+            <ul class="dropdown">
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Аналитика рынка</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Аналитика рынка</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Аналитика рынка</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              Обучение
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__phone" href="tel:84994503141">
+        <svg>
+          <use xlink:href="images/sprite.svg#tel"></use>
+        </svg>
+        8 (499) 450-31-41
+      </a>
+    </div>
+    <a class="header__login" href="#">
+      <svg>
+        <use xlink:href="images/sprite.svg#login-arrow"></use>
+      </svg>
+      Войти
+    </a>
+    <button class="burger-btn" aria-label="Открыть меню" aria-expanded="false" data-burger>
+      <span class="burger-btn__line"></span>
+    </button>
+  </div>
+</header>
+  <main class="main">
+    <div class="breadcrumbs">
+  <div class="container">
+    <ul class="breadcrumbs__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a class="breadcrumbs__link" href="#" itemprop="item">
+          <span itemprop="name">Главная</span>
+          <meta itemprop="position" content="0">
+        </a>
+      </li>
+      <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a class="breadcrumbs__link" href="#" itemprop="item">
+          <span>Обучение</span>
+          <meta itemprop="position" content="1">
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+    <section class="hero">
+  <div class="container hero__container">
+    <div class="hero__content">
+      <h1 class="hero__title title">
+        <span>Обучающие курсы</span> для поставщиков на маркетплейсы
+      </h1>
+      <span class="hero__price">
+        от <span>19 900</span> ₽
+      </span>
+      <div class="hero__text">
+        <p>
+          Обучающие курсы по работе и продвижению на маркетплейсах от практикующих селлеров
+        </p>
+        <p>
+          Добро пожаловать в Академию. Это место для эффективного обучения, где мы рассказываем, как работают маркетплейсы и никогда не вдаемся
+          в теорию, которая не понадобится на практике.
+        </p>
+        <p>
+          Нащи уроки помогут понять логику работы площадок и взять управление продажами в свои руки, а не действовать наугад. Становись экспертом в работе с маркетплейсами и увеличивай свою прибыль.
+        </p>
+      </div>
+    </div>
+    <picture class="hero__picture">
+      <source srcset="./images/hero-img.webp" type="image/webp">
+      <img loading="lazy" src="./images/hero-img.png" width="520" height="520" aria-hidden="true" alt="">
+    </picture>
+  </div>
+</section>
+    <section class="about">
+  <div class="container-small">
+    <h2 class="title about__title">
+      Небольшая предыстория о том, почему нам можно доверять
+    </h2>
+    <div class="about__item about__item--normal">
+      <picture class="about__picture">
+        <source srcset="./images/about-tech.webp" type="image/webp">
+        <img loading="lazy" src="./images/about-tech.png" width="460" height="460" aria-hidden="true" alt="">
+      </picture>
+      <div class="about__text">
+        <p>
+          Свой путь в бизнесе мы начали в 2016 г. У нас были свои островные магазины в крупных ТЦ Москвы («Европейский», «Метрополис», «Мега» и др.), а также свой интернет-магазин. Мы накопили большой опыт в продвижении своих товаров за счет многочисленных запусков разных рекламных каналов и работы с блогерами.
+        </p>
+      </div>
+    </div>
+    <div class="about__item about__item--reverse">
+      <picture class="about__picture">
+        <source srcset="./images/about-stats.webp" type="image/webp">
+        <img loading="lazy" src="./images/about-stats.png" width="460" height="460" aria-hidden="true" alt="">
+      </picture>
+      <div class="about__text">
+        <p>
+          Свой путь в бизнесе мы начали в 2016 г. У нас были свои островные магазины в крупных ТЦ Москвы («Европейский», «Метрополис», «Мега» и др.), а также свой интернет-магазин. Мы накопили большой опыт в продвижении своих товаров за счет многочисленных запусков разных рекламных каналов и работы с блогерами.
+        </p>
+        <p>
+          Пришло время поделится знаниями и лайфхаками, которые будут собраны и доступны в нашей Академии stat4market.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="training">
+  <div class="container">
+    <div class="training__header">
+      <h2 class="training__title title">
+        Обучение по продажам на маркетплейсах от <span class="training__name">stat<span>4</span>market</span>
+      </h2>
+      <p class="training__descr">
+        «Увеличение реальной прибыли, конкретика и ключевые инструменты,
+        которые дают результат» — на этом тезисе созданы наши курсы
+      </p>
+    </div>
+    <ul class="training__list">
+      <li class="training__item">
+        <div class="training__box training__box--easy">
+          <h3 class="training__subtitle">
+            Наше обучение построено очень лаконично и просто
+          </h3>
+          <p class="training__text">
+            Все занятия короткие по продолжительности для легкого восприятия и понимания. Мы даем в уроках только конкретику, без лишней теории и “воды”.
+          </p>
+        </div>
+      </li>
+      <li class="training__item">
+        <div class="training__box training__box--materials">
+          <h3 class="training__subtitle">
+            Ко всем урокам есть дополнительные материалы
+          </h3>
+          <p class="training__text">
+            Презентации, краткие инструкции, чек-листы и памятки по работе с маркетплейсами.
+          </p>
+        </div>
+      </li>
+      <li class="training__item">
+        <div class="training__box training__box--pract">
+          <h3 class="training__subtitle">
+            Наше обучение — практико-ориентированное
+          </h3>
+          <p class="training__text">
+            Поэтому после прохождения уроков ты будешь выполнять задания, которые помогут тебе закрепить полученные знания на практике.
+          </p>
+        </div>
+      </li>
+      <li class="training__item">
+        <div class="training__box training__box--creator">
+          <h3 class="training__subtitle">
+            Создатели нашей Академии
+          </h3>
+          <p class="training__text">
+            Действующие селлеры с большим опытом в продажах на маркетплейсах, эксперты компании stat4market, а также профессиональные лекторы и методологи.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+  </main>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
