@@ -9,11 +9,11 @@
   <title>Document</title>
 </head>
 
-<body class="body">
+<body class="body" id="top">
   <header class="header">
   <div class="container header__container">
     <a class="logo" href="#">
-      Logo
+      <img src="./images/logo.png" alt="Логотип">
     </a>
     <div class="header__inner">
       <nav class="nav" title="navigation">
@@ -148,19 +148,22 @@
           <span class="form__descr">
             Имя
           </span>
-          <input type="text" name="name" class="form__input">
+          <input type="text" name="name" class="form__input" pattern="^[?!,.а-яА-ЯёЁ0-9\s]+$" required>
         </label>
         <label class="form__label">
           <span class="form__descr">
             Email
           </span>
-          <input type="email" name="mail" class="form__input">
+          <input type="email" name="mail" class="form__input" required>
         </label>
         <label class="form__label">
           <span class="form__descr">
             Выберете тур
           </span>
-          <select class="form__select" name="name tour">
+          <select class="form__select" name="name tour" required>
+            <option value="Название тура">
+              Название тура
+            </option>
             <option value="Название тура">
               Название тура
             </option>
@@ -174,7 +177,7 @@
         </label>
         <div class="form__footer">
           <button class="form__btn" type="submit">Отправить</button>
-          <button class="form__btn" type="submit">Очистить</button>
+          <button class="form__btn" type="reset">Очистить</button>
         </div>
       </form>
     </div>
@@ -247,6 +250,8 @@
     © Copyright
   </div>
 </footer>
+  <a class="btn-up" href="#top" aria-label="Кнопка скролла вверх">
+  </a>
 
   <script src="js/main.min.js"></script>
 </body>
