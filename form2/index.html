@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Document</title>
+  <link rel="preload" as="font" href="./fonts/Inter-Regular.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Inter-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Inter-SemiBold.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Inter-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Inter-Bold.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Inter-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+  <div class="header__container">
+    <div class="header__row">
+      <div class="header__top">
+        <a class="logo header__logo" href="#">
+          <img src="./images/logo.svg" loading="lazy" alt="Логотип" width="70" height="50">
+        </a>
+        <h2 class="header__title">
+          Бухара. Прогулка по Ляб-и Хауз
+        </h2>
+      </div>
+      <div class="header__inner">
+        <div class="header__img">
+          <img src="./images/header-img.jpg" loading="lazy" alt="Бухара. Прогулка по Ляб-и Хауз" width="665" height="315">
+        </div>
+        <div class="header__right">
+          <div class="header__box">
+            <span class="header__descr">
+              Время начала (местное время гида):
+            </span>
+            <time class="header__time" datetime="2022-04-16 14:00">
+              2022-04-16 14:00
+            </time>
+          </div>
+          <div class="header__box">
+            <span class="header__descr">
+              Время начала (местное время гида):
+            </span>
+            <p class="header__text">
+              На этом стриме мы с вами прогуляемся по Котельнической набережной, поговорим об истории высотки на Котельнической, узнаем, что думали и писали современники.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h3 class="header__subtitle">
+        Что бы присоединиться к путешествию, авторизируйтесь
+      </h3>
+      <form action="#" class="form">
+        <label class="form__label">
+          <span class="sr-only">Введите вашу почту</span>
+          <input class="form__input" type="text" name="code" placeholder="Код">
+        </label>
+        <button class="form__btn form__btn--orange" type="submit">Продолжить</button>
+      </form>
+      <ul class="header__links">
+        <li class="header__item">
+          <a class="header__link" href="#" target="_blank" aria-label="Ссылка на скачивание приложения" style="background-image: url('./images/icons/aw-join.svg')">
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#" target="_blank" aria-label="Ссылка на скачивание приложения" style="background-image: url('./images/icons/google.svg')">
+          </a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#" target="_blank" aria-label="Ссылка на скачивание приложения" style="background-image: url('./images/icons/appstore.svg')">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="social">
+      <span class="social__descr">
+        Мы в соц. сетях:
+      </span>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="#" target="_blank" aria-label="Ссылка на Вконтакте" style="background-image: url('./images/icons/vk.svg')"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#" target="_blank" aria-label="Ссылка на Вконтакте" style="background-image: url('./images/icons/tg.svg')"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+  
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
