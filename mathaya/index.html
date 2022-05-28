@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>mathaya</title>
+  <link rel="preload" as="font" href="./fonts/NotoSans.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/NotoSans.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body">
+  <div class="badge">
+  <span class="badge__descr">
+    Бесплатная доставка от 3000 руб
+  </span>
+  <button class="badge__close" aria-label="Закрыть бейдж с описанием услуги">
+  </button>
+</div>
+  <header class="header">
+  <div class="container">
+    <div class="header__top">
+      <button class="burger-btn" aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger-btn__line"></span>
+      </button>
+      <a class="header__logo logo" href="#">
+        <img src="./images/logo.png" loading="lazy" alt="Логотип" width="124" height="20">
+      </a>
+      <div class="header__menu">
+        <nav class="header__nav nav" title="навигация">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Каталог
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Новинки
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Все изделия
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                О нас
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Доставка и оплата
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="header__users">
+        <li class="header__user">
+          <a class="header__link" href="#" aria-label="Кнопка поиска">
+            <svg>
+              <use xlink:href="images/sprite.svg#search"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header__user">
+          <a class="header__link" href="#" aria-label="Кнопка личного кабинета">
+            <svg>
+              <use xlink:href="images/sprite.svg#like"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header__user">
+          <a class="header__link" href="#" aria-label="Кнопка открытия корзины">
+            <svg>
+              <use xlink:href="images/sprite.svg#cart"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="header__bottom">
+      <div class="header__box">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__ref" href="#">
+              База
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__ref" href="#">
+              Худи и толстовки
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__ref" href="#">
+              Верхняя одежда
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__box">
+        <ul class="footer__list">
+          <li class="header__item">
+            <a class="header__ref" href="#">
+              Джемперы
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__ref" href="#">
+              Юбки
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__ref" href="#">
+              Топы и футболки
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__box">
+        <ul class="footer__list">
+          <li class="header__item">
+            <a class="header__ref" href="#">
+              Новинки
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__ref" href="#">
+              Все товары
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <h1 class="sr-only">
+      Интернет-магазин одежды mathaya
+    </h1>
+    <section class="teaser teaser--bg-right" style="background-image: url('./images/teaser-bg.jpg')">
+  <div class="container teaser__container">
+    <div class="teaser__box">
+      <h2 class="teaser__title title">
+        INSPIRIED BY PEACE
+      </h2>
+      <p class="teaser__descr">
+        Лаконичные формы создающие
+        маскульный, и, в то же время,
+        невероятно женственный силуэт
+      </p>
+      <a class="teaser__btn btn" href="#">
+        Shop
+      </a>
+    </div>
+  </div>
+</section>
+    <section class="teaser teaser--left teaser--white" style="background-image: url('./images/teaser-clothes.jpg')">
+  <div class="container teaser__container">
+    <div class="teaser__box">
+      <h2 class="teaser__title title">
+        Верхняя одежда
+      </h2>
+      <p class="teaser__descr">
+        Лаконичные формы создающие
+        маскульный, и, в то же время,
+        невероятно женственный силуэт
+      </p>
+      <a class="teaser__btn btn" href="#">
+        Смотреть
+      </a>
+    </div>
+  </div>
+</section>
+    <section class="teaser teaser--white" style="background-image: url('./images/teaser-base.jpg')">
+  <div class="container teaser__container">
+    <div class="teaser__box">
+      <h2 class="teaser__title title">
+        base
+      </h2>
+      <p class="teaser__descr">
+        Базовая интерпретация стиля и повседневности
+      </p>
+      <a class="teaser__btn btn" href="#">
+        Смотреть
+      </a>
+    </div>
+  </div>
+</section>
+    <section class="teaser teaser--left teaser--white" style="background-image: url('./images/teaser-about.jpg')">
+  <div class="container teaser__container">
+    <div class="teaser__box">
+      <h2 class="teaser__title title">
+        О нас
+      </h2>
+      <p class="teaser__descr">
+        Базовая интерпретация стиля и повседневности
+      </p>
+      <a class="teaser__btn btn" href="#">
+        Смотреть
+      </a>
+    </div>
+  </div>
+</section>
+    <section class="distribut">
+  <div class="container distribut__container">
+    <form action="#" class="form">
+      <h2 class="form__title">
+        Рассылка
+      </h2>
+      <p class="form__descr">
+        Секретные распродажи, уникальные акции и интересные статьи только для подписчиков рассылки
+      </p>
+      <label class="form__label">
+        <input type="email" name="email" class="form__input" placeholder="Введите свой email">
+      </label>
+      <button class="form__btn" type="submit">Подписаться</button>
+      <p class="form__policy">
+        Нажав на "Подписаться", Вы соглашаетесь с <a href="#">политикой конфинденциальности.</a>
+      </p>
+    </form>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__box">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Каталог</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Новинки</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Все изделия</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__box">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Условия возврата</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Часто задаваемые вопросы
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__box">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              О нас
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__middle">
+      <a class="logo" href="#">
+        <img src="./images/logo.png" loading="lazy" alt="Логотип" width="124" height="20">
+      </a>
+      <div class="footer__inner">
+        <a class="footer__policy" href="#">
+          Политика защиты и обработка персональных данных
+        </a>
+        <a class="footer__policy" href="#">
+          Полльзовательское соглашение
+        </a>
+      </div>
+      <ul class="social" title="социальные сети">
+        <li class="social__item">
+          <a class="social__link social__link--tg" href="#" target="_blank" aria-label="Наша группа в телеграмме"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--wa" href="#" target="_blank" aria-label="Наша группа в ватсапе"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#" target="_blank" aria-label="Наша страничка в вконтакте"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__copy">
+      © MATHAYA 2022 г.
+    </div>
+  </div>
+</footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
