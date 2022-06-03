@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Bugatti</title>
+  <link rel="preload" as="font" href="./fonts/SFProDisplay-Thin.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SFProDisplay-Thin.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SFProDisplay-Regular.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SFProDisplay-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body">
+  <header class="header">
+  <div class="container header__container">
+    <button class="burger-btn" aria-label="Кнопка открытия меню">
+      <span class="burger-btn__line"></span>
+    </button>
+    <a class="logo header__logo" href="#">
+      <img src="./images/logo.png" loading="lazy" alt="Логотип" width="200" height="50">
+    </a>
+    <div class="fixed-nav">
+      <nav class="nav" title="навигация">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--user">
+            <a href="#" class="nav__link nav__link--user">
+              <svg>
+                <use xlink:href="images/sprite.svg#user"></use>
+              </svg>
+              Личный кабинет
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--chart">
+              <svg>
+                <use xlink:href="images/sprite.svg#chart"></use>
+              </svg>
+              Графики
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--setting">
+              <svg class="">
+                <use xlink:href="images/sprite.svg#setting"></use>
+              </svg>
+              Настройки
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--notice">
+              <svg class="">
+                <use xlink:href="images/sprite.svg#notice"></use>
+              </svg>
+              Уведомление
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <h1 class="sr-only">
+      Cтраница выбора темературы
+    </h1>
+    <section class="hero">
+  <h2 class="sr-only">
+    Блок для взаимодействия с температурой
+  </h2>
+  <div class="container hero__container">
+    <div class="hero__left hero-side">
+      <div class="hero-side__head">
+        <h3 class="hero-side__title">
+          Список устройств
+        </h3>
+        <div class="hero-side__btns">
+          <button class="hero-side__add" aria-label="Кнопка добавить">
+            <svg>
+              <use xlink:href="images/sprite.svg#add"></use>
+            </svg>
+          </button>
+          <button class="btn-more btn-more--black" aria-label="Кнопка посмотреть еще">
+            <span class="btn-more__circle"></span>
+          </button>
+        </div>
+      </div>
+      <ul class="hero-side__box devices">
+        <li class="devices__item">
+          <a class="devices__link devices__link--close" href="#">
+            <span class="devices__smalltitle">
+              ZTC-720
+            </span>
+            <span class="devices__title">
+              Автосигнализация ZTC-7xx
+            </span>
+          </a>
+        </li>
+        <li class="devices__item">
+          <a class="devices__link devices__link--open" href="#">
+            <span class="devices__smalltitle">
+              zont expert
+            </span>
+            <span class="devices__title">
+              ZONT EXPERT
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="hero__right">
+      <ul class="hero__list">
+        <li class="hero__item">
+          <div class="hero__box">
+            <div class="hero__head">
+              <h3 class="hero__caption hero__caption--thermometer">
+                Температура
+              </h3>
+              <div class="hero__temp">
+                <span class="hero__descr">
+                  Датчик
+                </span>
+                <span class="hero__grade">
+                  <span>21.5</span>&deg;
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="hero__item">
+          <div class="hero__box">
+            <div class="hero__head">
+              <h3 class="hero__caption hero__caption--celsius">
+                Целевая температура
+              </h3>
+              <div class="hero__temp">
+                <span class="hero__descr">
+                  Датчик <span>20.7</span>
+                </span>
+                <div class="hero__counter">
+                  <button class="hero__minus" aria-label="Кнопка минус"></button>
+                  <span class="hero__grade hero__grade--small">
+                    <span>21.5</span>&deg;
+                  </span>
+                  <button class="hero__plus" aria-label="Кнопка плюс"></button>
+                </div>
+              </div>
+            </div>
+            <ul class="hero__btns">
+              <li class="hero__btns-item">
+                <button class="hero__btn">
+                  Эконом
+                </button>
+              </li>
+              <li class="hero__btns-item">
+                <button class="hero__btn hero__btn--active">
+                  Комфорт
+                </button>
+              </li>
+              <li class="hero__btns-item">
+                <button class="hero__btn">
+                  Расписание
+                </button>
+              </li>
+              <li class="hero__btns-item">
+                <button class="hero__btn">
+                  Выключен
+                </button>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="hero__item">
+          <div class="hero__box">
+            <h3 class="hero__caption hero__caption--layer hero__caption--mb">
+              Режим
+            </h3>
+            <ul class="hero__modes">
+              <li class="hero__modes-item">
+                <div class="hero__mode">
+                  <span class="hero__mode-name">
+                    Эконом
+                  </span>
+                  <span class="hero__grade hero__grade--small hero__grade--white">
+                    <span>21.5</span>&deg;
+                  </span>
+                </div>
+              </li>
+              <li class="hero__modes-item">
+                <div class="hero__mode hero__mode--active">
+                  <span class="hero__mode-name">
+                    Комфорт
+                  </span>
+                  <span class="hero__grade hero__grade--small hero__grade--white">
+                    <span>21.5</span>&deg;
+                  </span>
+                </div>
+              </li>
+              <li class="hero__modes-item">
+                <div class="hero__mode">
+                  <span class="hero__mode-name">
+                    Расписание
+                  </span>
+                </div>
+              </li>
+              <li class="hero__modes-item">
+                <div class="hero__mode">
+                  <span class="hero__mode-name">
+                    Выключен
+                  </span>
+                  <input class="hero__checkbox" type="checkbox" hidden="hidden" id="username">
+                  <label class="hero__switch" for="username"></label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+  </main>
+  <div class="menu">
+  <div class="menu__container" role="dialog" aria-modal="true">
+    <button class="menu__btn" aria-label="Закрыть модальное окно"></button>
+    <div class="menu__content">
+      <div class="menu__head">
+        Список устройств
+      </div>
+      <ul class="menu__items">
+        <li class="menu__item">
+          <a class="menu__ref" href="#">
+            Наименование устройства
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__ref" href="#">
+            Наименование устройства
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__ref" href="#">
+            Наименование устройства
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__ref" href="#">
+            Наименование устройства
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__ref" href="#">
+            Наименование устройства
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__ref" href="#">
+            Наименование устройства
+          </a>
+        </li>
+      </ul>
+      <nav class="menu__nav" title="Мобильная навигация">
+        <ul class="menu__nav__list">
+          <li class="menu__nav-item">
+            <div class="menu__inner">
+              <a href="#" class="menu__link">
+                <svg>
+                  <use xlink:href="images/sprite.svg#add"></use>
+                </svg>
+                Список устройств
+              </a>
+              <button class="btn-more" aria-label="Кнопка посмотреть еще">
+                <span class="btn-more__circle"></span>
+              </button>
+            </div>
+          </li>
+          <li class="menu__nav-item">
+            <a href="#" class="menu__link">
+              <svg>
+                <use xlink:href="images/sprite.svg#setting"></use>
+              </svg>
+              Настройки
+            </a>
+          </li>
+          <li class="menu__nav-item">
+            <a href="#" class="menu__link">
+              <svg>
+                <use xlink:href="images/sprite.svg#user"></use>
+              </svg>
+              Личный кабинет
+            </a>
+          </li>
+          <li class="menu__nav-item">
+            <a href="#" class="menu__link">
+              <svg>
+                <use xlink:href="images/sprite.svg#tel"></use>
+              </svg>
+              Техническая поддержка
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
