@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Bugatti</title>
+  <link rel="preload" as="font" href="./fonts/SFProDisplay-Thin.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SFProDisplay-Thin.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SFProDisplay-Regular.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SFProDisplay-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body">
+  <header class="header">
+  <div class="container header__container">
+    <button class="burger-btn" aria-label="Кнопка открытия меню">
+      <span class="burger-btn__line"></span>
+    </button>
+    <a class="logo header__logo" href="#">
+      <img src="./images/logo.png" loading="lazy" alt="Логотип" width="200" height="50">
+    </a>
+    <div class="fixed-nav">
+      <nav class="nav" title="навигация">
+        <ul class="nav__list">
+          <li class="nav__item nav__item--user">
+            <a href="#" class="nav__link nav__link--user">
+              <svg>
+                <use xlink:href="images/sprite.svg#user"></use>
+              </svg>
+              Личный кабинет
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--chart">
+              <svg>
+                <use xlink:href="images/sprite.svg#chart"></use>
+              </svg>
+              Графики
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--setting" data-modal-btn="second">
+              <svg class="">
+                <use xlink:href="images/sprite.svg#setting"></use>
+              </svg>
+              Настройки
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--notice" data-modal-btn="three">
+              <svg class="">
+                <use xlink:href="images/sprite.svg#notice"></use>
+              </svg>
+              Уведомление
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <h1 class="sr-only">
+      Cтраница выбора темературы
+    </h1>
+    <section class="hero">
+  <h2 class="sr-only">
+    Блок для взаимодействия с температурой
+  </h2>
+  <div class="container hero__container">
+    <div class="hero__left hero-side">
+      <div class="hero-side__head">
+        <h3 class="hero-side__title">
+          Список устройств
+        </h3>
+        <div class="hero-side__btns">
+          <button class="hero-side__add" aria-label="Кнопка добавить" data-modal-btn="first">
+            <svg>
+              <use xlink:href="images/sprite.svg#add"></use>
+            </svg>
+          </button>
+          <button class="btn-more btn-more--black" aria-label="Кнопка посмотреть еще">
+            <span class="btn-more__circle"></span>
+          </button>
+        </div>
+      </div>
+      <div class="hero-side__box">
+        <ul class="devices">
+          <li class="devices__item">
+            <a class="devices__link devices__link--close" href="#">
+              <span class="devices__smalltitle">
+                ZTC-720
+              </span>
+              <span class="devices__title">
+                Автосигнализация ZTC-7xx
+              </span>
+            </a>
+          </li>
+          <li class="devices__item">
+            <a class="devices__link devices__link--open" href="#">
+              <span class="devices__smalltitle">
+                zont expert
+              </span>
+              <span class="devices__title">
+                ZONT EXPERT
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="hero__right">
+      <ul class="hero__list">
+        <li class="hero__item">
+          <div class="hero__box">
+            <div class="hero__head">
+              <h3 class="hero__caption hero__caption--thermometer">
+                Температура
+              </h3>
+              <div class="hero__temp">
+                <span class="hero__descr">
+                  Датчик
+                </span>
+                <span class="hero__grade">
+                  <span>21.5</span>&deg;
+                </span>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="hero__item">
+          <div class="hero__box">
+            <div class="hero__head">
+              <h3 class="hero__caption hero__caption--celsius">
+                Целевая температура
+              </h3>
+              <div class="hero__temp">
+                <span class="hero__descr">
+                  Датчик <span>20.7</span>
+                </span>
+                <div class="hero__counter">
+                  <button class="hero__minus" aria-label="Кнопка минус"></button>
+                  <span class="hero__grade hero__grade--small">
+                    <span>21.5</span>&deg;
+                  </span>
+                  <button class="hero__plus" aria-label="Кнопка плюс"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="hero__item">
+          <div class="hero__box">
+            <h3 class="hero__caption hero__caption--layer hero__caption--mb">
+              Режим
+            </h3>
+            <ul class="hero__modes">
+              <li class="hero__modes-item">
+                <div class="hero__mode">
+                  <span class="hero__mode-name">
+                    Эконом
+                  </span>
+                  <span class="hero__grade hero__grade--small hero__grade--white">
+                    <span>21.5</span>&deg;
+                  </span>
+                </div>
+              </li>
+              <li class="hero__modes-item">
+                <div class="hero__mode hero__mode--active">
+                  <span class="hero__mode-name">
+                    Комфорт
+                  </span>
+                  <span class="hero__grade hero__grade--small hero__grade--white">
+                    <span>21.5</span>&deg;
+                  </span>
+                </div>
+              </li>
+              <li class="hero__modes-item">
+                <div class="hero__mode">
+                  <span class="hero__mode-name">
+                    Расписание
+                  </span>
+                </div>
+              </li>
+              <li class="hero__modes-item">
+                <div class="hero__mode">
+                  <span class="hero__mode-name">
+                    Выключен
+                  </span>
+                  <input class="switch" type="checkbox" hidden="hidden" id="username">
+                  <label class="switch__label" for="username">
+                    <span class="sr-only">
+                      Кнопка включени и выключения
+                    </span>
+                  </label>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+  </main>
+  <div class="menu">
+  <div class="menu__container" role="dialog" aria-modal="true">
+    <button class="menu__btn" aria-label="Закрыть модальное окно"></button>
+    <div class="menu__content">
+      <div class="menu__head">
+        Список устройств
+      </div>
+      <ul class="menu__items">
+        <li class="menu__item">
+          <a class="menu__ref" href="#">
+            Наименование устройства
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__ref" href="#">
+            Наименование устройства
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__ref" href="#">
+            Наименование устройства
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__ref" href="#">
+            Наименование устройства
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__ref" href="#">
+            Наименование устройства
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__ref" href="#">
+            Наименование устройства
+          </a>
+        </li>
+      </ul>
+      <nav class="menu__nav" title="Мобильная навигация">
+        <ul class="menu__nav__list">
+          <li class="menu__nav-item">
+            <div class="menu__devices">
+              <div class="menu__inner">
+                <a href="#" class="menu__link">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#add"></use>
+                  </svg>
+                  Список устройств
+                </a>
+                <button class="btn-more" aria-label="Кнопка посмотреть еще">
+                  <span class="btn-more__circle"></span>
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="menu__nav-item">
+            <a href="#" class="menu__link">
+              <svg>
+                <use xlink:href="images/sprite.svg#setting"></use>
+              </svg>
+              Настройки
+            </a>
+          </li>
+          <li class="menu__nav-item">
+            <a href="#" class="menu__link">
+              <svg>
+                <use xlink:href="images/sprite.svg#user"></use>
+              </svg>
+              Личный кабинет
+            </a>
+          </li>
+          <li class="menu__nav-item">
+            <a href="#" class="menu__link">
+              <svg>
+                <use xlink:href="images/sprite.svg#tel"></use>
+              </svg>
+              Техническая поддержка
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+  <div class="modal modal--add" data-modal="first">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__btn" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content device-add">
+      <h2 class="modal__title">
+        Введите серийный номер вашего устройства
+      </h2>
+      <form class="device-add__form" action="#">
+        <label class="device-add__label" for="device-add">
+          <input class="device-add__input" type="text" id="device-add" placeholder="Введите серийный номер">
+        </label>
+        <button class="device-add__btn">
+          Сохранить
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+  <div class="modal modal--setting" data-modal="second">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__btn" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content setting">
+      <h2 class="modal__title">
+        Режимы термостата
+      </h2>
+      <div class="setting__container">
+        <div class="setting__sidebar">
+          <h3 class="setting__title">
+            Настройки термостата
+          </h3>
+          <ul class="setting__btns">
+            <li class="setting__btns-item">
+              <a class="setting__btn setting__btn--active" href="#tab-1">
+                Режимы термостата
+              </a>
+            </li>
+            <li class="setting__btns-item">
+              <a class=" setting__btn" href="#tab-2">
+                Цифровая шина
+              </a>
+            </li>
+            <li class="setting__btns-item">
+              <a class="setting__btn" href="#tab-3">
+                Общие
+              </a>
+            </li>
+            <li class="setting__btns-item">
+              <a class="setting__btn" href="#tab-4">
+                Сервис
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="setting__tabs">
+          <div class="setting__tab setting__tab--active" id="tab-1">
+            <ul class="setting__list">
+              <li class="setting__item">
+                <div class="setting__box">
+                  <div class="setting__row">
+                    <div class="setting__inner">
+                      <span class="setting__info">
+                        Название режима
+                      </span>
+                      <input class="setting__input" type="text" placeholder="Название режима">
+                    </div>
+                    <div class="setting__inner">
+                      <span class="setting__info">
+                        Отопление
+                      </span>
+                      <input class="setting__input setting__input--temp" type="number" step="0.1" value="20.7">
+                    </div>
+                  </div>
+                  <button class="setting__delete" aria-label="Удалить карточку"></button>
+                  <button class="setting__move" aria-label="Передвигать карточку">
+                  </button>
+                </div>
+              </li>
+              <li class="setting__item">
+                <div class="setting__box">
+                  <div class="setting__row">
+                    <div class="setting__inner">
+                      <span class="setting__info">
+                        Название режима
+                      </span>
+                      <input class="setting__input" type="text" placeholder="Название режима">
+                    </div>
+                    <div class="setting__inner">
+                      <span class="setting__info">
+                        Отопление
+                      </span>
+                      <input class="setting__input setting__input--temp" type="number" step="0.1" value="20.7">
+                    </div>
+                  </div>
+                  <button class="setting__delete" aria-label="Удалить карточку"></button>
+                  <button class="setting__move" aria-label="Передвигать карточку">
+                  </button>
+                </div>
+              </li>
+              <li class="setting__item">
+                <div class="setting__box">
+                  <div class="setting__row">
+                    <div class="setting__inner">
+                      <span class="setting__info">
+                        Название режима
+                      </span>
+                      <input class="setting__input" type="text" placeholder="Название режима">
+                    </div>
+                    <div class="setting__inner">
+                      <span class="setting__info">
+                        Отопление
+                      </span>
+                      <input class="setting__input setting__input--temp" type="number" step="0.1" value="20.7">
+                    </div>
+                  </div>
+                  <button class="setting__delete" aria-label="Удалить карточку"></button>
+                  <button class="setting__move" aria-label="Передвигать карточку">
+                  </button>
+                </div>
+              </li>
+              <li class="setting__item">
+                <div class="setting__box">
+                  <div class="setting__row">
+                    <div class="setting__inner">
+                      <span class="setting__info">
+                        Название режима
+                      </span>
+                      <input class="setting__input" type="text" placeholder="Название режима">
+                    </div>
+                    <div class="setting__inner">
+                      <span class="setting__info">
+                        Отопление
+                      </span>
+                      <input class="setting__input setting__input--temp" type="number" step="0.1" value="20.7">
+                    </div>
+                  </div>
+                  <button class="setting__delete" aria-label="Удалить карточку"></button>
+                  <button class="setting__move" aria-label="Передвигать карточку">
+                  </button>
+                </div>
+              </li>
+            </ul>
+            <button class="setting__add">
+              Добавить режимы
+            </button>
+          </div>
+          <div class="setting__tab system" id="tab-2">
+            <h3 class="system__title title">
+              Настройки цифровой шины
+            </h3>
+            <span class="system__descr">
+              Включить управление по цифровой шине
+            </span>
+            <button class="system__toggler">
+              <span class="system__toggle">
+                Выкл
+              </span>
+              <input class="switch" type="checkbox" hidden="hidden" id="switch-can">
+              <label class="switch__label" for="switch-can">
+                <span class="sr-only">
+                  Кнопка включени и выключения
+                </span>
+              </label>
+            </button>
+            <div class="system__container">
+              <div class="system__item">
+                <h4 class="system__subtitle">
+                  Отопление
+                </h4>
+                <button class="system__toggler">
+                  <span class="system__toggle">
+                    Выкл
+                  </span>
+                  <input class="switch" type="checkbox" hidden="hidden" id="switch-heating">
+                  <label class="switch__label" for="switch-heating">
+                    <span class="sr-only">
+                      Кнопка включени и выключения
+                    </span>
+                  </label>
+                </button>
+                <div class="system__box">
+                  <ul class="system__list">
+                    <li class="system__list-item">
+                      <div class="system__inner">
+                        <span class="system__text">
+                          Минимальная температура теплоносителя
+                        </span>
+                        <input class="system__input" type="text">
+                        °C
+                      </div>
+                    </li>
+                    <li class="system__list-item">
+                      <div class="system__inner">
+                        <span class="system__text">
+                          Минимальная температура теплоносителя
+                        </span>
+                        <input class="system__input" type="text">
+                        °C
+                      </div>
+                    </li>
+                    <li class="system__list-item">
+                      <div class="system__inner">
+                        <span class="system__text">
+                          Минимальная давление теплоносителя
+                        </span>
+                        <input class="system__input" type="text">
+                        бар
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="system__item">
+                <h4 class="system__subtitle">
+                  Горячее водоснабжение
+                </h4>
+                <button class="system__toggler">
+                  <span class="system__toggle">
+                    Выкл
+                  </span>
+                  <input class="switch" type="checkbox" hidden="hidden" id="switch-ws">
+                  <label class="switch__label" for="switch-ws">
+                    <span class="sr-only">
+                      Кнопка включени и выключения
+                    </span>
+                  </label>
+                </button>
+                <div class="system__box">
+                  <ul class="system__list">
+                    <li class="system__list-item">
+                      <div class="system__inner">
+                        <span class="system__text">
+                          Заданная температура ГВС
+                        </span>
+                        <input class="system__input" type="text">
+                        С
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <label class="params__apply" for="checkbox-camera">
+                  <span class="params__checkbox">
+                    <input class="params__check" id="checkbox-camera" type="checkbox" checked>
+                    <span class="params__checked"></span>
+                  </span>
+                  <span class="params__text">
+                    Показывать вкладку камеры
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="setting__tab params" id="tab-3">
+            <h3 class="params__title title">
+              Параметры устройств
+            </h3>
+            <div class="params__serial">
+              <span class="params__serial-item">
+                Серийный номер:
+              </span>
+              <span class="params__serial-item">
+                214124324321
+              </span>
+              <span class="params__serial-item params__id">
+                id=
+                <span id="param-id">1580</span>
+              </span>
+            </div>
+            <ul class="params__list">
+              <li class="params__item">
+                <div class="params__box">
+                  <h4 class="params__subtitle">
+                    Название устройства
+                  </h4>
+                  <input class="params__input" type="text" value="Термостат ZONT">
+                </div>
+              </li>
+              <li class="params__item">
+                <div class="params__box">
+                  <h4 class="params__subtitle">
+                    Заметки
+                  </h4>
+                  <input class="params__input" type="text" placeholder="Например, номер SIM">
+                </div>
+              </li>
+              <li class="params__item">
+                <div class="params__box">
+                  <h4 class="params__subtitle">
+                    Часовой пояс
+                  </h4>
+                  <select class="params__select" name="select">
+                    <option value="UTC+0 — Западноевропейское время">
+                      UTC+0 — Западноевропейское время
+                    </option>
+                    <option value="2">
+                      2
+                    </option>
+                    <option value="3">
+                      3
+                    </option>
+                  </select>
+                </div>
+              </li>
+              <li class="params__item">
+                <div class="params__box">
+                  <h4 class="params__subtitle">
+                    Часовой пояс
+                  </h4>
+                  <div class="params__inner">
+                    <input class="params__input" type="text" placeholder="Производитель котла">
+                    <input class="params__input" type="text" placeholder="Модель котла">
+                  </div>
+                </div>
+              </li>
+              <li class="params__item">
+                <div class="params__box">
+                  <h4 class="params__subtitle">
+                    Местоположение устройства
+                  </h4>
+                  <span class="params__descr">
+                    не задано <a class="params__link" href="#">
+                      указать
+                    </a>
+                  </span>
+                </div>
+              </li>
+            </ul>
+            <label class="params__apply" for="checkbox-param">
+              <span class="params__checkbox">
+                <input class="params__check" id="checkbox-param" type="checkbox" checked>
+                <span class="params__checked"></span>
+              </span>
+              <span class="params__text">
+                Показывать вкладку камеры
+              </span>
+            </label>
+          </div>
+          <div class="setting__tab services" id="tab-4">
+            <h3 class="services__title title">
+              Прошивка
+            </h3>
+            <ul class="services__list">
+              <li class="services__item">
+                <div class="serivces__box">
+                  <span class="services__descr">
+                    Тип устройства:
+                  </span>
+                  <span class="services__info">
+                    ZONT H-1(404)
+                  </span>
+                </div>
+              </li>
+              <li class="services__item">
+                <div class="serivces__box">
+                  <span class="services__descr">
+                    Установленная ПО:
+                  </span>
+                  <span class="services__info">
+                    118:133
+                  </span>
+                </div>
+              </li>
+              <li class="services__item">
+                <div class="serivces__box">
+                  <span class="services__descr">
+                    Актуальная ПО:
+                  </span>
+                  <span class="services__info">
+                    154:148
+                  </span>
+                </div>
+              </li>
+            </ul>
+            <a class="services__link" href="#">
+              Удаленное обновление ПО
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="modal modal--notice" data-modal="three">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__btn" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content notice">
+      <h2 class="modal__title">
+        Выберите способы оповещения
+      </h2>
+      <form class="notice__form" action="#">
+        <label class="notice__apply" for="checkbox-sms">
+          <span class="notice__box">
+            <input class="notice__check" id="checkbox-sms" type="checkbox" checked>
+            <span class="notice__checkbox"></span>
+          </span>
+          <span class="notice__text">
+            SMS
+          </span>
+        </label>
+        <label class="notice__apply" for="checkbox-call">
+          <span class="notice__box">
+            <input class="notice__check" id="checkbox-call" type="checkbox" checked>
+            <span class="notice__checkbox"></span>
+          </span>
+          <span class="notice__text">
+            Звонок
+          </span>
+        </label>
+        <label class="notice__apply" for="checkbox-email">
+          <span class="notice__box">
+            <input class="notice__check" id="checkbox-email" type="checkbox" checked>
+            <span class="notice__checkbox"></span>
+          </span>
+          <span class="notice__text">
+            Email
+          </span>
+        </label>
+      </form>
+    </div>
+  </div>
+</div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
