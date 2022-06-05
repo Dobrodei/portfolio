@@ -34,7 +34,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link nav__link--chart">
+            <a href="#" class="nav__link nav__link--chart" data-chart>
               <svg>
                 <use xlink:href="images/sprite.svg#chart"></use>
               </svg>
@@ -151,11 +151,11 @@
                   Датчик <span>20.7</span>
                 </span>
                 <div class="hero__counter">
-                  <button class="hero__minus" aria-label="Кнопка минус"></button>
+                  <button class="hero__minus" aria-label="Кнопка минус" data-step="minus"></button>
                   <span class="hero__grade hero__grade--small">
-                    <span>21.5</span>&deg;
+                    <span id="grade">21.5</span>&deg;
                   </span>
-                  <button class="hero__plus" aria-label="Кнопка плюс"></button>
+                  <button class="hero__plus" aria-label="Кнопка плюс" data-step="plus"></button>
                 </div>
               </div>
             </div>
@@ -195,12 +195,12 @@
                 </div>
               </li>
               <li class="hero__modes-item">
-                <div class="hero__mode">
+                <div class="hero__mode hero__mode--switch">
                   <span class="hero__mode-name">
                     Выключен
                   </span>
-                  <input class="switch" type="checkbox" hidden="hidden" id="username">
-                  <label class="switch__label" for="username">
+                  <input class="switch" type="checkbox" hidden="hidden" id="switch-status">
+                  <label class="switch__box" for="switch-status">
                     <span class="sr-only">
                       Кнопка включени и выключения
                     </span>
@@ -211,6 +211,7 @@
           </div>
         </li>
       </ul>
+      <div class="chart hidden"></div>
     </div>
   </div>
 </section>
@@ -219,41 +220,6 @@
   <div class="menu__container" role="dialog" aria-modal="true">
     <button class="menu__btn" aria-label="Закрыть модальное окно"></button>
     <div class="menu__content">
-      <div class="menu__head">
-        Список устройств
-      </div>
-      <ul class="menu__items">
-        <li class="menu__item">
-          <a class="menu__ref" href="#">
-            Наименование устройства
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__ref" href="#">
-            Наименование устройства
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__ref" href="#">
-            Наименование устройства
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__ref" href="#">
-            Наименование устройства
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__ref" href="#">
-            Наименование устройства
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__ref" href="#">
-            Наименование устройства
-          </a>
-        </li>
-      </ul>
       <nav class="menu__nav" title="Мобильная навигация">
         <ul class="menu__nav__list">
           <li class="menu__nav-item" data-menu>
@@ -298,7 +264,7 @@
         <label class="device-add__label" for="device-add">
           <input class="device-add__input" type="text" id="device-add" placeholder="Введите серийный номер">
         </label>
-        <button class="device-add__btn">
+        <button class="device-add__btn" type="submit">
           Сохранить
         </button>
       </form>
@@ -309,14 +275,16 @@
   <div class="modal__container" role="dialog" aria-modal="true">
     <button class="modal__btn" aria-label="Закрыть модальное окно"></button>
     <div class="modal__content setting">
-      <h2 class="modal__title">
-        Режимы термостата
-      </h2>
+      <div class="modal__header">
+        <button class="modal__back modal__back--visible" aria-label="Кнопка назад">
+          ←
+        </button>
+        <h2 class="modal__title">
+          Режимы термостата
+        </h2>
+      </div>
       <div class="setting__container">
         <div class="setting__sidebar">
-          <h3 class="setting__title">
-            Настройки термостата
-          </h3>
           <ul class="setting__btns">
             <li class="setting__btns-item">
               <a class="setting__btn setting__btn--active" href="#tab-1">
@@ -439,11 +407,11 @@
             <span class="system__descr">
               Включить управление по цифровой шине
             </span>
-            <button class="system__toggler system__toggler">
+            <button class="system__toggler system__toggler" aria-label="Кнопка включение и выключение нижнего блока">
               <span class="system__toggle">
-                Вкл
+                Выкл
               </span>
-              <span class="switch__label">
+              <span class="switch__box">
                 <span class="sr-only">
                   Кнопка включени и выключения
                 </span>
@@ -454,11 +422,11 @@
                 <h4 class="system__subtitle">
                   Отопление
                 </h4>
-                <button class="system__toggler">
+                <button class="system__toggler" aria-label="Кнопка включение и выключение нижнего блока">
                   <span class="system__toggle">
-                    Вкл
+                    Выкл
                   </span>
-                  <span class="switch__label">
+                  <span class="switch__box">
                     <span class="sr-only">
                       Кнопка включени и выключения
                     </span>
@@ -500,11 +468,11 @@
                 <h4 class="system__subtitle">
                   Горячее водоснабжение
                 </h4>
-                <button class="system__toggler">
+                <button class="system__toggler" aria-label="Кнопка включение и выключение нижнего блока">
                   <span class="system__toggle">
-                    Вкл
+                    Выкл
                   </span>
-                  <span class="switch__label">
+                  <span class="switch__box">
                     <span class="sr-only">
                       Кнопка включени и выключения
                     </span>
@@ -523,13 +491,13 @@
                     </li>
                   </ul>
                 </div>
-                <label class="notice__apply" for="checkbox-temp">
-                  <span class="notice__box">
-                    <input class="notice__check" id="checkbox-temp" type="checkbox" checked>
-                    <span class="notice__checkbox"></span>
+                <label class="checkbox" for="checkbox-temp">
+                  <span class="checkbox__box">
+                    <input class="checkbox__input" id="checkbox-temp" type="checkbox" checked>
+                    <span class="checkbox__check"></span>
                   </span>
-                  <span class="notice__text">
-                    Показывать вкладку камеры
+                  <span class="checkbox__text">
+                    Показывать вкладку температуры
                   </span>
                 </label>
               </div>
@@ -610,13 +578,13 @@
                 </div>
               </li>
             </ul>
-            <label class="notice__apply" for="checkbox-fff">
-              <span class="notice__box">
-                <input class="notice__check" id="checkbox-fff" type="checkbox" checked>
-                <span class="notice__checkbox"></span>
+            <label class="checkbox" for="checkbox-inset">
+              <span class="checkbox__box">
+                <input class="checkbox__input" id="checkbox-inset" type="checkbox" checked>
+                <span class="checkbox__check"></span>
               </span>
-              <span class="notice__text">
-                Показывать вкладку камеры
+              <span class="checkbox__text">
+                Показывать вкладку температуры
               </span>
             </label>
           </div>
@@ -673,30 +641,30 @@
         Выберите способы оповещения
       </h2>
       <form class="notice__form" action="#">
-        <label class="notice__apply" for="checkbox-sms">
-          <span class="notice__box">
-            <input class="notice__check" id="checkbox-sms" type="checkbox" checked>
-            <span class="notice__checkbox"></span>
+        <label class="checkbox" for="checkbox-sms">
+          <span class="checkbox__box">
+            <input class="checkbox__input" id="checkbox-sms" type="checkbox" checked>
+            <span class="checkbox__check"></span>
           </span>
-          <span class="notice__text">
+          <span class="checkbox__text">
             SMS
           </span>
         </label>
-        <label class="notice__apply" for="checkbox-call">
-          <span class="notice__box">
-            <input class="notice__check" id="checkbox-call" type="checkbox" checked>
-            <span class="notice__checkbox"></span>
+        <label class="checkbox" for="checkbox-call">
+          <span class="checkbox__box">
+            <input class="checkbox__input" id="checkbox-call" type="checkbox" checked>
+            <span class="checkbox__check"></span>
           </span>
-          <span class="notice__text">
+          <span class="checkbox__text">
             Звонок
           </span>
         </label>
-        <label class="notice__apply" for="checkbox-email">
-          <span class="notice__box">
-            <input class="notice__check" id="checkbox-email" type="checkbox" checked>
-            <span class="notice__checkbox"></span>
+        <label class="checkbox" for="checkbox-email">
+          <span class="checkbox__box">
+            <input class="checkbox__input" id="checkbox-email" type="checkbox" checked>
+            <span class="checkbox__check"></span>
           </span>
-          <span class="notice__text">
+          <span class="checkbox__text">
             Email
           </span>
         </label>
