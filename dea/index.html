@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Deo</title>
+  <link rel="preload" as="font" href="./fonts/Montserrat-Light.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Montserrat-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Montserrat-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Montserrat-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Roboto-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Roboto-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Roboto-Black.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img src="./images/logo.svg" alt="Логотип" alt="" width="170" height="65">
+      </a>
+      <div class="header__middle">
+        <nav class="nav" title="Главная навигация">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="#">
+                Главная
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Товары
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                О компании
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Отзывы
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__contact">
+        <a class="header__phone" href="tel:375296264657">
+          375 29 626 46 57
+        </a>
+        <a class="header__mail" href="mailto:info.dea@yandex.by">
+          info.dea@yandex.by
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <section class="hero">
+  <div class="container hero__container">
+    <div class="hero__left">
+      <h1 class="hero__title title">
+        <span>Средства</span> для
+        ухода за бытовой техникой
+      </h1>
+      <p class="hero__text">
+        Профессиональный уход за бытовой техникой, без вреда для окружающей среды.
+        Оптом и в розницу.
+      </p>
+      <button class="hero__btn btn">
+        Заказать оптом!
+      </button>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--insta" href="#">
+            Много интересного!
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--wild" href="#">
+            Розничные продажи!
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="hero__right slider" style="background-image: url('./images/circle-hero.png')">
+      <div class="hero__quality">
+        <img src="./images/quality.png" alt="Фото качества продукта" width="173" height="173">
+      </div>
+      <div class="swiper hero__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="hero__img">
+              <img src="./images/hero-slider/1.png" alt="Фото средства" width="230" height="700">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero__img">
+              <img src="./images/hero-slider/1.png" alt="Фото средства" width="230" height="700">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="hero__img">
+              <img src="./images/hero-slider/1.png" alt="Фото средства" width="230" height="700">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero__controls">
+        <div class="hero__btns">
+          <div class="hero__btn-prev swiper-button-prev">
+            <svg>
+              <use xlink:href="images/sprite.svg#arrow-left"></use>
+            </svg>
+          </div>
+          <div class="hero__btn-next swiper-button-next">
+            <svg>
+              <use xlink:href="images/sprite.svg#arrow-right"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="hero__pagination swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="naturally">
+  <div class="container">
+    <h2 class="naturally__title title">
+      <span>
+        <img src="./images/logo.svg" aria-hidden="true" alt="" width="170" height="66">
+      </span>
+      Чисто и натурально
+    </h2>
+    <div class="naturally__inner">
+      <div class="naturally__box naturally__box--pr">
+        <h3 class="naturally__subtitle">
+          Основные принципы
+        </h3>
+        <p class="naturally__text">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div class="naturally__images">
+        <div class="naturally__bigimg naturally__img">
+          <img src="./images/naturally1.jpg" aria-hidden="true" alt="" width="360" height="450">
+        </div>
+        <div class="naturally__smallimg naturally__img">
+          <img src="./images/naturally2.png" aria-hidden="true" alt="" width="260" height="330">
+        </div>
+      </div>
+      <div class="naturally__box naturally__box--pl">
+        <h3 class="naturally__subtitle">
+          экологичные товары
+        </h3>
+        <p class="naturally__text">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="our-product">
+  <div class="container">
+    <h2 class="our-product__title title">
+      Наши продукты
+    </h2>
+    <div class="our-product__inner slider">
+      <div class="our-product__slides">
+        <div class="our-product__slider" style="background-image: url('./images/bg-product.png')">
+          <div class="our-product__quality">
+            <img src="./images/quality2.svg" alt="Качество продукта" width="220" height="220">
+          </div>
+          <div class="swiper our-product__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="our-product__img">
+                  <img src="./images/hero-slider/1.png" alt="Фото продукта" width="250" height="750">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="our-product__img">
+                  <img src="./images/hero-slider/1.png" alt="Фото продукта" width="250" height="750">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="our-product__img">
+                  <img src="./images/hero-slider/1.png" alt="Фото продукта" width="250" height="750">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="our-product__controls">
+          <div class="our-product__btn-prev swiper-button-prev">
+            <svg>
+              <use xlink:href="images/sprite.svg#arrow-left"></use>
+            </svg>
+          </div>
+          <div class="our-product__pagination swiper-pagination"></div>
+          <div class="our-product__btn-next swiper-button-next">
+            <svg>
+              <use xlink:href="images/sprite.svg#arrow-right"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="our-product__content">
+        <h3 class="our-product__subtitle title">
+          <span>
+            Средство
+          </span> для удаления накипи
+        </h3>
+        <ul class="our-product__benefits">
+          <li class="our-product__item">
+            <p class="our-product__benefit">
+              Подходит для любых типов автоматических кофемашин и кофеварок
+            </p>
+          </li>
+          <li class="our-product__item">
+            <p class="our-product__benefit">
+              Продлевает срок службы вашего устройства
+            </p>
+          </li>
+          <li class="our-product__item">
+            <p class="our-product__benefit">
+              Эффективно удаляет накипь и известковые отложения
+            </p>
+          </li>
+        </ul>
+        <p class="our-product__text">
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <div class="our-product__btns">
+          <button class="our-product__btn btn">
+            Заказать оптом!
+          </button>
+          <a class="our-product__link" href="#" aria-label="Ссылка на валдбериз">
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="our-product__notice">
+      при оформлении заказа на <span>2100</span> единиц продукции скидка 30%
+    </p>
+    <div class="our-product__inner">
+      <div class="our-product__amount">
+        <span class="our-product__num">
+          +5000
+        </span>
+        <span class="our-product__descr">
+          проданных товаров
+        </span>
+      </div>
+      <ul class="our-product__sales">
+        <li class="our-product__sale">
+          <p class="our-product__place our-product__place--shop">
+            Сотрудничаем с множеством
+            крупных торговых сетей!
+          </p>
+        </li>
+        <li class="our-product__sale">
+          <p class="our-product__place our-product__place--wild">
+            Розничная торговля реализуется
+            через WILDBERRIES!
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="brands">
+    <h3 class="brands__title">
+      Нас выбирают
+    </h3>
+    <ul class="brands__list">
+      <li class="brands__item">
+        <div class="brands__img">
+          <img src="./images/brands/1.svg" alt="Фото бренда">
+        </div>
+      </li>
+      <li class="brands__item">
+        <div class="brands__img">
+          <img src="./images/brands/2.svg" alt="Фото бренда">
+        </div>
+      </li>
+      <li class="brands__item">
+        <div class="brands__img">
+          <img src="./images/brands/3.svg" alt="Фото бренда">
+        </div>
+      </li>
+      <li class="brands__item">
+        <div class="brands__img">
+          <img src="./images/brands/4.svg" alt="Фото бренда">
+        </div>
+      </li>
+      <li class="brands__item">
+        <div class="brands__img">
+          <img src="./images/brands/5.svg" alt="Фото бренда">
+        </div>
+      </li>
+      <li class="brands__item">
+        <div class="brands__img">
+          <img src="./images/brands/6.svg" alt="Фото бренда">
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="benefits" style="background-image: url('./images/icons/bg-benefits.svg')">
+  <div class="container">
+    <h2 class="benefits__title title">
+      Почему люди выбирают <span><img src="./images/logo.svg" aria-hidden="true" width="170" height="66"></span>
+    </h2>
+    <ul class="benefits__list">
+      <li class="benefits__item">
+        <div class="benefits__box benefits__box--available">
+          <span class="benefits__subtitle">
+            доступно
+          </span>
+          <p class="benefits__text">
+            Стоимость нашей продукции
+            на 20-30% ниже, чем у лидеров
+            рынка в этом направлении!
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box benefits__box--eco">
+          <span class="benefits__subtitle">
+            Экологично
+          </span>
+          <p class="benefits__text">
+            Биоразлагаемые компоненты.
+            Не вредит здоровью человека, проверено в лаборатории.
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box benefits__box--modern">
+          <span class="benefits__subtitle">
+            современно
+          </span>
+          <p class="benefits__text">
+            Передовые технологии производства, самое современное оборудование!
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box benefits__box--grade">
+          <span class="benefits__subtitle">
+            Качественно
+          </span>
+          <p class="benefits__text">
+            Продукт белорусского производства. Отвечает всем отечественным и европейским стандартам качества.
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box benefits__box--verified">
+          <span class="benefits__subtitle">
+            проверенно
+          </span>
+          <p class="benefits__text">
+            Предусмотрена вся сопроводительная документации. Паспорта качества, свидетельства о регистрации продукта, сертификаты качества и государственной регистрации.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="records">
+  <div class="container records__container">
+    <div class="records__inner">
+      <h2 class="records__title title">
+        Документация
+      </h2>
+      <p class="records__text">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+    <div class="records__bigslider">
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="records__img">
+              <img src="./images/docs/1.jpg" alt="Фото документа" width="470" height="710">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="records__img">
+              <img src="./images/docs/1.jpg" alt="Фото документа" width="470" height="710">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="records__img">
+              <img src="./images/docs/1.jpg" alt="Фото документа" width="470" height="710">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="records__img">
+              <img src="./images/docs/1.jpg" alt="Фото документа" width="470" height="710">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="records__smallslider slider">
+      <div class="records__controls">
+        <div class="records__btn-prev swiper-button-prev">
+          <svg>
+            <use xlink:href="images/sprite.svg#arrow-left"></use>
+          </svg>
+        </div>
+        <div class="records__pagination swiper-pagination"></div>
+        <div class="records__btn-next swiper-button-next">
+          <svg>
+            <use xlink:href="images/sprite.svg#arrow-right"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="records__img">
+              <img src="./images/docs/1.jpg" alt="Фото документа" width="200" height="304">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="records__img">
+              <img src="./images/docs/1.jpg" alt="Фото документа" width="200" height="304">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="records__img">
+              <img src="./images/docs/1.jpg" alt="Фото документа" width="200" height="304">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="records__img">
+              <img src="./images/docs/1.jpg" alt="Фото документа" width="200" height="304">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="reviews">
+  <div class="container">
+    <h2 class="reviews__title title">
+      <span>Ваши</span> отзывы
+    </h2>
+    <ul class="reviews__list">
+      <li class="reviews__item">
+        <div class="reviews__box">
+          <div class="reviews__images">
+            <div class="reviews__author reviews__img">
+              <img src="./images/review.png" alt="Фото автора" width="80" height="80">
+            </div>
+            <div class="reviews__country reviews__img">
+              <img src="./images/icons/blr.svg" alt="Страна автора" width="30" height="30">
+            </div>
+          </div>
+          <div class="reviews__rating reviews__img">
+            <img src="./images/icons/rating.svg" alt="5 звезд" width="135" height="20">
+          </div>
+          <span class="reviews__name">
+            Ангелина
+          </span>
+          <p class="reviews__text">
+            Хорошее средство. Индикатор погас, рекомендую! Пришло целое, хорошо упаковано.
+          </p>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <div class="reviews__box">
+          <div class="reviews__images">
+            <div class="reviews__author reviews__img">
+              <img src="./images/review.png" alt="Фото автора" width="80" height="80">
+            </div>
+            <div class="reviews__country reviews__img">
+              <img src="./images/icons/blr.svg" alt="Страна автора" width="30" height="30">
+            </div>
+          </div>
+          <div class="reviews__rating reviews__img">
+            <img src="./images/icons/rating.svg" alt="5 звезд" width="135" height="20">
+          </div>
+          <span class="reviews__name">
+            Ангелина
+          </span>
+          <p class="reviews__text">
+            Хорошее средство. Индикатор погас, рекомендую! Пришло целое, хорошо упаковано.
+          </p>
+        </div>
+      </li>
+      <li class="reviews__item">
+        <div class="reviews__box">
+          <div class="reviews__images">
+            <div class="reviews__author reviews__img">
+              <img src="./images/review.png" alt="Фото автора" width="80" height="80">
+            </div>
+            <div class="reviews__country reviews__img">
+              <img src="./images/icons/blr.svg" alt="Страна автора" width="30" height="30">
+            </div>
+          </div>
+          <div class="reviews__rating reviews__img">
+            <img src="./images/icons/rating.svg" alt="5 звезд" width="135" height="20">
+          </div>
+          <span class="reviews__name">
+            Ангелина
+          </span>
+          <p class="reviews__text">
+            Хорошее средство. Индикатор погас, рекомендую! Пришло целое, хорошо упаковано.
+          </p>
+        </div>
+      </li>
+    </ul>
+    <div class="centred">
+      <a class="revievs__link btn" href="#">
+        Все отзывы
+      </a>
+    </div>
+  </div>
+</section>
+    <section class="contacts">
+  <div class="container contacts__container">
+    <div class="contacts__left">
+      <h2 class="contacts__title title">
+        Контакты
+      </h2>
+      <p class="contacts__descr">
+        Общество с ограниченной ответственностью «ДЕА Ин»
+        220103 Республика Беларусь, г. Минск, ул. Кнорина 50, корп. 25, офс. 810(АБЧ)
+        +375 29 747 56 77
+
+        УНП 193599952
+      </p>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <a class="contacts__link contacts__link--email" href="mailto:info.dea@yandex.by">
+            info.dea@yandex.by
+          </a>
+        </li>
+        <li class="contacts__item">
+          <ul class="contacts__phones">
+            <li class="contacts__phone">
+              <a class="contacts__link" href="tel:+375296264657">
+                375 29 626 46 57
+              </a>
+            </li>
+            <li class="contacts__phone">
+              <a class="contacts__link" href="tel:+375333297674 ">
+                375 33 329 76 74
+              </a>
+            </li>
+            <li class="contacts__phone">
+              <a class="contacts__link" href="tel:+375297475677">
+                375 29 747 56 77
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--insta" href="#">
+            Много интересного!
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--wild" href="#">
+            Розничные продажи!
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="contacts__form">
+      <form action="#" class="form" style="background-image: url('./images/icons/bg-form.svg')">
+        <h3 class="form__title title">
+          Заказать сейчас
+        </h3>
+        <label class="form__label">
+          <span class="sr-only">
+            Поле для ФИО
+          </span>
+          <input class="form__input" type="text" placeholder="Ф.И.О.">
+        </label>
+        <label class="form__label">
+          <span class="sr-only">
+            Поле для телефона
+          </span>
+          <input class="form__input" type="tel" placeholder="Телефон:">
+        </label>
+        <label class="form__label">
+          <span class="sr-only">
+            Поле для почты
+          </span>
+          <input class="form__input" type="email" placeholder="Почта:">
+        </label>
+        <label class="form__label">
+          <span class="sr-only">
+            Поле для комментария
+          </span>
+          <textarea class="form__textarea" name="textarea" placeholder="Комментарий:"></textarea>
+        </label>
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="checkbox" for="checkbox-data">
+              <span class="checkbox__box">
+                <input class="checkbox__input" id="checkbox-data" type="checkbox" checked>
+                <span class="checkbox__check"></span>
+              </span>
+              <span class="checkbox__text">
+                Согласие на обработку персональных данных.
+              </span>
+            </label>
+          </li>
+          <li class="form__item">
+            <label class="checkbox" for="checkbox-sms">
+              <span class="checkbox__box">
+                <input class="checkbox__input" id="checkbox-sms" type="checkbox" checked>
+                <span class="checkbox__check"></span>
+              </span>
+              <span class="checkbox__text">
+                Согласие получать уведомления об акциях, изменениях цен и новых продуктах.
+              </span>
+            </label>
+          </li>
+        </ul>
+        <button class="form__btn btn">
+          Сделать заказ
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer" style="background-image: url('./images/icons/bg-footer.svg')">
+  <div class="container footer__container">
+    <a class="logo" href="#">
+      <img src="./images/logo.svg" alt="Логотип" width="175" height="68">
+    </a>
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a class="footer__link" href="#">
+          Главная
+        </a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">
+          Товары
+        </a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">
+          О компании
+        </a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">
+          Отзывы
+        </a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">
+          Контакты
+        </a>
+      </li>
+    </ul>
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a class="footer__link footer__link--tel" href="tel:+375296264657">
+          375 29 626 46 57
+        </a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link footer__link--mail" href="mailto:info.dea@yandex.by">
+          info.dea@yandex.by
+        </a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">
+
+        </a>
+      </li>
+    </ul>
+    <p class="footer__text">
+      Общество с ограниченной ответственностью «ДЕА Ин»
+      220103 Республика Беларусь, г. Минск, ул. Кнорина 50, корп. 25, офс. 810(АБЧ)
+      +375 29 747 56 77
+
+      УНП 193599952
+    </p>
+  </div>
+  <p class="footer__copy">
+    Все права защищены©
+  </p>
+</footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
