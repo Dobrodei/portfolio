@@ -21,18 +21,68 @@
   <header class="header">
   <div class="header__container">
     <div class="header__top">
+      <a class="logo header__logo" href="#">
+        <img loading="lazy" src="./images/logo.svg" alt="Логотип" width="64" height="64">
+      </a>
       <div class="header__inner">
-        <span class="header__box header__box--time">
+        <span class="header__box header__styles header__box--time">
           00:07:04
         </span>
-        <span class="header__box">
+        <span class="header__box header__styles">
           <span id="price">FREE</span> ₽
         </span>
-        <a class="header__help" href="#" aria-label="Кнопка помощи"></a>
+        <!-- <a class="header__help header__styles" href="#" aria-label="Кнопка помощи"></a> -->
       </div>
-      <a class="logo header__logo" href="#">
-        <img loading="lazy" src="./images/logo.svg" alt="Логотип" width="120" height="80">
-      </a>
+      <div class="header__inner header__inner--descr">
+        <p class="header__text header__styles">
+          Торонто
+        </p>
+        <p class="header__text header__text--small header__styles">
+          Длинная и увлекательная экскурсия
+          по Торонто и окресностям.
+        </p>
+      </div>
+      <ul class="header__list">
+        <li class="header__list-item">
+          <a class="header__ref header__styles" href="#">
+            <svg>
+              <use xlink:href="images/sprite.svg#full"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__ref header__styles" href="#">
+            <svg>
+              <use xlink:href="images/sprite.svg#quest"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__ref header__styles" href="#">
+            <svg>
+              <use xlink:href="images/sprite.svg#profile"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header__list-item">
+          <div class="lang">
+            <button class="lang__checked" aria-label="Кнопка выбора языка">
+            </button>
+            <ul class="lang__list">
+              <li class="lang__item">
+                <a class="lang__country lang__country--ua" href="#">
+                  Украина
+                </a>
+              </li>
+              <li class="lang__item">
+                <a class="lang__country lang__country--de" href="#">
+                  Германия
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
     </div>
     <div class="header__strim" style="background-image: url('./images/stream-img.jpg')">
     </div>
