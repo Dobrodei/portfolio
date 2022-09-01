@@ -15,28 +15,113 @@
 </head>
 
 <body>
-  <h1 class="sr-only">Страница места экскурсии</h1>
+  <h1 class="sr-only">
+    Страница стрима
+  </h1>
   <header class="header">
   <div class="header__container">
-    <div class="header__row">
+    <div class="header__top">
       <a class="logo header__logo" href="#">
-        <img src="./images/logo.svg" loading="lazy" alt="Логотип" width="90" height="70">
+        <img loading="lazy" src="./images/logo.svg" alt="Логотип" width="64" height="64">
       </a>
-      <div class="header__img">
-        <img src="./images/header-img.jpg" loading="lazy" alt="Фото места экскурсии" width="398" height="170">
+      <div class="header__inner">
+        <span class="header__box header__styles header__box--time">
+          00:07:04
+        </span>
+        <span class="header__box header__styles">
+          <span id="price">FREE</span> ₽
+        </span>
+        <!-- <a class="header__help header__styles" href="#" aria-label="Кнопка помощи"></a> -->
       </div>
-      <h1 class="header__title">
-        Экскурсия по Москве
-      </h1>
-      <div class="header__price">
-        Стоимость: <span id="total">400 </span>₽
+      <div class="header__inner header__inner--descr">
+        <p class="header__text header__styles">
+          Торонто
+        </p>
+        <p class="header__text header__text--small header__styles">
+          Длинная и увлекательная экскурсия
+          по Торонто и окресностям.
+        </p>
       </div>
-      <div class="header__timer">
-        Время старта: <time class="header__time" datetime="2022-11.05 13:40">11.05.2022 13:40</time>
+      <ul class="header__list">
+        <li class="header__list-item">
+          <a class="header__ref header__styles" href="#">
+            <svg>
+              <use xlink:href="images/sprite.svg#turn"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__ref header__styles" href="#">
+            <svg>
+              <use xlink:href="images/sprite.svg#quest"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header__list-item">
+          <a class="header__ref header__styles" href="#">
+            <svg>
+              <use xlink:href="images/sprite.svg#profile"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header__list-item">
+          <div class="lang">
+            <button class="lang__checked" aria-label="Кнопка выбора языка">
+            </button>
+            <ul class="lang__list">
+              <li class="lang__item">
+                <a class="lang__country lang__country--ua" href="#">
+                  Украина
+                </a>
+              </li>
+              <li class="lang__item">
+                <a class="lang__country lang__country--de" href="#">
+                  Германия
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="header__strim" style="background-image: url('./images/stream-img.jpg')">
+    </div>
+    <div class="header__bottom">
+      <div class="social">
+        <span class="social__descr">
+          Мы в соц. сетях:
+        </span>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank" aria-label="Ссылка на вконтакте" style="background-image: url('./images/icons/vk.svg')"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" target="_blank" aria-label="Ссылка на телеграмм" style="background-image: url('./images/icons/tg.svg')"></a>
+          </li>
+        </ul>
       </div>
-      <a class="header__app" href="#" target="_blank">
-        Подключится
-      </a>
+      <ul class="header__btns">
+        <li class="header__btns-item">
+          <button class="header__btn header__btn--close" aria-label="Кнопка завершения">
+          </button>
+        </li>
+        <li class="header__btns-item">
+          <button class="header__btn header__btn--donat" aria-label="Кнопка доната">
+          </button>
+        </li>
+        <li class="header__btns-item">
+          <button class="header__btn header__btn--micro" aria-label="Кнопка микрофона">
+          </button>
+        </li>
+        <li class="header__btns-item">
+          <button class="header__btn header__btn--sound" aria-label="Кнопка звука">
+          </button>
+        </li>
+        <li class="header__btns-item">
+          <button class="header__btn header__btn--like" aria-label="Кнопка лайка">
+          </button>
+        </li>
+      </ul>
       <ul class="header__links">
         <li class="header__item">
           <a class="header__link" href="#" target="_blank" aria-label="Ссылка на скачивание приложения google play" style="background-image: url('./images/icons/google.svg')">
@@ -45,19 +130,6 @@
         <li class="header__item">
           <a class="header__link" href="#" target="_blank" aria-label="Ссылка на скачивание приложения app store" style="background-image: url('./images/icons/appstore.svg')">
           </a>
-        </li>
-      </ul>
-    </div>
-    <div class="social">
-      <span class="social__descr">
-        Мы в соц. сетях:
-      </span>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link" href="#" target="_blank" aria-label="Ссылка на вконтакте" style="background-image: url('./images/icons/vk.svg')"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#" target="_blank" aria-label="Ссылка на телеграмм" style="background-image: url('./images/icons/tg.svg')"></a>
         </li>
       </ul>
     </div>
