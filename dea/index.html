@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Deo</title>
+  <title>Dea</title>
   <link rel="preload" as="font" href="./fonts/Montserrat-Light.woff2" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" as="font" href="./fonts/Montserrat-Regular.woff2" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" as="font" href="./fonts/Montserrat-Medium.woff2" type="font/woff2" crossorigin="anonymous">
@@ -120,25 +120,25 @@
         </ul>
       </div>
     </div>
-    <div class="hero__right slider" style="background-image: url('./images/circle-hero.png')" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="800">
-      <div class="hero__quality">
-        <img src="./images/quality.png" loading="lazy" alt="Фото качества продукта" width="173" height="173">
-      </div>
+    <div class="hero__right slider" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="800">
       <div class="swiper hero__slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="hero__img">
-              <img src="./images/hero-slider/1.png" alt="Фото средства" loading="lazy" width="230" height="700">
+              <img class="swiper-lazy" src="./images/1x1.png" data-src="./images/products/1.png" alt="Фото средства" loading="lazy" width="230" height="700">
+              <div class="swiper-lazy-preloader"></div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="hero__img">
-              <img src="./images/hero-slider/1.png" alt="Фото средства" loading="lazy" width="230" height="700">
+              <img class="swiper-lazy" src="./images/1x1.png" data-src="./images/products/1.png" alt="Фото средства" loading="lazy" width="230" height="700">
+              <div class="swiper-lazy-preloader"></div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="hero__img">
-              <img src="./images/hero-slider/1.png" alt="Фото средства" loading="lazy" width="230" height="700">
+              <img class="swiper-lazy" src="./images/1x1.png" data-src="./images/products/1.png" alt="Фото средства" loading="lazy" width="230" height="700">
+              <div class="swiper-lazy-preloader"></div>
             </div>
           </div>
         </div>
@@ -183,7 +183,7 @@
           <img src="./images/naturally1.jpg" aria-hidden="true" loading="lazy" alt="" width="360" height="450">
         </div>
         <div class="naturally__smallimg naturally__img">
-          <img src="./images/naturally2.png" aria-hidden="true" loading="lazy" alt="" width="260" height="330">
+          <img src="./images/naturally2.jpg" aria-hidden="true" loading="lazy" alt="" width="260" height="330">
         </div>
       </div>
       <div class="naturally__box naturally__box--pl" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="1200">
@@ -204,26 +204,24 @@
     </h2>
     <div class="our-product__inner slider">
       <div class="our-product__slides" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="800">
-        <div class="our-product__slider" style="background-image: url('./images/bg-product.png')">
-          <div class="our-product__quality">
-            <img src="./images/quality2.svg" alt="Качество продукта" loading="lazy" width="220" height="220">
-          </div>
-          <div class="swiper our-product__swiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="our-product__img">
-                  <img src="./images/hero-slider/1.png" alt="Фото продукта" loading="lazy" width="250" height="750">
-                </div>
+        <div class="swiper our-product__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="our-product__img">
+                <img class="swiper-lazy" src="./images/1x1.png" data-src="./images/products/2.png" alt="Фото продукта" loading="lazy" width="250" height="750">
+                <div class="swiper-lazy-preloader"></div>
               </div>
-              <div class="swiper-slide">
-                <div class="our-product__img">
-                  <img src="./images/hero-slider/1.png" alt="Фото продукта" loading="lazy" width="250" height="750">
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="our-product__img">
+                <img class="swiper-lazy" src="./images/1x1.png" data-src="./images/products/2.png" alt="Фото продукта" loading="lazy" width="250" height="750">
+                <div class="swiper-lazy-preloader"></div>
               </div>
-              <div class="swiper-slide">
-                <div class="our-product__img">
-                  <img src="./images/hero-slider/1.png" alt="Фото продукта" loading="lazy" width="250" height="750">
-                </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="our-product__img">
+                <img class="swiper-lazy" src="./images/1x1.png" data-src="./images/products/2.png" alt="Фото продукта" loading="lazy" width="250" height="750">
+                <div class="swiper-lazy-preloader"></div>
               </div>
             </div>
           </div>
@@ -243,7 +241,98 @@
         </div>
       </div>
       <div class="our-product__content" data-aos="zoom-in-up" data-aos-duration="800" data-aos-delay="1300">
-        <h3 class="our-product__subtitle title">
+        <div class="swiper our-product__swiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="our-product__box">
+                <h3 class="our-product__subtitle title">
+                  <span>
+                    Средство1
+                  </span> для удаления накипи
+                </h3>
+                <ul class="our-product__benefits">
+                  <li class="our-product__item">
+                    <p class="our-product__benefit">
+                      Подходит для любых типов автоматических кофемашин и кофеварок
+                    </p>
+                  </li>
+                  <li class="our-product__item">
+                    <p class="our-product__benefit">
+                      Продлевает срок службы вашего устройства
+                    </p>
+                  </li>
+                  <li class="our-product__item">
+                    <p class="our-product__benefit">
+                      Эффективно удаляет накипь и известковые отложения
+                    </p>
+                  </li>
+                </ul>
+                <p class="our-product__text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="our-product__box">
+                <h3 class="our-product__subtitle title">
+                  <span>
+                    Средство2
+                  </span> для удаления накипи
+                </h3>
+                <ul class="our-product__benefits">
+                  <li class="our-product__item">
+                    <p class="our-product__benefit">
+                      Подходит для любых типов автоматических кофемашин и кофеварок
+                    </p>
+                  </li>
+                  <li class="our-product__item">
+                    <p class="our-product__benefit">
+                      Продлевает срок службы вашего устройства
+                    </p>
+                  </li>
+                  <li class="our-product__item">
+                    <p class="our-product__benefit">
+                      Эффективно удаляет накипь и известковые отложения
+                    </p>
+                  </li>
+                </ul>
+                <p class="our-product__text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="our-product__box">
+                <h3 class="our-product__subtitle title">
+                  <span>
+                    Средство3
+                  </span> для удаления накипи
+                </h3>
+                <ul class="our-product__benefits">
+                  <li class="our-product__item">
+                    <p class="our-product__benefit">
+                      Подходит для любых типов автоматических кофемашин и кофеварок
+                    </p>
+                  </li>
+                  <li class="our-product__item">
+                    <p class="our-product__benefit">
+                      Продлевает срок службы вашего устройства
+                    </p>
+                  </li>
+                  <li class="our-product__item">
+                    <p class="our-product__benefit">
+                      Эффективно удаляет накипь и известковые отложения
+                    </p>
+                  </li>
+                </ul>
+                <p class="our-product__text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <h3 class="our-product__subtitle title">
           <span>
             Средство
           </span> для удаления накипи
@@ -267,7 +356,7 @@
         </ul>
         <p class="our-product__text">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        </p> -->
         <div class="our-product__btns">
           <button class="our-product__btn btn" data-modal="first">
             Заказать оптом!
@@ -444,22 +533,26 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="records__img">
-              <img src="./images/docs/1.jpg" alt="Фото документа" width="470" height="710">
+              <img class="swiper-lazy" src="./images/1x1.png" data-src="./images/docs/1.jpg" alt="Фото документа" width="470" height="710">
+              <div class="swiper-lazy-preloader"></div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="records__img">
-              <img src="./images/docs/1.jpg" alt="Фото документа" width="470" height="710">
+              <img class="swiper-lazy" src="./images/1x1.png" data-src="./images/docs/1.jpg" alt="Фото документа" width="470" height="710">
+              <div class="swiper-lazy-preloader"></div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="records__img">
-              <img src="./images/docs/1.jpg" alt="Фото документа" width="470" height="710">
+              <img class="swiper-lazy" src="./images/1x1.png" data-src="./images/docs/1.jpg" alt="Фото документа" width="470" height="710">
+              <div class="swiper-lazy-preloader"></div>
             </div>
           </div>
           <div class="swiper-slide">
             <div class="records__img">
-              <img src="./images/docs/1.jpg" alt="Фото документа" width="470" height="710">
+              <img class="swiper-lazy" src="./images/1x1.png" data-src="./images/docs/1.jpg" alt="Фото документа" width="470" height="710">
+              <div class="swiper-lazy-preloader"></div>
             </div>
           </div>
         </div>
@@ -484,22 +577,26 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="records__img">
-                <img src="./images/docs/1.jpg" alt="Фото документа" width="200" height="304">
+                <img class="swiper-lazy" src="./images/1x1.png" data-src="./images/docs/1.jpg" alt="Фото документа" width="200" height="304">
+                <div class="swiper-lazy-preloader"></div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="records__img">
-                <img src="./images/docs/1.jpg" alt="Фото документа" width="200" height="304">
+                <img class="swiper-lazy" src="./images/1x1.png" data-src="./images/docs/1.jpg" alt="Фото документа" width="200" height="304">
+                <div class="swiper-lazy-preloader"></div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="records__img">
-                <img src="./images/docs/1.jpg" alt="Фото документа" width="200" height="304">
+                <img class="swiper-lazy" src="./images/1x1.png" data-src="./images/docs/1.jpg" alt="Фото документа" width="200" height="304">
+                <div class="swiper-lazy-preloader"></div>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="records__img">
-                <img src="./images/docs/1.jpg" alt="Фото документа" width="200" height="304">
+                <img class="swiper-lazy" src="./images/1x1.png" data-src="./images/docs/1.jpg" alt="Фото документа" width="200" height="304">
+                <div class="swiper-lazy-preloader"></div>
               </div>
             </div>
           </div>
@@ -518,7 +615,7 @@
         <div class="reviews__box">
           <div class="reviews__images">
             <div class="reviews__author reviews__img">
-              <img src="./images/review.png" alt="Фото автора" width="80" height="80">
+              <img src="./images/reviews/1.png" alt="Фото автора" width="80" height="80">
             </div>
             <div class="reviews__country reviews__img">
               <img src="./images/icons/blr.svg" alt="Страна автора" width="30" height="30">
@@ -539,7 +636,7 @@
         <div class="reviews__box">
           <div class="reviews__images">
             <div class="reviews__author reviews__img">
-              <img src="./images/review.png" alt="Фото автора" width="80" height="80">
+              <img src="./images/reviews/1.png" alt="Фото автора" width="80" height="80">
             </div>
             <div class="reviews__country reviews__img">
               <img src="./images/icons/kz.svg" alt="Страна автора" width="30" height="30">
@@ -560,7 +657,7 @@
         <div class="reviews__box">
           <div class="reviews__images">
             <div class="reviews__author reviews__img">
-              <img src="./images/review.png" alt="Фото автора" width="80" height="80">
+              <img src="./images/reviews/1.png" alt="Фото автора" width="80" height="80">
             </div>
             <div class="reviews__country reviews__img">
               <img src="./images/icons/rus.svg" alt="Страна автора" width="30" height="30">
@@ -595,7 +692,6 @@
         Общество с ограниченной ответственностью «ДЕА Ин»
         220103 Республика Беларусь, г. Минск, ул. Кнорина 50, корп. 25, офс. 810(АБЧ)
         +375 29 747 56 77
-
         <span>
           УНП 193599952
         </span>
@@ -640,7 +736,7 @@
       </ul>
     </div>
     <div class="contacts__form">
-      <form action="#" method="POST" class="form" style="background-image: url('./images/icons/bg-form.svg')">
+      <form class="form form-contacts" action="#" method="POST" style="background-image: url('./images/icons/bg-form.svg')">
         <h3 class="form__title title">
           Заказать сейчас
         </h3>
@@ -770,11 +866,11 @@
     Все права защищены©
   </p>
 </footer>
-  <div class="modal" data-modal="first">
+  <div class="modal" data-modal="second">
   <div class="modal__container" role="dialog" aria-modal="true">
-    <button class="modal__btn" aria-label="Закрыть модальное окно"></button>
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
     <div class="modal__content">
-      <form action="#" class="form form--modal" style="background-image: url('./images/icons/bg-form2.svg')">
+      <form action="#" class="form form-modal form--modal" style="background-image: url('./images/icons/bg-form2.svg')">
         <h3 class="form__title title">
           Заказать сейчас
         </h3>
@@ -782,19 +878,19 @@
           <span class="sr-only">
             Поле для ФИО
           </span>
-          <input class="form__input" type="text" placeholder="Ф.И.О.">
+          <input class="form__input input-modal-name" type="text" data-validate-field="name" name="name" placeholder="Ф.И.О.">
         </label>
         <label class="form__label">
           <span class="sr-only">
             Поле для телефона
           </span>
-          <input class="form__input" type="tel" placeholder="Телефон:">
+          <input class="form__input input-modal-tel" type="tel" data-validate-field="tel" name="Телефон" placeholder="Телефон:">
         </label>
         <label class="form__label">
           <span class="sr-only">
             Поле для почты
           </span>
-          <input class="form__input" type="email" placeholder="Почта:">
+          <input class="form__input input-modal-mail" type="email" data-validate-field="email" name="Email" placeholder="Почта:">
         </label>
         <label class="form__label">
           <span class="sr-only">
@@ -830,6 +926,22 @@
           Сделать заказ
         </button>
       </form>
+    </div>
+  </div>
+</div>
+  <div class="modal modal--received" data-modal="second">
+  <div class="modal__container" role="dialog" aria-modal="true" style="background-image: url('./images/icons/bg-form2.svg')">
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content">
+      <span class="modal__title">
+        Спасибо
+      </span>
+      <p class="modal__text">
+        Наш специалист свяжется с Вами, в самое ближайшее время!
+      </p>
+      <button class="modal__btn btn">
+        Отлично!
+      </button>
     </div>
   </div>
 </div>
