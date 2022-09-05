@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Move</title>
+  <link rel="preload" as="font" href="./fonts/Montserrat-Regular.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Montserrat-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Montserrat-ExtraBold.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Montserrat-ExtraBold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/WorkSans-Regular.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/WorkSans-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/WorkSans-Medium.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/WorkSans-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/WorkSans-SemiBold.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/WorkSans-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body body--workshop" style="background-image: url('./images/workshop-bg.png');">
+
+  <header class="header">
+  <div class="container header__container">
+    <a class="logo" href="#">
+      <img src="./images/logo.svg" loading="lazy" alt="Logo" width="50" height="15">
+    </a>
+    <button class="burger-btn" aria-label="open or close menu">
+      <span class="burger-btn__line"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            Home
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            About
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            Events
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            Regular classes
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="training.html" class="nav__link">
+            Online training
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="contacts.html" class="nav__link">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <main class="main">
+    <h1 class="sr-only">
+      Workshop
+    </h1>
+    <section class="workshop">
+  <div class="workshop__top">
+    <h2 class="workshop__title title">
+      Workshops
+    </h2>
+    <p class="workshop__descr">
+      I offer different events on a regular basis
+    </p>
+  </div>
+  <div class="workshop__banner">
+    <img src="./images/banner.jpg" alt="banner" aria-hidden="true" width="1920" height="330">
+  </div>
+  <div class="container">
+    <ul class="workshop__list">
+      <li class="workshop__item">
+        <article class="training-card">
+          <div class="training-card__img">
+            <img src="./images/training-img/1.jpg" alt="photo training" width="362" height="246">
+          </div>
+          <div class="training-card__box">
+            <span class="training-card__badge">
+              Stockholm, nor
+            </span>
+            <h3 class="training-card__title">
+              Acrobatic flow with Lukas Flint
+            </h3>
+            <p class="training-card__descr">
+              Intermediate, Advanced
+            </p>
+            <ul class="training-card__list">
+              <li class="training-card__item">
+                <time class="training-card__info training-card__info--time" datetime="2012-12-23T08:23:11+07:00">
+                  12.07.2022 18:30 - 21:30
+                </time>
+              </li>
+              <li class="training-card__item">
+                <p class="training-card__info training-card__info--address">
+                  Oudenarder Str. 16, 13347 Berlin, Germany
+                </p>
+              </li>
+            </ul>
+            <div class="training-card__bottom">
+              <span class="training-card__price">
+                <span>120</span> €
+              </span>
+              <a class="training-card__link" href="#">
+                info and booking
+              </a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="workshop__item">
+        <article class="training-card">
+          <div class="training-card__img">
+            <img src="./images/training-img/1.jpg" alt="photo training" width="362" height="246">
+          </div>
+          <div class="training-card__box">
+            <span class="training-card__badge">
+              Stockholm, nor
+            </span>
+            <h3 class="training-card__title">
+              Acrobatic flow with Lukas Flint
+            </h3>
+            <p class="training-card__descr">
+              Intermediate, Advanced
+            </p>
+            <ul class="training-card__list">
+              <li class="training-card__item">
+                <time class="training-card__info training-card__info--time" datetime="2012-12-23T08:23:11+07:00">
+                  12.07.2022 18:30 - 21:30
+                </time>
+              </li>
+              <li class="training-card__item">
+                <p class="training-card__info training-card__info--address">
+                  Oudenarder Str. 16, 13347 Berlin, Germany
+                </p>
+              </li>
+            </ul>
+            <div class="training-card__bottom">
+              <span class="training-card__price">
+                <span>120</span> €
+              </span>
+              <a class="training-card__link" href="#">
+                info and booking
+              </a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="workshop__item">
+        <article class="training-card">
+          <div class="training-card__img">
+            <img src="./images/training-img/1.jpg" alt="photo training" width="362" height="246">
+          </div>
+          <div class="training-card__box">
+            <span class="training-card__badge">
+              Stockholm, nor
+            </span>
+            <h3 class="training-card__title">
+              Acrobatic flow with Lukas Flint
+            </h3>
+            <p class="training-card__descr">
+              Intermediate, Advanced
+            </p>
+            <ul class="training-card__list">
+              <li class="training-card__item">
+                <time class="training-card__info training-card__info--time" datetime="2012-12-23T08:23:11+07:00">
+                  12.07.2022 18:30 - 21:30
+                </time>
+              </li>
+              <li class="training-card__item">
+                <p class="training-card__info training-card__info--address">
+                  Oudenarder Str. 16, 13347 Berlin, Germany
+                </p>
+              </li>
+            </ul>
+            <div class="training-card__bottom">
+              <span class="training-card__price">
+                <span>120</span> €
+              </span>
+              <a class="training-card__link" href="#">
+                info and booking
+              </a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="workshop__item">
+        <article class="training-card">
+          <div class="training-card__img">
+            <img src="./images/training-img/1.jpg" alt="photo training" width="362" height="246">
+          </div>
+          <div class="training-card__box">
+            <span class="training-card__badge">
+              Stockholm, nor
+            </span>
+            <h3 class="training-card__title">
+              Acrobatic flow with Lukas Flint
+            </h3>
+            <p class="training-card__descr">
+              Intermediate, Advanced
+            </p>
+            <ul class="training-card__list">
+              <li class="training-card__item">
+                <time class="training-card__info training-card__info--time" datetime="2012-12-23T08:23:11+07:00">
+                  12.07.2022 18:30 - 21:30
+                </time>
+              </li>
+              <li class="training-card__item">
+                <p class="training-card__info training-card__info--address">
+                  Oudenarder Str. 16, 13347 Berlin, Germany
+                </p>
+              </li>
+            </ul>
+            <div class="training-card__bottom">
+              <span class="training-card__price">
+                <span>120</span> €
+              </span>
+              <a class="training-card__link" href="#">
+                info and booking
+              </a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="workshop__item">
+        <article class="training-card">
+          <div class="training-card__img">
+            <img src="./images/training-img/1.jpg" alt="photo training" width="362" height="246">
+          </div>
+          <div class="training-card__box">
+            <span class="training-card__badge">
+              Stockholm, nor
+            </span>
+            <h3 class="training-card__title">
+              Acrobatic flow with Lukas Flint
+            </h3>
+            <p class="training-card__descr">
+              Intermediate, Advanced
+            </p>
+            <ul class="training-card__list">
+              <li class="training-card__item">
+                <time class="training-card__info training-card__info--time" datetime="2012-12-23T08:23:11+07:00">
+                  12.07.2022 18:30 - 21:30
+                </time>
+              </li>
+              <li class="training-card__item">
+                <p class="training-card__info training-card__info--address">
+                  Oudenarder Str. 16, 13347 Berlin, Germany
+                </p>
+              </li>
+            </ul>
+            <div class="training-card__bottom">
+              <span class="training-card__price">
+                <span>120</span> €
+              </span>
+              <a class="training-card__link" href="#">
+                info and booking
+              </a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="workshop__item">
+        <article class="training-card">
+          <div class="training-card__img">
+            <img src="./images/training-img/1.jpg" alt="photo training" width="362" height="246">
+          </div>
+          <div class="training-card__box">
+            <span class="training-card__badge">
+              Stockholm, nor
+            </span>
+            <h3 class="training-card__title">
+              Acrobatic flow with Lukas Flint
+            </h3>
+            <p class="training-card__descr">
+              Intermediate, Advanced
+            </p>
+            <ul class="training-card__list">
+              <li class="training-card__item">
+                <time class="training-card__info training-card__info--time" datetime="2012-12-23T08:23:11+07:00">
+                  12.07.2022 18:30 - 21:30
+                </time>
+              </li>
+              <li class="training-card__item">
+                <p class="training-card__info training-card__info--address">
+                  Oudenarder Str. 16, 13347 Berlin, Germany
+                </p>
+              </li>
+            </ul>
+            <div class="training-card__bottom">
+              <span class="training-card__price">
+                <span>120</span> €
+              </span>
+              <a class="training-card__link" href="#">
+                info and booking
+              </a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="workshop__item">
+        <article class="training-card">
+          <div class="training-card__img">
+            <img src="./images/training-img/1.jpg" alt="photo training" width="362" height="246">
+          </div>
+          <div class="training-card__box">
+            <span class="training-card__badge">
+              Stockholm, nor
+            </span>
+            <h3 class="training-card__title">
+              Acrobatic flow with Lukas Flint
+            </h3>
+            <p class="training-card__descr">
+              Intermediate, Advanced
+            </p>
+            <ul class="training-card__list">
+              <li class="training-card__item">
+                <time class="training-card__info training-card__info--time" datetime="2012-12-23T08:23:11+07:00">
+                  12.07.2022 18:30 - 21:30
+                </time>
+              </li>
+              <li class="training-card__item">
+                <p class="training-card__info training-card__info--address">
+                  Oudenarder Str. 16, 13347 Berlin, Germany
+                </p>
+              </li>
+            </ul>
+            <div class="training-card__bottom">
+              <span class="training-card__price">
+                <span>120</span> €
+              </span>
+              <a class="training-card__link" href="#">
+                info and booking
+              </a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="workshop__item">
+        <article class="training-card">
+          <div class="training-card__img">
+            <img src="./images/training-img/1.jpg" alt="photo training" width="362" height="246">
+          </div>
+          <div class="training-card__box">
+            <span class="training-card__badge">
+              Stockholm, nor
+            </span>
+            <h3 class="training-card__title">
+              Acrobatic flow with Lukas Flint
+            </h3>
+            <p class="training-card__descr">
+              Intermediate, Advanced
+            </p>
+            <ul class="training-card__list">
+              <li class="training-card__item">
+                <time class="training-card__info training-card__info--time" datetime="2012-12-23T08:23:11+07:00">
+                  12.07.2022 18:30 - 21:30
+                </time>
+              </li>
+              <li class="training-card__item">
+                <p class="training-card__info training-card__info--address">
+                  Oudenarder Str. 16, 13347 Berlin, Germany
+                </p>
+              </li>
+            </ul>
+            <div class="training-card__bottom">
+              <span class="training-card__price">
+                <span>120</span> €
+              </span>
+              <a class="training-card__link" href="#">
+                info and booking
+              </a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="workshop__item">
+        <article class="training-card">
+          <div class="training-card__img">
+            <img src="./images/training-img/1.jpg" alt="photo training" width="362" height="246">
+          </div>
+          <div class="training-card__box">
+            <span class="training-card__badge">
+              Stockholm, nor
+            </span>
+            <h3 class="training-card__title">
+              Acrobatic flow with Lukas Flint
+            </h3>
+            <p class="training-card__descr">
+              Intermediate, Advanced
+            </p>
+            <ul class="training-card__list">
+              <li class="training-card__item">
+                <time class="training-card__info training-card__info--time" datetime="2012-12-23T08:23:11+07:00">
+                  12.07.2022 18:30 - 21:30
+                </time>
+              </li>
+              <li class="training-card__item">
+                <p class="training-card__info training-card__info--address">
+                  Oudenarder Str. 16, 13347 Berlin, Germany
+                </p>
+              </li>
+            </ul>
+            <div class="training-card__bottom">
+              <span class="training-card__price">
+                <span>120</span> €
+              </span>
+              <a class="training-card__link" href="#">
+                info and booking
+              </a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="workshop__item">
+        <article class="training-card">
+          <div class="training-card__img">
+            <img src="./images/training-img/1.jpg" alt="photo training" width="362" height="246">
+          </div>
+          <div class="training-card__box">
+            <span class="training-card__badge">
+              Stockholm, nor
+            </span>
+            <h3 class="training-card__title">
+              Acrobatic flow with Lukas Flint
+            </h3>
+            <p class="training-card__descr">
+              Intermediate, Advanced
+            </p>
+            <ul class="training-card__list">
+              <li class="training-card__item">
+                <time class="training-card__info training-card__info--time" datetime="2012-12-23T08:23:11+07:00">
+                  12.07.2022 18:30 - 21:30
+                </time>
+              </li>
+              <li class="training-card__item">
+                <p class="training-card__info training-card__info--address">
+                  Oudenarder Str. 16, 13347 Berlin, Germany
+                </p>
+              </li>
+            </ul>
+            <div class="training-card__bottom">
+              <span class="training-card__price">
+                <span>120</span> €
+              </span>
+              <a class="training-card__link" href="#">
+                info and booking
+              </a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="workshop__item">
+        <article class="training-card">
+          <div class="training-card__img">
+            <img src="./images/training-img/1.jpg" alt="photo training" width="362" height="246">
+          </div>
+          <div class="training-card__box">
+            <span class="training-card__badge">
+              Stockholm, nor
+            </span>
+            <h3 class="training-card__title">
+              Acrobatic flow with Lukas Flint
+            </h3>
+            <p class="training-card__descr">
+              Intermediate, Advanced
+            </p>
+            <ul class="training-card__list">
+              <li class="training-card__item">
+                <time class="training-card__info training-card__info--time" datetime="2012-12-23T08:23:11+07:00">
+                  12.07.2022 18:30 - 21:30
+                </time>
+              </li>
+              <li class="training-card__item">
+                <p class="training-card__info training-card__info--address">
+                  Oudenarder Str. 16, 13347 Berlin, Germany
+                </p>
+              </li>
+            </ul>
+            <div class="training-card__bottom">
+              <span class="training-card__price">
+                <span>120</span> €
+              </span>
+              <a class="training-card__link" href="#">
+                info and booking
+              </a>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="workshop__item">
+        <article class="training-card">
+          <div class="training-card__img">
+            <img src="./images/training-img/1.jpg" alt="photo training" width="362" height="246">
+          </div>
+          <div class="training-card__box">
+            <span class="training-card__badge">
+              Stockholm, nor
+            </span>
+            <h3 class="training-card__title">
+              Acrobatic flow with Lukas Flint
+            </h3>
+            <p class="training-card__descr">
+              Intermediate, Advanced
+            </p>
+            <ul class="training-card__list">
+              <li class="training-card__item">
+                <time class="training-card__info training-card__info--time" datetime="2012-12-23T08:23:11+07:00">
+                  12.07.2022 18:30 - 21:30
+                </time>
+              </li>
+              <li class="training-card__item">
+                <p class="training-card__info training-card__info--address">
+                  Oudenarder Str. 16, 13347 Berlin, Germany
+                </p>
+              </li>
+            </ul>
+            <div class="training-card__bottom">
+              <span class="training-card__price">
+                <span>120</span> €
+              </span>
+              <a class="training-card__link" href="#">
+                info and booking
+              </a>
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="container footer__container">
+    <ul class="social">
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link social__link--insta" aria-label="Our intagram page">
+          <svg>
+            <use xlink:href="images/sprite.svg#insta"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link social__link--fb" aria-label="Our facebook page">
+          <svg>
+            <use xlink:href="images/sprite.svg#fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link social__link--tw" aria-label="Our twitter page">
+          <svg>
+            <use xlink:href="images/sprite.svg#youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <nav class="footer__nav">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link footer__link--mail" href="mailto:lukas@organic-movement.de">
+            lukas@organic-movement.de
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link footer__link--tel" href="tel:+4915732310340">
+            +49 1573 2310340
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">
+            Impressum
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">
+            Datenschutz
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
