@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Move</title>
+  <link rel="preload" as="font" href="./fonts/Montserrat-Regular.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Montserrat-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Montserrat-ExtraBold.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Montserrat-ExtraBold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/WorkSans-Regular.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/WorkSans-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/WorkSans-Medium.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/WorkSans-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/WorkSans-SemiBold.woff" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/WorkSans-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body body--retreats" style="background-image: url('./images/retreats-bg.png');">
+
+  <header class="header">
+  <div class="container header__container">
+    <a class="logo" href="#">
+      <img src="./images/logo.svg" loading="lazy" alt="Logo" width="50" height="15">
+    </a>
+    <button class="burger-btn" aria-label="open or close menu">
+      <span class="burger-btn__line"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            Home
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            About
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            Events
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            Regular classes
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="training.html" class="nav__link">
+            Online training
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="contacts.html" class="nav__link">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <main class="main">
+    <h1 class="sr-only">
+      retreats
+    </h1>
+    <section class="retreats">
+  <div class="retreats__top">
+    <h2 class="retreats__title title">
+      Retreats
+    </h2>
+    <p class="retreats__descr">
+      I offer different events on a regular basis
+    </p>
+  </div>
+  <div class="retreats__banner">
+    <img src="./images/retreats-banner.jpg" aria-hidden="true" alt="" width="1920" height="330">
+  </div>
+  <div class="container">
+    <div class="retreats__box">
+      <h3 class="retreats__subtitle">
+        Retreats coming soon
+      </h3>
+      <p class="retreats__text">
+        Be the first to receive events updates and other important information. Subscribe to our Newsletter!
+      </p>
+      <form class="retreats__form" action="#">
+        <label class="retreats__label" for="">
+          <span class="sr-only"></span>
+          <input class="retreats__input" type="email" placeholder="Type your e-mail here">
+        </label>
+        <button class="retreats__btn btn btn--orange" type="submit">
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="container footer__container">
+    <ul class="social">
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link social__link--insta" aria-label="Our intagram page">
+          <svg>
+            <use xlink:href="images/sprite.svg#insta"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link social__link--fb" aria-label="Our facebook page">
+          <svg>
+            <use xlink:href="images/sprite.svg#fb"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link social__link--tw" aria-label="Our twitter page">
+          <svg>
+            <use xlink:href="images/sprite.svg#youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <nav class="footer__nav">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link footer__link--mail" href="mailto:lukas@organic-movement.de">
+            lukas@organic-movement.de
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link footer__link--tel" href="tel:+4915732310340">
+            +49 1573 2310340
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">
+            Impressum
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">
+            Datenschutz
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
