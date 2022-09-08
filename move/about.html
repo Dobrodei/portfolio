@@ -19,7 +19,7 @@
   <link rel="preload" as="font" href="./fonts/WorkSans-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
 </head>
 
-<body class="body body--about" style="background-image: url('./images/about-bg.png');">
+<body class="body body--about" style="background-image: url('./images/body-bg/about-bg.png');">
 
   <header class="header">
   <div class="container header__container">
@@ -71,15 +71,15 @@
     </h1>
     <section class="about-person">
   <div class="container">
-    <h2 class="about-person__title title">
+    <h2 class="about-person__title title title--big">
       About us
     </h2>
-    <p class="about-person__descr">
-      About Lukas, Franziskus and their practiceLukas Flint
+    <p class="about-person__descr descr">
+      About Lukas, Franziskus and their practice
     </p>
     <div class="about-person__inner">
       <div class="about-person__img">
-        <img src="./images/person/1.jpg" alt="person" width="526" height="585">
+        <img src="./images/person/1.jpg" loading="lazy" alt="person" width="526" height="585">
       </div>
       <div class="about-person__content">
         <span class="about-person__name">
@@ -130,33 +130,51 @@
     </h2>
     <ul class="practice__list">
       <li class="practice__item">
-        <div class="practice__img">
-          <img src="./images/practice/1.jpg" alt="name practice" width="344" height="252">
+        <div class="practice__box">
+          <div class="practice__img">
+            <img src="./images/practice/1.jpg" loading="lazy" alt="name practice" width="344" height="252">
+          </div>
+          <button class="practice__btn" data-modal="first" aria-label="button open modal"></button>
         </div>
       </li>
       <li class="practice__item">
-        <div class="practice__img">
-          <img src="./images/practice/1.jpg" alt="name practice" width="344" height="252">
+        <div class="practice__box">
+          <div class="practice__img">
+            <img src="./images/practice/1.jpg" loading="lazy" alt="name practice" width="344" height="252">
+          </div>
+          <button class="practice__btn" data-modal="first" aria-label="button open modal"></button>
         </div>
       </li>
       <li class="practice__item">
-        <div class="practice__img">
-          <img src="./images/practice/1.jpg" alt="name practice" width="344" height="252">
+        <div class="practice__box">
+          <div class="practice__img">
+            <img src="./images/practice/1.jpg" loading="lazy" alt="name practice" width="344" height="252">
+          </div>
+          <button class="practice__btn" data-modal="first" aria-label="button open modal"></button>
         </div>
       </li>
       <li class="practice__item">
-        <div class="practice__img">
-          <img src="./images/practice/1.jpg" alt="name practice" width="344" height="252">
+        <div class="practice__box">
+          <div class="practice__img">
+            <img src="./images/practice/1.jpg" loading="lazy" alt="name practice" width="344" height="252">
+          </div>
+          <button class="practice__btn" data-modal="first" aria-label="button open modal"></button>
         </div>
       </li>
       <li class="practice__item">
-        <div class="practice__img">
-          <img src="./images/practice/1.jpg" alt="name practice" width="344" height="252">
+        <div class="practice__box">
+          <div class="practice__img">
+            <img src="./images/practice/1.jpg" loading="lazy" alt="name practice" width="344" height="252">
+          </div>
+          <button class="practice__btn" data-modal="first" aria-label="button open modal"></button>
         </div>
       </li>
       <li class="practice__item">
-        <div class="practice__img">
-          <img src="./images/practice/1.jpg" alt="name practice" width="344" height="252">
+        <div class="practice__box">
+          <div class="practice__img">
+            <img src="./images/practice/1.jpg" loading="lazy" alt="name practice" width="344" height="252">
+          </div>
+          <button class="practice__btn" data-modal="first" aria-label="button open modal"></button>
         </div>
       </li>
     </ul>
@@ -170,12 +188,15 @@
       </p>
     </div>
     <a class="practice__link" href="#">
-      Show less
+      Show more
     </a>
   </div>
 </section>
     <section class="about-person about-person--second">
   <div class="container">
+    <h2 class="sr-only">
+      About person
+    </h2>
     <div class="about-person__inner">
       <div class="about-person__content">
         <span class="about-person__name">
@@ -217,7 +238,7 @@
         </ul>
       </div>
       <div class="about-person__img">
-        <img src="./images/person/1.jpg" alt="person" width="526" height="585">
+        <img src="./images/person/1.jpg" loading="lazy" alt="person" width="526" height="585">
       </div>
     </div>
   </div>
@@ -274,6 +295,16 @@
     </nav>
   </div>
 </footer>
+  <div class="modal" data-modal="first">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content">
+      <div class="modal__img">
+        <img src="./images/practice/1.jpg" loading="lazy" alt="photo" width="1100" height="740">
+      </div>
+    </div>
+  </div>
+</div>
 
   <script src="js/main.min.js"></script>
 </body>

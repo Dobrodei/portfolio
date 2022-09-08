@@ -19,7 +19,7 @@
   <link rel="preload" as="font" href="./fonts/WorkSans-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
 </head>
 
-<body class="body body--retreats" style="background-image: url('./images/retreats-bg.png');">
+<body class="body body--retreats" style="background-image: url('./images/body-bg/retreats-bg.png');">
 
   <header class="header">
   <div class="container header__container">
@@ -71,15 +71,15 @@
     </h1>
     <section class="retreats">
   <div class="retreats__top">
-    <h2 class="retreats__title title">
+    <h2 class="retreats__title title title--big">
       Retreats
     </h2>
-    <p class="retreats__descr">
+    <p class="retreats__descr descr">
       I offer different events on a regular basis
     </p>
   </div>
   <div class="retreats__banner">
-    <img src="./images/retreats-banner.jpg" aria-hidden="true" alt="" width="1920" height="330">
+    <img src="./images/retreats-banner.jpg" loading="lazy" aria-hidden="true" alt="" width="1920" height="330">
   </div>
   <div class="container">
     <div class="retreats__box">
@@ -90,7 +90,7 @@
         Be the first to receive events updates and other important information. Subscribe to our Newsletter!
       </p>
       <form class="retreats__form" action="#">
-        <label class="retreats__label" for="">
+        <label class="retreats__label">
           <span class="sr-only"></span>
           <input class="retreats__input" type="email" placeholder="Type your e-mail here">
         </label>

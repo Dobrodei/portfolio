@@ -19,7 +19,7 @@
   <link rel="preload" as="font" href="./fonts/WorkSans-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
 </head>
 
-<body class="body body--main" style="background-image: url('./images/body-bg.png');">
+<body class="body body--main" style="background-image: url('./images/body-bg/body-bg.png');">
 
   <header class="header">
   <div class="container header__container">
@@ -73,7 +73,7 @@
   <div class="swiper hero__slider">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="hero__box" style="background-image: url('./images/hero-bg.jpg');">
+        <div class="hero__box" style="background-image: url('./images/hero-slider/hero-bg.jpg');">
           <h2 class="title hero__title">
             We are meant to move
           </h2>
@@ -91,7 +91,7 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="hero__box" style="background-image: url('./images/hero-bg.jpg');">
+        <div class="hero__box" style="background-image: url('./images/hero-slider/hero-bg.jpg');">
           <h2 class="title hero__title">
             We are meant to move
           </h2>
@@ -109,7 +109,7 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="hero__box" style="background-image: url('./images/hero-bg.jpg');">
+        <div class="hero__box" style="background-image: url('./images/hero-slider/hero-bg.jpg');">
           <h2 class="title hero__title">
             We are meant to move
           </h2>
@@ -139,16 +139,27 @@
     <h2 class="sr-only">
       About us
     </h2>
-    <div class="about__left">
-      <p class="about__text">
-        We are Lukas Flint and Franziskus Hielscher, movers based in Berlin and founders of and coaches at Organic Movement Berlin. Our goal ist to provide you with approved knowledge and technique. To enable the best training experience, we offer both, <span>offline classes</span> in Berlin and other places as well as <span>online training</span> all over the world with our app Organic Movement. Also, on a regular basis we conduct events on different topics and with different teachers to make the world of movement accessible to a wide range of people.
-      </p>
+    <div class="about__img">
+      <img src="./images/person/about-img.jpg" loading="lazy" alt="about-img" width="670" height="590">
+    </div>
+    <div class="about__right">
+      <h3 class="about__subtitle">
+        Hello and Welcome
+      </h3>
+      <div class="about__text">
+        <p>
+          My name is Lukas and on this website, I present my approaches to a playful and acrobatic movement practice. While I am into teaching classes, workshops, and preparing online programs, Franz is helping with research, development, and tech support.
+        </p>
+        <p>
+          To learn more about my approach, my practice and the team you can use the link below.
+        </p>
+      </div>
       <a class="about__link" href="#">
         Read more
+        <svg>
+          <use xlink:href="images/sprite.svg#arrow-right"></use>
+        </svg>
       </a>
-    </div>
-    <div class="about__img">
-      <img src="./images/about-img.jpg" loading="lazy" alt="about-img" width="670" height="590">
     </div>
   </div>
 </section>
