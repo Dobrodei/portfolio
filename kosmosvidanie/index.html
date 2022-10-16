@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Kosmo</title>
+  <link rel="preload" as="font" href="./fonts/Gilroy-Light.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-Black.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body">
+
+  <header class="header">
+  <div class="container header__container">
+    <div class="header__left">
+      <a class="header__logo logo" href="index.html">
+        <img src="./images/logo.svg" loading="lazy" alt="Логотип" width="205" height="25">
+      </a>
+      <span class="header__address">
+        г. Воронеж, ул. Генерала Лизюкова, д. 2
+      </span>
+    </div>
+    <div class="header__inner">
+      <nav class="nav" title="Навигация по сайту">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#tarifs-section" data-scroll>
+              Цены
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#gallery-section" data-scroll>
+              Фотогалерея
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#feedback-section" data-scroll>
+              Задать вопрос
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts-section" data-scroll>
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__right">
+        <a class="header__phone" href="tel:+89525422882">
+          8 (952) 542 28-82
+        </a>
+        <span class="header__descr">
+          Работаем с 10:00 до 22:00
+        </span>
+      </div>
+    </div>
+    <button class="burger-btn" aria-label="Кнопка открытия меню">
+      <span class="burger-btn__line"></span>
+    </button>
+  </div>
+</header>
+  <main class="main">
+    <section class="hero" style="background-image: url('./images/hero-bg.jpg')">
+  <div class="hero__star" style="background-image: url('./images/star.webp')">
+  </div>
+  <div class="container">
+    <div class="hero__container" data-aos="zoom-in-right" data-aos-duration="900">
+      <h1 class="hero__title title">
+        Космические СВИДАНИЯ
+        <span>
+          В fulldome кинотеатре
+        </span>
+      </h1>
+      <div class="hero__box">
+        <span class="hero__descr">
+          Вам у нас ПОНРАВИТСЯ! Мы организуем:
+        </span>
+        <ul class="hero__list">
+          <li class="hero__item">
+            <p class="hero__text hero__text--proposal">
+              Незабываемое предложение руки и сердца
+            </p>
+          </li>
+          <li class="hero__item">
+            <p class="hero__text hero__text--champagne">
+              Годовщину отношений
+            </p>
+          </li>
+          <li class="hero__item">
+            <p class="hero__text hero__text--gift">
+              Романтический сюрприз
+            </p>
+          </li>
+        </ul>
+      </div>
+      <button class="hero__btn btn" data-modal="feedback-modal">
+        Узнать свободные даты
+      </button>
+    </div>
+  </div>
+</section>
+    <section class="benefits" style="background-image: url('./images/benefits-bg.png')">
+  <div class="container">
+    <h2 class="benefits__title title">
+      Что такое свидание
+      <span>
+        в планетарии?
+      </span>
+    </h2>
+    <ul class="benefits__list">
+      <li class="benefits__item">
+        <div class="benefits__box" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="200" data-aos-duration="800">
+          <picture class="benefits__img">
+            <source srcset="./images/benefits/1.webp" type="image/webp">
+            <img src="./images/benefits/1.jpg" loading="lazy" aria-hidden="true" width="320" height="300" alt="">
+          </picture>
+          <p class="benefits__text">
+            Эксклюзивные шоу-программы которые вы не увидите в обычные дни + яркие незабываемые эмоции, благодаря технологии FullDome-кинотеатра и углом обзора в 360°
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="400" data-aos-duration="800">
+          <picture class="benefits__img">
+            <source srcset="./images/benefits/2.webp" type="image/webp">
+            <img src="./images/benefits/2.jpg" loading="lazy" aria-hidden="true" width="320" height="300" alt="">
+          </picture>
+          <p class="benefits__text">
+            Удобные, полулежащие кресла, в которых комфортно созерцать красоту и величия дальнего космоса, обнявшись с любимым человеком
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="600" data-aos-duration="800">
+          <picture class="benefits__img">
+            <source srcset="./images/benefits/3.webp" type="image/webp">
+            <img src="./images/benefits/3.jpg" loading="lazy" aria-hidden="true" width="320" height="300" alt="">
+          </picture>
+          <p class="benefits__text">
+            Красивая, приятная музыка, свечи, угощения и напитки, лепестки роз и яркий звездопад над вами, все это и создает волшебную атмосферу праздника, любви и нежности, во время межгалактического путешествия по просторам бесконечного космоса
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="tarifs" id="tarifs-section" style="background-image: url('./images/tarifs-bg.jpg')">
+  <div class="container">
+    <h2 class="tarifs__title title">
+      Стоимость свиданий
+      <span>
+        в планетарии?
+      </span>
+    </h2>
+    <ul class="tarifs__list">
+      <li class="tarifs__item">
+        <article class="tarifs__article article-tarifs" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="200" data-aos-duration="800">
+          <picture class="article-tarifs__img">
+            <source srcset="./images/tarifs/1.webp" type="image/webp">
+            <img src="./images/tarifs/1.jpg" loading="lazy" aria-hidden="true" width="320" height="440" alt="">
+          </picture>
+          <div class="article-tarifs__content">
+            <h3 class="article-tarifs__title">
+              Тариф базовый
+            </h3>
+            <div class="article-tarifs__box">
+              <span class="article-tarifs__strong">
+                Что входит:
+              </span>
+              <p class="article-tarifs__text">
+                Бронирование звездного зала на три яркие, эксклюзивные шоу программы, которые нельзя увидеть в обычные дни!
+              </p>
+            </div>
+            <div class="article-tarifs__box">
+              <span class="article-tarifs__strong">
+                Длительность:
+              </span>
+              <p class="article-tarifs__text">
+                1 час
+              </p>
+            </div>
+            <div class="article-tarifs__inner">
+              <span class="article-tarifs__price">
+                <span class="article-tarifs__strong">
+                  Стоимость:
+                </span>
+                3900 р.
+              </span>
+              <a class="article-tarifs__link" href="#" data-modal="base-modal">
+                Как организовывается свидание
+              </a>
+            </div>
+            <div class="article-tarifs__btns">
+              <button class="article-tarifs__btn btn" data-modal="feedback-modal">
+                Узнать свободные даты
+              </button>
+              <button class="article-tarifs__btn btn" data-modal="view-modal">
+                Заказать бесплатный просмотр
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="tarifs__item">
+        <article class="tarifs__article article-tarifs" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="400" data-aos-duration="800">
+          <picture class="article-tarifs__img">
+            <source srcset="./images/tarifs/2.webp" type="image/webp">
+            <img src="./images/tarifs/2.jpg" loading="lazy" aria-hidden="true" width="320" height="440" alt="">
+          </picture>
+          <div class="article-tarifs__content">
+            <h3 class="article-tarifs__title">
+              Тариф стандарт
+            </h3>
+            <div class="article-tarifs__box">
+              <span class="article-tarifs__strong">
+                Что входит:
+              </span>
+              <p class="article-tarifs__text">
+                столик в звездном зале + три яркие, красочные программы, музыкальное сопровождение, красивая посуда и аксессуары. Угощения и напитки вы можете принести с собой.
+              </p>
+            </div>
+            <div class="article-tarifs__box">
+              <span class="article-tarifs__strong">
+                Длительность:
+              </span>
+              <p class="article-tarifs__text">
+                1 час
+              </p>
+            </div>
+            <div class="article-tarifs__inner">
+              <span class="article-tarifs__price">
+                <span class="article-tarifs__strong">
+                  Стоимость:
+                </span>
+                5900 р.
+              </span>
+              <a class="article-tarifs__link" href="#" data-modal="standart-modal">
+                Как организовывается свидание
+              </a>
+            </div>
+            <div class="article-tarifs__btns">
+              <button class="article-tarifs__btn btn" data-modal="feedback-modal">
+                Узнать свободные даты
+              </button>
+              <button class="article-tarifs__btn btn" data-modal="view-modal">
+                Заказать бесплатный просмотр
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="tarifs__item">
+        <article class="tarifs__article article-tarifs" data-aos="zoom-in" data-aos-offset="50" data-aos-delay="600" data-aos-duration="800">
+          <picture class="article-tarifs__img">
+            <source srcset="./images/tarifs/3.webp" type="image/webp">
+            <img src="./images/tarifs/3.jpg" loading="lazy" aria-hidden="true" width="320" height="440" alt="">
+          </picture>
+          <div class="article-tarifs__content">
+            <h3 class="article-tarifs__title">
+              Тариф VIP
+            </h3>
+            <div class="article-tarifs__box">
+              <span class="article-tarifs__strong">
+                Что входит:
+              </span>
+              <p class="article-tarifs__text">
+                столик в звездном зале. В центре зала раскладываем лепестки роз в виде сердца и сервируем столик красивой посудой и свечами. Из угощения – фруктовая нарезка, чизкейк или пироженные, конфеты и сок. Алкогольные напитки можно принести с собой.
+              </p>
+            </div>
+            <div class="article-tarifs__box">
+              <span class="article-tarifs__strong">
+                Длительность:
+              </span>
+              <p class="article-tarifs__text">
+                1 час
+              </p>
+            </div>
+            <div class="article-tarifs__inner">
+              <span class="article-tarifs__price">
+                <span class="article-tarifs__strong">
+                  Стоимость:
+                </span>
+                8900 р.
+              </span>
+              <a class="article-tarifs__link" href="#" data-modal="vip-modal">
+                Как организовывается свидание
+              </a>
+            </div>
+            <div class="article-tarifs__btns">
+              <button class="article-tarifs__btn btn" data-modal="feedback-modal">
+                Узнать свободные даты
+              </button>
+              <button class="article-tarifs__btn btn" data-modal="view-modal">
+                Заказать бесплатный просмотр
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="gallery" id="gallery-section">
+  <!-- style="background-image: url('./images/gallery-bg.jpg')" -->
+  <div class="container">
+    <h2 class="sr-only">
+      Галерея
+    </h2>
+    <ul class="gallery__list">
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/2.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/1.webp" type="image/webp">
+            <img src="./images/gallery/1.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/3.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/3.webp" type="image/webp">
+            <img src="./images/gallery/3.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/4.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/4.webp" type="image/webp">
+            <img src="./images/gallery/4.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/5.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/5.webp" type="image/webp">
+            <img src="./images/gallery/5.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/6.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/6.webp" type="image/webp">
+            <img src="./images/gallery/6.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/7.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/7.webp" type="image/webp">
+            <img src="./images/gallery/7.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/8.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/8.webp" type="image/webp">
+            <img src="./images/gallery/8.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/9.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/9.webp" type="image/webp">
+            <img src="./images/gallery/9.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/1.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/1.webp" type="image/webp">
+            <img src="./images/gallery/1.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/11.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/11.webp" type="image/webp">
+            <img src="./images/gallery/11.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/12.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/12.webp" type="image/webp">
+            <img src="./images/gallery/12.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/13.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/13.webp" type="image/webp">
+            <img src="./images/gallery/13.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/14.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/14.webp" type="image/webp">
+            <img src="./images/gallery/14.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/15.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/15.webp" type="image/webp">
+            <img src="./images/gallery/15.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/16.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/16.webp" type="image/webp">
+            <img src="./images/gallery/16.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/17.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/17.webp" type="image/webp">
+            <img src="./images/gallery/17.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/18.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/18.webp" type="image/webp">
+            <img src="./images/gallery/18.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/19.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/19.webp" type="image/webp">
+            <img src="./images/gallery/19.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/20.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/20.webp" type="image/webp">
+            <img src="./images/gallery/20.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+      <li class="gallery__item">
+        <a class="gallery__img" href="./images/gallery/21.jpg" data-fancybox="gallery">
+          <picture class="gallery__picture">
+            <source srcset="./images/gallery/21.webp" type="image/webp">
+            <img src="./images/gallery/21.jpg" loading="lazy" width="300" height="300" alt="Фото из галереи">
+          </picture>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="contacts" id="contacts-section">
+  <div class="contacts__map">
+    <img src="./images/map.jpg" loading="lazy" alt="Карта">
+  </div>
+  <div class="container">
+    <div class="contacts__box">
+      <div class="contacts__img">
+        <img src="./images/logo.svg" loading="lazy" aria-hidden="true" alt="" width="205" height="25">
+      </div>
+      <h2 class="contacts__title title">
+        Успей забронировать свое космическое свидание:
+      </h2>
+      <ul class="contacts__list">
+        <li class="contacts__item">
+          <a class="contacts__tel" href="tel:+84732284224">
+            8 (473) 228-42-24
+          </a>
+        </li>
+        <li class="contacts__item">
+          <a class="contacts__tel" href="tel:+84732284224">
+            8 (473) 228-42-24
+          </a>
+        </li>
+      </ul>
+      <div class="contacts__route">
+        <span class="contacts__strong contacts__strong--mb">
+          На каком транспорте можно добраться:
+        </span>
+        <p class="contacts__descr">
+          Автобусы: 16В, 27, 41, 54, 58В, 5А, 47, 21, 90, 15, 48.
+        </p>
+        <p class="contacts__descr">
+          Маршрутное такси: 37, 37А, 3В, 47, 49М, 75, 81, 125.
+        </p>
+      </div>
+      <address class="contacts__address">
+        <span class="contacts__strong">
+          Наш адрес:
+        </span>
+        г.Воронеж, ул. Генерала Лизюкова 2
+      </address>
+      <button class="contacts__btn btn" data-modal="feedback-modal">
+        Узнать свободные даты
+      </button>
+    </div>
+  </div>
+</section>
+    <section class="feedback" id="feedback-section" style="background-image: url('./images/feedback-bg.png')">
+  <div class="container">
+    <div class="feedback__top">
+      <h2 class="feedback__title title">
+        У вас остальись вопросы или возникли какие-либо затруднения?
+      </h2>
+      <p class="feedback__descr">
+        Просто заполните форму ниже и мы вам перезвоним и поможем разобраться!
+      </p>
+    </div>
+    <form class="feedback__form form-feedback" action="#">
+      <label class="form-feedback__label">
+        <span class="sr-only">
+          Введите ваше имя
+        </span>
+        <input class="form-feedback__input input-name" type="text" data-validate-field="name" name="Имя" placeholder="Ваше имя">
+      </label>
+      <label class="form-feedback__label">
+        <span class="sr-only">
+          Введите ваш телефон
+        </span>
+        <input class="form-feedback__input input-tel" type="tel" data-validate-field="tel" name="Телефон" placeholder="Телефон">
+      </label>
+      <div class="form-feedback__box">
+        <button class="form-feedback__btn btn" type="submit">
+          Задать вопрос
+        </button>
+        <p class="form-feedback__text">
+          Нажимая кнопку «Перезвоните мне», я соглашаюсь на
+          <a class="form-feedback__policy" href="policy.html">
+            обработку своих персональных данных
+          </a>
+        </p>
+      </div>
+    </form>
+  </div>
+</section>
+    <section class="about">
+  <div class="container">
+    <h2 class="sr-only">
+      О сервисе
+    </h2>
+    <div class="about__container">
+      <div class="about__text">
+        <p>
+          Воронежский Планетарий «Космодром» предлагает новую эксклюзивную услугу – свидание под звездами.
+          У нас вы можете отпраздновать годовщину, сделать предложение руки или отметить день рождения, а может просто провести ваше самое незабываемое свидание. После закрытия, Планетарий постепенно пустеет и становится самым романтичным местом Воронежа: здесь можно погулять по открытому космосу не покидая земли, насладиться незабываемой атмосферой и пейзажами космоса, лежа на мягком, удобном, кожаном кресле, в романтической атмосфере.
+        </p>
+        <p>
+          Кажется, что весь мир смолк на мгновение, давая вам возможность насладиться общением и бездонной красотой панорамного, ночного неба с углом обзора в 360º. Вот, на небе зажглась величественная Венера – покровительница всех влюбленных сердец. Она как звезда, сияющая желтым, обжигающим пламенем, в далеком космосе. Вокруг нее можно разглядеть несколько наиболее ярких созвездий осеннего неба.
+          Хотите сделать незабываемый подарок своей второй половинке? В нашем планетарии вы с легкостью сможете удивить любимую девушку или парня, проведя ваш незабываемый вечер согласно тарифу «стандарт». Вас будет ожидать столик в звездном зале, три ярких, красочных программы, расслабляющее музыкальное сопровождение, красивая посуда и аксессуары.
+          Напитки и угощения Вы можете принести с собой.
+        </p>
+        <p>
+          Быть может, вы решите провести романтическую встречу по тарифу VIP. В большом звездном зале, который будет открыт только для вас двоих! Здесь вас ждет столик в звездном зале, в центре зала раскладываем лепестки роз в виде сердца и сервируем столик красивой посудой и свечами. Из угощения – фруктовая нарезка, чизкейк или пироженные, конфеты и сок. Алкогольные напитки можете принести с собой.
+          Увлекательный рассказ о Вселенной и звездная панорама нашей галактики в FullDome кинотеатре оставит море позитивных впечатлений в вашей памяти на долгое время.
+        </p>
+        <p>
+          Особенный вечер только для двоих, который начинается с рассказа о Вселенной и продолжается под звездным небом и потрясающей проекцией реального космоса 360º в звёздном зале планетария «Космодром» - идеальное место для празднования годовщины, в котором влюбленные сердца сливаются в унисон. Пригласите девушку на свидания в планетарий, и она будет очарована.
+        </p>
+      </div>
+      <button class="about__more">
+        Читать далее
+      </button>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer" style="background-image: url('./images/footer-bg.jpg')">
+  <div class="footer__star" style="background-image: url('./images/star.webp')">
+  </div>
+  <div class="container footer__container">
+    <a class="footer__logo logo" href="#">
+      <img src="./images/logo.svg" loading="lazy" alt="Логотип" width="205" height="25">
+    </a>
+    <nav class="footer__nav" title="Навигация по сайту">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="#tarifs-section" data-scroll>
+            Цены
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#gallery-section" data-scroll>
+            Фотогалерея
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#feedback-section" data-scroll>
+            Задать вопрос
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#contacts-section" data-scroll>
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer__ref">
+      <a class="footer__policy" href="policy.html">
+        Политика конфиденциальности
+      </a>
+    </div>
+    <div class="footer__contacts">
+      <a class="footer__tel" href="tel:+79518778717">
+        +7 (951) 877-87-17
+      </a>
+      <span class="footer__descr">
+        Ежедневно с 10:00 до 22:00
+      </span>
+    </div>
+  </div>
+</footer>
+  <div class="modal modal--feedback" data-modal="feedback-modal">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content">
+      <h3 class="modal__title title">
+        Оставить заявку чтобы узнать свободные даты
+      </h3>
+      <form class="form-feedback form-feedback--modal" action="#">
+        <label class="form-feedback__label">
+          <span class="sr-only">
+            Введите ваше имя
+          </span>
+          <input class="form-feedback__input input-name" type="text" data-validate-field="name" name="Имя" placeholder="Ваше имя">
+        </label>
+        <label class="form-feedback__label">
+          <span class="sr-only">
+            Введите ваш телефон
+          </span>
+          <input class="form-feedback__input input-tel" type="tel" data-validate-field="tel" name="Телефон" placeholder="Телефон">
+        </label>
+        <div class="form-feedback__box">
+          <button class="form-feedback__btn btn" type="submit">
+            Задать вопрос
+          </button>
+          <p class="form-feedback__text">
+            Нажимая кнопку «Перезвоните мне», я соглашаюсь на
+            <a class="form-feedback__policy" href="policy.html">
+              обработку своих персональных данных
+            </a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <div class="modal modal--text" data-modal="view-modal">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content">
+      <h3 class="modal__title title">
+        Организуем бесплатный просмотр в звездном зале
+      </h3>
+      <p class="modal__text">
+        Для заказа просто заполните форму и наши менеджеры вам перезвонят
+      </p>
+      <form class="form-feedback form-feedback--modal" action="#">
+        <label class="form-feedback__label">
+          <span class="sr-only">
+            Введите ваше имя
+          </span>
+          <input class="form-feedback__input input-name" type="text" data-validate-field="name" name="Имя" placeholder="Ваше имя">
+        </label>
+        <label class="form-feedback__label">
+          <span class="sr-only">
+            Введите ваш телефон
+          </span>
+          <input class="form-feedback__input input-tel" type="tel" data-validate-field="tel" name="Телефон" placeholder="Телефон">
+        </label>
+        <div class="form-feedback__box">
+          <button class="form-feedback__btn btn" type="submit">
+            Задать вопрос
+          </button>
+          <p class="form-feedback__text">
+            Нажимая кнопку «Перезвоните мне», я соглашаюсь на
+            <a class="form-feedback__policy" href="policy.html">
+              обработку своих персональных данных
+            </a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <div class="modal modal--bg" data-modal="base-modal">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content">
+      <h3 class="modal__title title">
+        Как организовывается романтическое свидание в тарифе "БАЗОВЫЙ"
+      </h3>
+      <P class="modal__text">
+        Вы звоните или оставляете заявку на проведения романтического свидания в планетарии. Мы Вам перезваниваем и уточняем все детали романтического вечера. Далее в назначенный день и время подготавливаем для вас звездный зал и три яркие, красочные программы.
+      </P>
+    </div>
+  </div>
+</div>
+  <div class="modal modal--bg" data-modal="standart-modal">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content">
+      <h3 class="modal__title title">
+        Как организовывается романтическое свидание в тарифе "СТАНДАРТ"
+      </h3>
+      <P class="modal__text">
+        Вы звоните или оставляете заявку на проведения романтического свидания в планетарии. Мы Вам перезваниваем и уточняем все детали романтического вечера. Далее в назначенный день и время подготавливаем для вас три яркие, красочные программы, музыкальное сопровождение, столик, красивую посуду и аксессуары. Угощения и напитки вы можете принести с собой.
+      </P>
+    </div>
+  </div>
+</div>
+  <div class="modal modal--bg" data-modal="vip-modal">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content">
+      <h3 class="modal__title title">
+        Как организовывается романтическое свидание в тарифе "VIP"
+      </h3>
+      <P class="modal__text">
+        Вы звоните или оставляете заявку на проведения романтического свидания в планетарии. Мы Вам перезваниваем и уточняем все детали романтического вечера. Далее в назначенный день и время подготавливаем для вас небольшой столик в звездном зале. В центре зала раскладываем лепестки роз в виде сердца и сервируем столик красивой посудой и свечами. Из угощения – фруктовая нарезка, чизкейк или пироженные, конфеты и сок. Алкогольные напитки можно принести с собой.
+      </P>
+    </div>
+  </div>
+</div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
