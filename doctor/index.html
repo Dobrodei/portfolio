@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Doctor</title>
+  <link rel="preload" as="font" href="./fonts/Roboto-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Roboto-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/SansationBold.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body" style="background-image: url('./images/bg-body.png')">
+
+  <header class="header">
+  <div class="container">
+    <div class="header__container">
+      <button class="burger-btn" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger-btn__line"></span>
+      </button>
+      <a class="header__logo logo" href="#">
+        <img src="./images/logo.svg" loading="lazy" alt="Логотип" width="198" height="72">
+      </a>
+      <div class="header__right">
+        <div class="header__top">
+          <a class="header__phone link-hover" href="tel:+79696963755">
+            +7 969 696 37 55
+          </a>
+          <!-- <span class="header__lang">RU</span> -->
+          <div class="lang">
+            <button class="lang__checked" aria-label="Кнопка выбора языка">
+              RU
+            </button>
+            <ul class="lang__list">
+              <li class="lang__item">
+                <a class="lang__country" href="#">
+                  EN
+                </a>
+              </li>
+              <li class="lang__item">
+                <a class="lang__country" href="#">
+                  DE
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="nav" title="Навигация по сайту">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link link-hover" href="#about-section" data-scroll>
+                О нас
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link-hover" href="#culture-section" data-scroll>
+                Культуры и Болезни
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link-hover" href="#sample-section" data-scroll>
+                Попробовать
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link-hover" href="#services-section" data-scroll>
+                Услуги
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link-hover" href="#support-section" data-scroll>
+                Помощь
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link-hover" href="#contacts-section" data-scroll>
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <section class="hero">
+  <div class="container">
+    <div class="hero__box">
+      <h1 class="hero__title title">
+        Доктор для ваших растений
+      </h1>
+      <p class="hero__descr">
+        Опыт агрономов в вашем телефоне поможет сохранить и увеличить количество урожая.
+      </p>
+      <a class="hero__link btn" href="#">
+        Скачать приложение
+      </a>
+    </div>
+    <div class="hero__img">
+      <img src="./images/hero-bg.jpg" loading="lazy" aria-hidden="true" alt="" width="720" height="770">
+    </div>
+  </div>
+</section>
+    <section class="about" id="about-section">
+  <div class="container about__container">
+    <div class="about__img">
+      <img src="./images/about-img.jpg" loading="lazy" alt="Фото из нашего приложения" width="280" height="620">
+    </div>
+    <div class="about__content">
+      <h2 class="about__title title title--decor">
+        Приложение определения болезней
+      </h2>
+      <div class="about__text">
+        <p>
+          Наша работа направлена на решение задач диагностирования и предотвращения болезней агрокультур путем использования современных методов обработки графической и текстовой информации на высокопроизводительных вычислительных инфраструктурах.
+        </p>
+        <p>
+          Суть проекта состоит в создании механизмов, позволяющих людям отправлять запросы, содержащие графическое описание проблемы с их растениями, а в ответ получать варианты возможных заболеваний и рекомендуемых действий.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="benefits">
+  <div class="container">
+    <div class="centred">
+      <h2 class="benefits__title title title--decor">
+        Мы в цифрах
+      </h2>
+    </div>
+    <ul class="benefits__list">
+      <li class="benefits__item">
+        <div class="benefits__box">
+          <span class="benefits__num">
+            >40
+          </span>
+          <p class="benefits__descr">
+            Число культур
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box">
+          <span class="benefits__num">
+            >100
+          </span>
+          <p class="benefits__descr">
+            Классов изображение
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box">
+          <span class="benefits__num">
+            >4000
+          </span>
+          <p class="benefits__descr">
+            Изображений в базе
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box">
+          <span class="benefits__num">
+            >40000
+          </span>
+          <p class="benefits__descr">
+            Запросов пользователей
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="culture" id="culture-section">
+  <div class="container">
+    <div class="centred">
+      <h2 class="culture__title title title--decor">
+        Культуры
+      </h2>
+    </div>
+    <div class="culture__wrapper culture__slider">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url('./images/culture/1.jpg')">
+            <div class="culture__box">
+              <h3 class="culture__subtitle">
+                Фиалка
+              </h3>
+              <p class="culture__text">
+                актериоз, Фузариоз, Серая гниль, Фитофтороз, Мучнистый червец, Мучнистая роса, Ржавчина, Трипсы
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./images/culture/2.jpg')">
+            <div class="culture__box">
+              <h3 class="culture__subtitle">
+                Фиалка
+              </h3>
+              <p class="culture__text">
+                Бактериоз, Фузариоз...
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./images/culture/3.jpg')">
+            <div class="culture__box">
+              <h3 class="culture__subtitle">
+                Фиалка
+              </h3>
+              <p class="culture__text">
+                Бактериоз, Фузариоз, Серая гниль, Фитофтороз, Мучнистый червец, Мучнистая роса, Ржавчина, Трипсы
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./images/culture/4.jpg')">
+            <div class="culture__box">
+              <h3 class="culture__subtitle">
+                Фиалка
+              </h3>
+              <p class="culture__text">
+                Бактериоз, Фузариоз, Серая гниль, Фитофтороз, Мучнистый червец, Мучнистая роса, Ржавчина, Трипсы
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./images/culture/5.jpg')">
+            <div class="culture__box">
+              <h3 class="culture__subtitle">
+                Фиалка
+              </h3>
+              <p class="culture__text">
+                Бактериоз, Фузариоз, Серая гниль, Фитофтороз, Мучнистый червец, Мучнистая роса, Ржавчина, Трипсы
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./images/culture/6.jpg')">
+            <div class="culture__box">
+              <h3 class="culture__subtitle">
+                Фиалка
+              </h3>
+              <p class="culture__text">
+                Бактериоз, Фузариоз, Серая гниль, Фитофтороз, Мучнистый червец, Мучнистая роса, Ржавчина, Трипсы
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./images/culture/1.jpg')">
+            <div class="culture__box">
+              <h3 class="culture__subtitle">
+                Фиалка
+              </h3>
+              <p class="culture__text">
+                Бактериоз, Фузариоз, Серая гниль, Фитофтороз, Мучнистый червец, Мучнистая роса, Ржавчина, Трипсы
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./images/culture/2.jpg')">
+            <div class="culture__box">
+              <h3 class="culture__subtitle">
+                Фиалка
+              </h3>
+              <p class="culture__text">
+                Бактериоз, Фузариоз, Серая гниль, Фитофтороз, Мучнистый червец, Мучнистая роса, Ржавчина, Трипсы
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+    <section class="culture culture--pb">
+  <div class="container">
+    <div class="centred">
+      <h2 class="culture__title title title--decor">
+        Болезни
+      </h2>
+    </div>
+    <div class="culture__wrapper culture__slider">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url('./images/culture/1.jpg')">
+            <div class="culture__box">
+              <h3 class="culture__subtitle">
+                Фиалка
+              </h3>
+              <p class="culture__text">
+                актериоз, Фузариоз, Серая гниль, Фитофтороз, Мучнистый червец, Мучнистая роса, Ржавчина, Трипсы
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./images/culture/2.jpg')">
+            <div class="culture__box">
+              <h3 class="culture__subtitle">
+                Фиалка
+              </h3>
+              <p class="culture__text">
+                Бактериоз, Фузариоз, Серая гниль...
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./images/culture/3.jpg')">
+            <div class="culture__box">
+              <h3 class="culture__subtitle">
+                Фиалка
+              </h3>
+              <p class="culture__text">
+                Бактериоз, Фузариоз, Серая гниль, Фитофтороз, Мучнистый червец, Мучнистая роса, Ржавчина, Трипсы
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./images/culture/4.jpg')">
+            <div class="culture__box">
+              <h3 class="culture__subtitle">
+                Фиалка
+              </h3>
+              <p class="culture__text">
+                Бактериоз, Фузариоз, Серая гниль, Фитофтороз, Мучнистый червец, Мучнистая роса, Ржавчина, Трипсы
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./images/culture/5.jpg')">
+            <div class="culture__box">
+              <h3 class="culture__subtitle">
+                Фиалка
+              </h3>
+              <p class="culture__text">
+                Бактериоз, Фузариоз, Серая гниль, Фитофтороз, Мучнистый червец, Мучнистая роса, Ржавчина, Трипсы
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./images/culture/6.jpg')">
+            <div class="culture__box">
+              <h3 class="culture__subtitle">
+                Фиалка
+              </h3>
+              <p class="culture__text">
+                Бактериоз, Фузариоз, Серая гниль, Фитофтороз, Мучнистый червец, Мучнистая роса, Ржавчина, Трипсы
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./images/culture/1.jpg')">
+            <div class="culture__box">
+              <h3 class="culture__subtitle">
+                Фиалка
+              </h3>
+              <p class="culture__text">
+                Бактериоз, Фузариоз, Серая гниль, Фитофтороз, Мучнистый червец, Мучнистая роса, Ржавчина, Трипсы
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url('./images/culture/2.jpg')">
+            <div class="culture__box">
+              <h3 class="culture__subtitle">
+                Фиалка
+              </h3>
+              <p class="culture__text">
+                Бактериоз, Фузариоз, Серая гниль, Фитофтороз, Мучнистый червец, Мучнистая роса, Ржавчина, Трипсы
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+    <section class="sample" id="sample-section" style="background-image: url(./images/sample-bg.jpg)">
+  <div class="container">
+    <h2 class="sample__title title">
+      Попробовать:
+    </h2>
+    <h3 class="sample__subtitle">
+      Запустить на сайте
+    </h3>
+    <div class="sample__text">
+      <p>
+        Вы можете загрузить фотографию 2 способами:
+      </p>
+      <p>
+        1.Выберите нужное изображение на компьютере и перетащите с помошью мыши на экран.
+      </p>
+      <p>
+        2.Загрузите файл с помощью кнопки “Загрузите фотографию”.
+      </p>
+    </div>
+    <form class="file-form" action="#">
+      <label class="file-form__label" for="file-input">
+        <span class="file-form__btn btn btn--black">
+          Загрузите фотографию
+        </span>
+        <span class="file-form__descr">
+          <span>или</span>
+          перетащите файл мышью
+        </span>
+      </label>
+      <input class="file-form__input" id="file-input" type="file" multiple>
+    </form>
+    <div class="sample__inner">
+      <div class="sample__box">
+        <h3 class="sample__subtitle">
+          Приложение
+        </h3>
+        <p class="sample__descr">
+          Превратите свой телефон в помощника по выращиванию урожая.
+          С помощью всего одной фотографии Plants Doctor диагностирует зараженные культуры и помогает лечение от любых вредителей, болезней или проблем с дефицитом питательных веществ.
+        </p>
+        <ul class="sample__links">
+          <li class="sample__item">
+            <a class="sample__link" href="#">
+              Google Play
+            </a>
+          </li>
+          <li class="sample__item">
+            <a class="sample__link" href="#">
+              App Store
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sample__box">
+        <h3 class="sample__subtitle">
+          Телеграм - Бот
+        </h3>
+        <p class="sample__descr">
+          С помощью телеграм - бота @DoctorP_bot Вы сможете получить
+          общую информацию по проекту, отправить фотографию растения
+          для распознавнаия или для пополнения базы.
+        </p>
+        <ul class="sample__links">
+          <li class="sample__item">
+            <a class="sample__link" href="#">
+              Запустить бота
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="api">
+  <div class="container">
+    <div class="centred">
+      <h2 class="api__title title title--decor">
+        Api
+      </h2>
+    </div>
+    <div class="api__text">
+      <p>
+        Api - платная возможность, созданная для тех, кто работает с сельскохозяйственными культурами.
+      </p>
+      <p>
+        Мы готовы к сотрудничеству со сторонними группами и огранизациями.
+      </p>
+      <p>
+        Мы можем предоставить API к нашим моделям, оказать консультационные услуги, обучить модель на ваших данных и подготовить окружение для ее запуска на ваших ресурсах. Пишите на auzhinskiy@jinr.ru для получения подробной информации.
+      </p>
+    </div>
+  </div>
+</section>
+    <section class="services" id="services-section">
+  <div class="container">
+    <div class="centred">
+      <h2 class="services__title title title--decor">
+        Услуги Api
+      </h2>
+    </div>
+    <ul class="services__list">
+      <li class="services__item">
+        <div class="services__box">
+          <span class="services__subtitle">
+            Free - доступ
+          </span>
+          <p class="services__descr">
+            До 1000 запросов в месяц
+          </p>
+        </div>
+      </li>
+      <li class="services__item">
+        <div class="services__box">
+          <span class="services__subtitle">
+            1000$ за месяц
+          </span>
+          <p class="services__descr">
+            До 100000 запросов
+          </p>
+          <p class="services__text">
+            Возможность запроса добавления новых культур и болезней.
+          </p>
+        </div>
+      </li>
+      <li class="services__item">
+        <div class="services__box">
+          <span class="services__subtitle">
+            3000$ - unlim
+          </span>
+          <p class="services__descr">
+            До 100000 запросов
+          </p>
+          <p class="services__descr">
+            Возможность запроса добавления новых культур и болезней.
+          </p>
+        </div>
+      </li>
+      <li class="services__item">
+        <div class="services__box">
+          <p class="services__text">
+            Экспертиза и консультационные услуги в области применения искуственного интелекта
+            в задачах связанных
+            с выращиванием сельскохозяйственных
+            и декоративных культур. Анализ проблемы, предложение решения и т.д.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="support" id="support-section">
+  <div class="container">
+    <div class="centred">
+      <h2 class="support__title title title--decor">
+        Помощь проекту
+      </h2>
+    </div>
+    <div class="support__container">
+      <div class="support__content">
+        <div class="support__box">
+          <h3 class="support__subtitle">
+            Волонтерские вакансии
+          </h3>
+          <p class="support__descr">
+            Мы работаем над расширением нашей базы и улучшением наших нейронных сетей. Мы всегда рады помощи в различных направлениях. Например, сбор изображений по уже имеющимся или новым болезням и культурам. Проверка и редактирование описаний и рекомендаций по лечению. Поиск ошибок и неточностей на сайте и в работе приложения. И многое другое. Если у Вас есть желание нам помочь - пишите на
+            <a href="#">auzhinskiy@jinr.ru</a> или заходите в канал <a href="#">@DoctorPl</a>
+          </p>
+        </div>
+        <div class="support__box">
+          <h3 class="support__subtitle">
+            Поддержать проект
+          </h3>
+          <p class="support__descr support__descr--mb">
+            Мы стараемся развивать наш ресурс! Вы также можете внести свой вклад в развитие данного проекта, и внести свой донат при помощи кнопок ниже.
+          </p>
+          <ul class="support__links">
+            <li class="support__item">
+              <a class="support__link btn btn--black" href="#">
+                Для стран СНГ
+              </a>
+            </li>
+            <li class="support__item">
+              <a class="support__link btn btn--transparent" href="#">
+                Для зарубежных стран
+              </a>
+            </li>
+          </ul>
+          <p class="support__descr">
+            Так же можете помочь проекту, если разместите ссылку на тематических сайтах, форумах, в социальных сетях.
+          </p>
+        </div>
+      </div>
+      <div class="support__img">
+        <img src="./images/support-img.jpg" loading="lazy" aria-hidden="true" alt="" width="480" height="580">
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="contacts" id="contacts-section">
+  <div class="container">
+    <div class="centred">
+      <h2 class="contacts__title title title--decor">
+        Контакты
+      </h2>
+    </div>
+    <div class="contacts__inner">
+      <div class="contacts__info">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <div class="contacts__box">
+              <span class="contacts__descr">
+                Адрес:
+              </span>
+              <span class="contacts__concat">
+                Город Дубна, улица 9 мая, дом 7В
+              </span>
+            </div>
+          </li>
+          <li class="contacts__item">
+            <div class="contacts__box">
+              <span class="contacts__descr">
+                Телефон:
+              </span>
+              <a class="contacts__concat link-hover" href="#">
+                +7 969 696 37 55
+              </a>
+            </div>
+          </li>
+          <li class="contacts__item">
+            <div class="contacts__box">
+              <span class="contacts__descr">
+                Email:
+              </span>
+              <a class="contacts__concat link-hover" href="#">
+                auzhinskiy@jinr.ru
+              </a>
+            </div>
+          </li>
+          <li class="contacts__item">
+            <div class="contacts__box">
+              <span class="contacts__descr">
+                Telegram:
+              </span>
+              <a class="contacts__concat link-hover" href="#">
+                @DoctorPl
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts__map">
+        <img src="./images/map.jpg" loading="lazy" alt="Метка на карте, где мы находимся" width="580" height="260">
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <a class="footer__logo logo" href="#">
+        <img src="./images/logo.svg" loading="lazy" alt="Логотип" width="215" height="75">
+      </a>
+      <nav class="footer__nav" title="Навигация по сайту">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#about-section" data-scroll>
+              О нас
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#culture-section" data-scroll>
+              Культуры и Болезни
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#sample-section" data-scroll>
+              Попробовать
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#support-section" data-scroll>
+              Помощь
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#services-section" data-scroll>
+              Услуги
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#contacts-section" data-scroll>
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="social" title="Соц сети">
+        <li class="social__item">
+          <a class="social__link social__link--inst" href="#" target="_blank" aria-label="Наша страничка в инстаграмме"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--link" href="#" target="_blank" aria-label="Наша страничка в линкедине"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--tg" href="#" target="_blank" aria-label="Наша страничка в телеграмме"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#" target="_blank" aria-label="Наша страничка в вконтакте"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
