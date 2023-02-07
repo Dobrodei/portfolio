@@ -222,13 +222,13 @@ body {
   background-color: #28a745;
 }
 .badge-new.badge-pill:before {
-    content: "Новый";
+    content: "New";
 }
 .badge-inwork.badge-pill:before {
-    content: "В работе";
+    content: "In the work";
 }
 .badge-complete.badge-pill:before {
-    content: "Завершенный";
+    content: "Completed";
 }
 a[data-value] > *{
   pointer-events: none;
