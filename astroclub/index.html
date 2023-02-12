@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Планетарий с технологией FullDome - кинотеатра и углом обзора в 360°</title>
+  <link rel="preload" as="font" href="./fonts/Gilroy-Thin.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+  <!— Yandex.Metrika counter —>
+    <!-- <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+        (a = e.getElementsByTagName(t)[0]),
+        (k.async = 1),
+        (k.src = r),
+        a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(54547789, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript>
+      <div>
+        <img src="https://mc.yandex.ru/watch/54547789" style="position: absolute; left: -9999px" alt="" />
+      </div>
+    </noscript>
+    <!— /Yandex.Metrika counter —>
+      <script type="text/javascript">
+        !(function () {
+          var t = document.createElement("script");
+          (t.type = "text/javascript"),
+          (t.async = !0),
+          (t.src = "https://vk.com/js/api/openapi.js?162"),
+          (t.onload = function () {
+            VK.Retargeting.Init("VK-RTRG-430773-5w3hu"), VK.Retargeting.Hit();
+          }),
+          document.head.appendChild(t);
+        })();
+      </script>
+      <noscript><img src="https://vk.com/rtrg?p=VK-RTRG-430773-5w3hu" style="position: fixed; left: -999px" alt="" /></noscript> -->
+</head>
+
+<body class="body" id="body" style="background-image: url('./images/all-img/body-bg.jpg')">
+
+  <header class="header">
+  <div class="container header__container">
+    <div class="header__left">
+      <a class="header__logo logo" href="#">
+        <img src="./images/logo.svg" alt="Логотип" width="125" height="70">
+      </a>
+      <address class="header__address">
+        ул. Генерала Лизюкова, д.2, г. Воронеж
+      </address>
+    </div>
+    <button class="burger-btn" aria-label="Кнопка открытия и закртыия меню" aria-expanded="false" data-burger>
+      <span class="burger-btn__line"></span>
+    </button>
+    <div class="header__menu">
+      <nav class="nav" title="Навигация по сайту">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#club-member" data-scroll>
+              Как вступить в клуб
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#team" data-scroll>
+              Наши лекторы
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#subscriber" data-scroll>
+              Про СБП
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#tarifs" data-scroll>
+              Тарифы
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts" data-scroll>
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <a class="header__tel" href="tel:+89525422882">
+          8 (952) 542 28-82
+        </a>
+        <span class="header__descr">
+          Работаем с 10:00 до 22:00
+        </span>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <section class="hero">
+  <div class="container">
+    <h1 class="sr-only">
+      Планетарий с технологией FullDome - кинотеатра и углом обзора в 360°
+    </h1>
+    <div class="swiper hero__slider swiper-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="hero__box border-radius">
+            <div class="hero__content">
+              <h2 class="hero__title title">
+                Выезд с телескопами
+              </h2>
+              <p class="hero__text">
+                Примите участие в невероятных исследованиях под открытым небом! Освойте навык владения телескопом и научитесь астрофотографии. Взгляните своими глазами на ярчайшие звёзды, ближайшие планеты и невероятные туманности и изучайте их под чутким руководством наших преподавателей
+              </p>
+              <p class="hero__descr">
+                *выезд с территории «Космодрома» на специальном
+                транспорте или на личном авто по желанию
+              </p>
+              <button class="hero__btn btn border-radius" data-modal="feedback">
+                Принять участие
+              </button>
+            </div>
+            <div class="hero__img hero__img--bottom">
+              <img src="./images/hero/1.png" aria-hidden="true" alt="" width="400" height="400">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="hero__box border-radius">
+            <div class="hero__content">
+              <h2 class="hero__title title">
+                Космические лекции
+              </h2>
+              <p class="hero__text">
+                Посещайте интереснейшие лекции о космосе: разгадайте тайны невероятных туманностей, выясните, на каких планетах возможна жизнь, и загляните в бездну чёрных дыр! Развейте все заблуждения о вселенной и её явлениях и станьте автором или родителем автора настоящего астрономического открытия, которое запомнит всё человечество!
+              </p>
+              <button class="hero__btn btn border-radius" data-modal="feedback">
+                Принять участие
+              </button>
+            </div>
+            <div class="hero__img">
+              <img src="./images/hero/2.png" aria-hidden="true" alt="" width="400" height="400">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="hero__box border-radius">
+            <div class="hero__content">
+              <h2 class="hero__title title">
+                Астрономическое исследование
+              </h2>
+              <p class="hero__text">
+                Примите участие в международной программе по поиску новых космических объектов! Проводите исследования, наблюдайте за открытым космосом и становитесь настоящим первооткрывателем при помощи наших преподавателей и передового оснащения «Космодрома»
+              </p>
+              <button class="hero__btn btn border-radius" data-modal="feedback">
+                Принять участие
+              </button>
+            </div>
+            <div class="hero__img">
+              <img src="./images/hero/3.png" aria-hidden="true" alt="" width="400" height="400">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev hero__slider-prev"></div>
+      <div class="swiper-button-next hero__slider-next"></div>
+      <div class="swiper-pagination hero__slider-pagination"></div>
+    </div>
+  </div>
+</section>
+    <section class="club-member" id="club-member">
+  <div class="container">
+    <h2 class="club-member__title title">
+      Как стать членом клуба «Альдебаран»?
+    </h2>
+  </div>
+  <div class="club-member__box">
+    <div class="club-member__img">
+      <img src="./images/all-img/planet-bg.png" aria-hidden="true" alt="" width="960" height="1075">
+    </div>
+    <ul class="club-member__list">
+      <li class="club-member__item">
+        <div class="club-member__poit">
+          <div class="club-member__num club-member__num--one">
+            <span class="club-member__num-decor">
+              1
+            </span>
+          </div>
+          <div class="club-member__info">
+            <h3 class="club-member__subtitle">
+              Оставляете заявку
+            </h3>
+            <p class="club-member__text">
+              Подайте заявку на вступление у нас на сайте – мы перезвоним вам
+              в течении 20 минут
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="club-member__item">
+        <div class="club-member__poit">
+          <div class="club-member__num club-member__num--two">
+            <span class="club-member__num-decor">
+              2
+            </span>
+          </div>
+          <div class="club-member__info">
+            <h3 class="club-member__subtitle">
+              Посещаете вводную лекцию
+            </h3>
+            <p class="club-member__text">
+              Ваше вступление в ряды команды АКЧ «Альдебаран» начнётся с бесплатной вводной лекции, на которой
+              вы сможете обсудить все организационные вопросы – удобное для вас время, желаемые темы лекций
+              и формат их проведения
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="club-member__item">
+        <div class="club-member__poit">
+          <div class="club-member__num club-member__num--three">
+            <span class="club-member__num-decor">
+              3
+            </span>
+          </div>
+          <div class="club-member__info">
+            <h3 class="club-member__subtitle">
+              Выбираете тариф
+            </h3>
+            <p class="club-member__text">
+              Вы сможете выбрать уровень доступа вашего абонемента, т.е. какие мероприятия центра «Космодром» вы хотите посещать
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="club-member__item">
+        <div class="club-member__poit">
+          <div class="club-member__num club-member__num--four">
+            <span class="club-member__num-decor">
+              4
+            </span>
+          </div>
+          <div class="club-member__info">
+            <h3 class="club-member__subtitle">
+              Зачисление в группу
+            </h3>
+            <p class="club-member__text">
+              После персонально для вас будет составлена программа теоретических и практических занятий, предоставлен необходимый фирменный инвентарь
+              и оформлен «Специальный бортовой полис – СБП»
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="team" id="team">
+  <div class="container">
+    <h2 class="team__title title">
+      Наши лекторы
+    </h2>
+    <ul class="team__list">
+      <li class="team__item">
+        <div class="team__card">
+          <div class="team__img border-radius">
+            <img src="./images/team/1.jpg" alt="Фото лектора Татьяна" width="360" height="365">
+          </div>
+          <div class="team__box">
+            <span class="team__name">
+              Татьяна
+            </span>
+            <span class="team__descr">
+              Магистр биофизики с богатым преподавательским опытом
+            </span>
+          </div>
+          <p class="team__text">
+            Некогда этот знаток молекулярной медицины и белковой инженерии обратил свой взор на сложнейшие космические исследования.
+            Благодаря своим богатым познаниям в биофизике, Татьяна быстро освоилась в новой области и разработала свой подход к изучению таких важных и сложных дисциплин как гелиофизика и астробиология
+            Но даже не смотря на все это, главной суперспособностью Татьяны является умение раскрыть сложную и непонятную тему доступным для любого возраста языком
+          </p>
+          <button class="team__more" data-modal="team-tatiana">
+            Подробнее
+          </button>
+        </div>
+      </li>
+      <li class="team__item">
+        <div class="team__card">
+          <div class="team__img border-radius">
+            <img src="./images/team/2.jpg" alt="Фото лектора Александр" width="360" height="365">
+          </div>
+          <div class="team__box">
+            <span class="team__name">
+              Александр
+            </span>
+            <span class="team__descr">
+              Ходячая космическая энциклопедия
+            </span>
+          </div>
+          <p class="team__text">
+            С детства любовался звёздами, мечтал стать космонавтом. Название и порядок планет выучил раньше, чем азбуку. Так много интересовался космосом, что теперь носит его внутри себя.
+            Он с радостью поделится с вами всем, что знает. Поможет разобраться даже в сложных темах, приоткрывающих тайну бескрайнего космоса. И если не расскажет, то покажет в телескоп.
+            Если вам интересно, что происходит за пределами атмосферы Земли и как там всё устроено - спросите у него.
+          </p>
+          <button class="team__more" data-modal="team-alex">
+            Подробнее
+          </button>
+        </div>
+      </li>
+      <li class="team__item">
+        <div class="team__card">
+          <div class="team__img border-radius">
+            <img src="./images/team/3.jpg" alt="Фото лектора Полина" width="360" height="365">
+          </div>
+          <div class="team__box">
+            <span class="team__name">
+              Полина
+            </span>
+            <span class="team__descr">
+              Астроном без языкового барьера
+            </span>
+          </div>
+          <p class="team__text">
+            Креативный, весёлый и доступный формат её лекций позволит всем, от мала до велика, с головой погрузиться в древнюю мифологию, изучить самые сложные созвездия и пропитаться энергией далёких галактик
+            Если вам нужен проводник на другой край вселенной - вы нашли его. А точнее, её
+            * Проведение лекций на разных языках
+          </p>
+          <button class="team__more" data-modal="team-polina">
+            Подробнее
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="subscriber" id="subscriber">
+  <div class="container subscriber__container">
+    <div class="subscriber__content">
+      <h2 class="subscriber__title title">
+        СБП – Специальный бортовой полис
+      </h2>
+      <div class="subscriber__text">
+        <p>
+          СБП – Ваш персональный пропуск в мир бескрайнего космоса! Это специальный абонемент члена АКЧ «Альдебаран», открывающий доступ к услугам нашего космического центра.
+        </p>
+        <p>
+          В зависимости от приобретенных услуг меняется цвет и класс СПБ-абонемента
+        </p>
+      </div>
+      <button class="subscriber__btn btn border-radius" data-modal="feedback">
+        Оставить заявку
+      </button>
+    </div>
+    <div class="subscriber__img">
+      <img src="./images/all-img/subscriber-img.png" alt="Фото нашего абонемента" width="610" height="600">
+    </div>
+  </div>
+</section>
+    <section class="tarifs" id="tarifs">
+  <div class="container">
+    <h2 class="tarifs__title title">
+      Основные тарифы СБП
+    </h2>
+    <ul class="tarifs__list">
+      <li class="tarifs__item">
+        <article class="tarifs__article border-radius">
+          <span class="tarifs__badge tarifs__badge--vip">
+            Vip
+          </span>
+          <h3 class="tarifs__subtitle">
+            «Интерстеллар»
+          </h3>
+          <ul class="tarifs__sublist">
+            <li class="tarifs__subitem">
+              <p class="tarifs__benefit">
+                теоретическая часть (научные и науч-поп программы)
+              </p>
+            </li>
+            <li class="tarifs__subitem">
+              <p class="tarifs__benefit">
+                практическая часть (выезды
+                с телескопами, постройка солнечных рефлекторов, опыты с солнечной энергией, астрофотография)
+              </p>
+            </li>
+            <li class="tarifs__subitem">
+              <p class="tarifs__benefit">
+                поиск ещё не открытых небесных тел + подготовка к их открытию
+              </p>
+            </li>
+            <li class="tarifs__subitem">
+              <p class="tarifs__benefit">
+                мероприятие на день рождения члена группы (короткий др для 4х человек – остальные платно)
+              </p>
+            </li>
+            <li class="tarifs__subitem">
+              <p class="tarifs__benefit">
+                групповые посещения планетария
+              </p>
+            </li>
+          </ul>
+          <div class="tarifs__prices">
+            <div class="tarifs__price">
+              <span class="tarifs__time">
+                1 месяц
+              </span>
+              <span class="tarifs__num">
+                14.500 ₽
+              </span>
+              <button class="tarifs__btn btn border-radius" data-modal="feedback">
+                Купить тариф
+              </button>
+            </div>
+            <div class="tarifs__price">
+              <span class="tarifs__time">
+                6 месяц
+              </span>
+              <span class="tarifs__num">
+                79.500 ₽
+              </span>
+              <button class="tarifs__btn btn btn--transparent border-radius" data-modal="feedback">
+                Купить тариф
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="tarifs__item">
+        <article class="tarifs__article border-radius">
+          <span class="tarifs__badge tarifs__badge--standart">
+            Standart
+          </span>
+          <h3 class="tarifs__subtitle">
+            «Кассиопея»
+          </h3>
+          <ul class="tarifs__sublist">
+            <li class="tarifs__subitem">
+              <p class="tarifs__benefit">
+                теоретическая часть (научные и науч-поп программы)
+              </p>
+            </li>
+            <li class="tarifs__subitem">
+              <p class="tarifs__benefit">
+                практическая часть (выезды
+                с телескопами, постройка солнечных рефлекторов, опыты с солнечной энергией, астрофотография)
+              </p>
+            </li>
+            <li class="tarifs__subitem">
+              <p class="tarifs__benefit tarifs__benefit--disabled">
+                поиск ещё не открытых небесных тел + подготовка к их открытию
+              </p>
+            </li>
+            <li class="tarifs__subitem">
+              <p class="tarifs__benefit tarifs__benefit--disabled">
+                мероприятие на день рождения члена группы (короткий др для 4х человек – остальные платно)
+              </p>
+            </li>
+            <li class="tarifs__subitem">
+              <p class="tarifs__benefit">
+                групповые посещения планетария
+              </p>
+            </li>
+          </ul>
+          <div class="tarifs__prices">
+            <div class="tarifs__price">
+              <span class="tarifs__time">
+                1 месяц
+              </span>
+              <span class="tarifs__num">
+                7.500 ₽
+              </span>
+              <button class="tarifs__btn btn border-radius" data-modal="feedback">
+                Купить тариф
+              </button>
+            </div>
+            <div class="tarifs__price">
+              <span class="tarifs__time">
+                3 месяц
+              </span>
+              <span class="tarifs__num">
+                20.000 ₽
+              </span>
+              <button class="tarifs__btn btn btn--transparent border-radius" data-modal="feedback">
+                Купить тариф
+              </button>
+            </div>
+            <div class="tarifs__price">
+              <span class="tarifs__time">
+                6 месяц
+              </span>
+              <span class="tarifs__num">
+                39.500 ₽
+              </span>
+              <button class="tarifs__btn btn btn--transparent border-radius" data-modal="feedback">
+                Купить тариф
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="tarifs__item">
+        <article class="tarifs__article border-radius">
+          <span class="tarifs__badge tarifs__badge--light">
+            Light
+          </span>
+          <h3 class="tarifs__subtitle">
+            «Немо»
+          </h3>
+          <ul class="tarifs__sublist">
+            <li class="tarifs__subitem">
+              <p class="tarifs__benefit">
+                одно теоретическое или практическое занятие
+              </p>
+            </li>
+            <li class="tarifs__subitem">
+              <p class="tarifs__benefit tarifs__benefit--disabled">
+                поиск ещё не открытых небесных тел + подготовка к их открытию
+              </p>
+            </li>
+            <li class="tarifs__subitem">
+              <p class="tarifs__benefit tarifs__benefit--disabled">
+                мероприятие на день рождения члена группы (короткий др для 4х человек – остальные платно)
+              </p>
+            </li>
+            <li class="tarifs__subitem">
+              <p class="tarifs__benefit tarifs__benefit--disabled">
+                групповые посещения планетария
+              </p>
+            </li>
+          </ul>
+          <div class="tarifs__prices">
+            <div class="tarifs__price">
+              <span class="tarifs__time">
+                разовое посещение
+              </span>
+              <span class="tarifs__num">
+                2.000 ₽
+              </span>
+              <button class="tarifs__btn btn btn--transparent border-radius" data-modal="feedback">
+                Купить тариф
+              </button>
+            </div>
+          </div>
+        </article>
+      </li>
+    </ul>
+    <div class="tarifs__banner">
+      <h3 class="tarifs__banner-title title">
+        Количество человек в группе
+      </h3>
+      <p class="tarifs__banner-descr">
+        Максимальное количество человек в одной из групп клуба – 15 человек.
+        Начало занятий группы объявляется после набора 5 человек на группу
+      </p>
+    </div>
+  </div>
+</section>
+    <section class="news">
+  <div class="container">
+    <h2 class="news__title title">
+      Бортовой журнал
+    </h2>
+    <ul class="news__list">
+    </ul>
+    <div class="centred">
+      <a class="news__link btn border-radius" href="news-all.html">
+        Смотреть все
+      </a>
+    </div>
+  </div>
+</section>
+    <section class="contacts" id="contacts">
+  <div class="container">
+    <h2 class="contacts__title title">
+      Контакты
+    </h2>
+    <div class="contacts__container">
+      <div class="contacts__content" data-aos="zoom-in" data-aos-offset="200" data-aos-delay="300" data-aos-duration="800">
+        <div class="contacts__row">
+          <div class="contacts__box">
+            <span class="contacts__descr">
+              Телефон
+            </span>
+            <a class="contacts__link" href="tel:+79518778717">
+              +7 (951) 877-87-17
+            </a>
+          </div>
+        </div>
+        <div class="contacts__row">
+          <div class="contacts__box">
+            <span class="contacts__descr">
+              Социальные сети
+            </span>
+            <ul class="social" title="Социальные сети">
+              <li class="social__item">
+                <a href="#" target="_blank" class="social__link social__link--inst" aria-label="Наша страничка в инстаграме" style="background-image: url('./images/icons/inst.svg');"></a>
+              </li>
+              <li class="social__item">
+                <a href="#" target="_blank" class="social__link social__link--vk" aria-label="Наша страничка во Вконтакте" style="background-image: url('./images/icons/vk.svg');"></a>
+              </li>
+              <li class="social__item">
+                <a href="#" target="_blank" class="social__link social__link--yt" aria-label="Наш канал на Ютубе" style="background-image: url('./images/icons/yt.svg');"></a>
+              </li>
+              <li class="social__item">
+                <a href="#" target="_blank" class="social__link social__link--od" aria-label="Наша страничка в одноклассниках" style="background-image: url('./images/icons/od.svg');"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contacts__row">
+          <div class="contacts__box">
+            <span class="contacts__descr">
+              Адрес
+            </span>
+            <a class="contacts__link" href="https://yandex.by/maps/-/CCUfzCseOD" target="_blank">
+              г. Воронеж, ул. Генерала Лизюкова, д. 2
+            </a>
+          </div>
+        </div>
+        <div class="contacts__row">
+          <div class="contacts__box">
+            <span class="contacts__descr">
+              Автобусы
+            </span>
+            <span class="contacts__text">
+              16В, 27, 41, 54, 58В, 5А, 47, 21, 90, 15, 48
+            </span>
+          </div>
+        </div>
+        <div class="contacts__row">
+          <div class="contacts__box">
+            <span class="contacts__descr">
+              Маршрутное такси
+            </span>
+            <span class="contacts__text">
+              37, 37А, 3В, 47, 49М, 75, 81, 125
+            </span>
+          </div>
+        </div>
+      </div>
+      <form class="feedback-form border-radius" action="#">
+        <h3 class="feedback-form__title">
+          Оставьте заявку
+        </h3>
+        <p class="feedback-form__descr">
+          И наш менеджер свяжется с Вами в ближайшее время
+        </p>
+        <label class="feedback-form__label">
+          <span class="sr-only">
+            Введите ваше имя
+          </span>
+          <input class="feedback-form__input input-name" type="text" data-validate-field="name" name="Имя" placeholder="Имя">
+        </label>
+        <label class="feedback-form__label">
+          <span class="sr-only">
+            Введите ваш мобильный телефое
+          </span>
+          <input class="feedback-form__input input-tel" type="tel" data-validate-field="tel" name="Телефон" placeholder="+7">
+        </label>
+        <label class="checkbox" for="checkbox-data">
+          <span class="checkbox__box">
+            <input class="checkbox__input checkbox-input" id="checkbox-data" type="checkbox" checked required>
+            <span class="checkbox__check"></span>
+          </span>
+          <span class="checkbox__text">
+            Согласие на <a class="checkbox__link" href="policy.html">обработку персональных данных.</a>
+          </span>
+        </label>
+        <button class="feedback-form__btn btn border-radius" type="submit">
+          Отправить
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+    
+    
+    
+    
+    
+
+  </main>
+  <footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__left">
+      <a class="footer__logo logo" href="#">
+        <img src="./images/logo.svg" alt="Логотип" width="125" height="70">
+      </a>
+      <address class="footer__address">
+        ул. Генерала Лизюкова, д.2, г. Воронеж
+      </address>
+    </div>
+    <nav class="footer__nav" title="Навигация по сайту">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="#club-member" data-scroll>
+            Как вступить в клуб
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#team" data-scroll>
+            Наши лекторы
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#subscriber" data-scroll>
+            Про СБП
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#tarifs" data-scroll>
+            Тарифы
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#contacts" data-scroll>
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="footer__contacts">
+      <a class="footer__tel" href="tel:+89525422882">
+        8 (952) 542 28-82
+      </a>
+      <span class="footer__descr">
+        Работаем с 10:00 до 22:00
+      </span>
+    </div>
+  </div>
+</footer>
+  <div class="modal modal--feedback" data-modal="feedback">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content">
+      <form class="feedback-form border-radius" action="#">
+        <h3 class="feedback-form__title">
+          Узнайте свободное время
+        </h3>
+        <p class="feedback-form__descr">
+          Мы вам перезвоним в течение 20 мин
+        </p>
+        <label class="feedback-form__label">
+          <span class="sr-only">
+            Введите ваше имя
+          </span>
+          <input class="feedback-form__input input-name" type="text" data-validate-field="name" name="Имя" placeholder="Имя">
+        </label>
+        <label class="feedback-form__label">
+          <span class="sr-only">
+            Введите ваш мобильный телефое
+          </span>
+          <input class="feedback-form__input input-tel" type="tel" data-validate-field="tel" name="Телефон" placeholder="+7">
+        </label>
+        <label class="checkbox" for="checkbox-data">
+          <span class="checkbox__box">
+            <input class="checkbox__input checkbox-input" id="checkbox-data" type="checkbox" checked required>
+            <span class="checkbox__check"></span>
+          </span>
+          <span class="checkbox__text">
+            Согласие на <a class="checkbox__link" href="policy.html">обработку персональных данных.</a>
+          </span>
+        </label>
+        <button class="feedback-form__btn btn border-radius" type="submit">
+          Отправить
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+  <div class="modal modal--received" data-modal="received">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content">
+      <span class="modal__title">
+        Спасибо!
+      </span>
+      <p class="modal__text">
+        Ваша заявка получена, мы вам перезвоним
+      </p>
+      <button class="modal__btn btn">
+        Закрыть
+      </button>
+    </div>
+  </div>
+</div>
+  <div class="modal modal--team" data-modal="team-tatiana">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content">
+      <p class="modal__text">
+        Некогда этот знаток молекулярной медицины и белковой инженерии обратил свой взор на сложнейшие космические исследования.
+        Благодаря своим богатым познаниям в биофизике, Татьяна быстро освоилась в новой области и разработала свой подход к изучению таких важных и сложных дисциплин как гелиофизика и астробиология
+        Но даже не смотря на все это, главной суперспособностью Татьяны является умение раскрыть сложную и непонятную тему доступным для любого возраста языком
+      </p>
+      <button class="modal__btn btn btn-back border-radius">
+        Закрыть
+      </button>
+    </div>
+  </div>
+</div>
+  <div class="modal modal--team" data-modal="team-alex">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content">
+      <p class="modal__text">
+        С детства любовался звёздами, мечтал стать космонавтом. Название и порядок планет выучил раньше, чем азбуку. Так много интересовался космосом, что теперь носит его внутри себя.
+        Он с радостью поделится с вами всем, что знает. Поможет разобраться даже в сложных темах, приоткрывающих тайну бескрайнего космоса. И если не расскажет, то покажет в телескоп.
+        Если вам интересно, что происходит за пределами атмосферы Земли и как там всё устроено - спросите у него.
+      </p>
+      <button class="modal__btn btn btn-back border-radius">
+        Закрыть
+      </button>
+    </div>
+  </div>
+</div>
+  <div class="modal modal--team" data-modal="team-polina">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content">
+      <p class="modal__text">
+        Креативный, весёлый и доступный формат её лекций позволит всем, от мала до велика, с головой погрузиться в древнюю мифологию, изучить самые сложные созвездия и пропитаться энергией далёких галактик
+        Если вам нужен проводник на другой край вселенной - вы нашли его. А точнее, её
+        * Проведение лекций на разных языках
+      </p>
+      <button class="modal__btn btn btn-back border-radius">
+        Закрыть
+      </button>
+    </div>
+  </div>
+</div>
+
+  <!-- <script src="js/news-json.js" type="module"></script> -->
+  <script src="js/main.min.js"></script>
+  <!-- <script src="//code.jivosite.com/widget.js" data-jv-id="irtFnsLstf"></script> -->
+</body>
+
+</html>
