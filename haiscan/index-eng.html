@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>Haiscan</title>
+  <link rel="preload" as="font" href="./fonts/Montserrat-Regular.woff2" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" as="font" href="./fonts/Montserrat-Medium.woff2" type="font/woff2" crossorigin="anonymous" />
+  <link rel="preload" as="font" href="./fonts/Montserrat-SemiBold.woff2" type="font/woff2" crossorigin="anonymous" />
+</head>
+
+<body class="body" id="body">
+  <header class="header">
+  <div class="container header__container">
+    <a class="header__logo logo" href="#body" data-scroll>
+      Haiscan
+    </a>
+    <button class="burger-btn" aria-label="Кнопка открытия и закрытия меню" aria-expanded="false">
+      <span class="burger-btn__line"></span>
+    </button>
+    <nav class="nav" title="Навигация по сайту">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#benefits" data-scroll>
+            How can this help
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#about" data-scroll>
+            How does this work
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contacts" data-scroll>
+            Cooperation
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <main class="main">
+    <section class="hero bg-gray">
+  <div class="container hero__container">
+    <h1 class="hero__title">
+      AI animal health diagnostic system
+      <span class="hero__title-small red">
+        by photo and video analysis
+      </span>
+    </h1>
+  </div>
+</section>
+    <section class="benefits bg-white" id="benefits" scroll-section>
+  <div class="container">
+    <h2 class="benefits__title title">
+      How the system can help
+    </h2>
+    <ul class="benefits__list">
+      <li class="benefits__item">
+        <div class="benefits__box">
+          Will not miss important details during inspection
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box">
+          Highlight problem areas
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box">
+          Make a diagnosis and suggest treatment options
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="about bg-gray" id="about" scroll-section>
+  <div class="container">
+    <h2 class="about__title title">
+      How <span class="red">HAISCAN</span> work
+    </h2>
+    <div class="about__inner">
+      <div class="about__video">
+        <button class="about__play" aria-label="Кпопка запуска видео"></button>
+        <video class="about__player" muted>
+          <source src="./video/video_ru.mp4#t=4" type="video/mp4">
+        </video>
+      </div>
+      <ul class="about__benefits">
+        <li class="about__item">
+          <div class="about__benefit bg-white">
+            Localizes and highlights anomalies in real time based on the analysis of video and photo images of the animal
+          </div>
+        </li>
+        <li class="about__item">
+          <div class="about__benefit bg-white">
+            Analyzes problem areas in detail and gives hints on possible diagnoses based on our own knowledge base
+          </div>
+        </li>
+        <li class="about__item">
+          <div class="about__benefit bg-white">
+            Generates a detailed report in a convenient form for further processing
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+    <section class="contacts" id="contacts" scroll-section>
+  <div class="container">
+    <h2 class="contacts__title title">
+      Cooperation with <span class="red">HAISCAN</span>
+    </h2>
+    <div class="contacts__descr">
+      Fill out the form and we will contact you as soon as possible:
+    </div>
+    <form class="contacts__form form" action="#">
+      <div class="form__inputs">
+        <label class="form__label">
+          <span class="sr-only">Name field</span>
+          <input class="form__input input-name" data-validate-field="name" name="Name" type="text" placeholder="Name">
+        </label>
+        <label class="form__label">
+          <span class="sr-only">Field for tel or email</span>
+          <input class="form__input input-tel" data-validate-field="name" name="Имя или почта" type="text" placeholder="Phone/Email">
+        </label>
+        <label class="form__label">
+          <span class="sr-only">Field for comment</span>
+          <textarea class="form__textarea" placeholder="Comment"></textarea>
+        </label>
+      </div>
+      <div class="form__inner">
+        <div class="form__box">
+          <p class="form__descr">
+            Or contact us in messengers
+          </p>
+          <ul class="social" title="Socials">
+            <li class="social__item">
+              <a href="https://wa.me/905342657043" target="_blank" class="social__link social__link--wa" aria-label="Our watsap page" style="background-image: url('./images/icons/wa.svg');"></a>
+            </li>
+            <li class="social__item">
+              <a href="https://telegram.me/haiscan_com" target=" _blank" class="social__link social__link--tg" aria-label="Our telegram page" style="background-image: url('./images/icons/tg.svg');"></a>
+            </li>
+          </ul>
+        </div>
+        <button class="form__btn" type="submit">
+          Send
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+  </main>
+  <footer class="footer bg-gray">
+  <div class="container footer__container">
+    <div class="footer__left">
+      <a class="footer__logo logo" href="#">
+        Haiscan
+      </a>
+      <p class="footer__copy">
+        HAISCAN © 2023 <a class="footer__link" href="https://
+        haiscan.com">https://haiscan.com</a> All rights reserved
+      </p>
+    </div>
+    <div class="footer__box footer__box--middle">
+      <span class="footer__title">
+        We are open for cooperation!
+      </span>
+      <p class="footer__text">
+        You can ask any of your questions using the form on the site, by calling or contacting us in any messenger convenient for you
+      </p>
+    </div>
+    <div class="footer__box">
+      <span class="footer__title">
+        Contacts
+      </span>
+      <a class="footer__tel" href="tel:+905342657043">
+        +90 534 265 70 43
+      </a>
+      <ul class="social" title="Socials">
+        <li class="social__item">
+          <a href="https://wa.me/905342657043" target="_blank" class="social__link social__link--wa" aria-label="Our watsap page" style="background-image: url('./images/icons/wa.svg');"></a>
+        </li>
+        <li class="social__item">
+          <a href="https://telegram.me/haiscan_com" target=" _blank" class="social__link social__link--tg" aria-label="Our telegram page" style="background-image: url('./images/icons/tg.svg');"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+  <div class="modal modal--received" data-modal="received">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__close" aria-label="Close modal"></button>
+    <div class="modal__content">
+      <span class="modal__title">
+        Thanks!
+      </span>
+      <p class="modal__text">
+        Your application has been received, we will contact you soon!
+      </p>
+      <button class="modal__btn btn border-radius">
+        Back
+      </button>
+    </div>
+  </div>
+</div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
