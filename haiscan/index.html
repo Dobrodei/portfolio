@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.min.css" />
+		<title>
+			HAISCAN - Диагностика здоровья животных по анализу фото и видео
+		</title>
+		<link
+			rel="preload"
+			as="font"
+			href="./fonts/Montserrat-Regular.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			href="./fonts/Montserrat-Medium.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="preload"
+			as="font"
+			href="./fonts/Montserrat-SemiBold.woff2"
+			type="font/woff2"
+			crossorigin="anonymous"
+		/>
+		<script>
+			let language = window.navigator
+				? window.navigator.language ||
+				  window.navigator.systemLanguage ||
+				  window.navigator.userLanguage
+				: 'ru'
+			language = language.substr(0, 2).toLowerCase()
+
+			function startPage(params) {
+				if (language != 'ru') {
+					window.location.href += 'index-eng.html'
+				}
+			}
+			startPage()
+		</script>
+	</head>
+
+	<body class="body" id="body">
+		<header class="header">
+  <div class="container header__container">
+    <a class="header__logo logo" href="#body" data-scroll>
+      Haiscan
+    </a>
+    <button class="burger-btn" aria-label="Кнопка открытия и закрытия меню" aria-expanded="false">
+      <span class="burger-btn__line"></span>
+    </button>
+    <nav class="nav" title="Навигация по сайту">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#benefits" data-scroll>
+            Чем может помочь
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#about" data-scroll>
+            Как работает
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contacts" data-scroll>
+            Сотрудничество
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+		<main class="main">
+			<section class="hero bg-gray">
+  <div class="container hero__container">
+    <div class="hero__img">
+      <img src="./images/hero-img.png" alt="Фото из работы">
+    </div>
+    <h1 class="hero__title">
+      Диагностика здоровья животных
+      <span class="hero__title-small red"> по фото и видео </span>
+    </h1>
+  </div>
+</section> <section class="benefits bg-white" id="benefits" data-anchor>
+  <div class="container">
+    <h2 class="benefits__title title">Чем система может помочь?</h2>
+    <ul class="benefits__list">
+      <li class="benefits__item">
+        <div class="benefits__box">Не пропустить важные детали при осмотре</div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box">Выделить проблемные области</div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box">
+          Поставить диагноз и предложить варианты лечения
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box">
+          Вести визуальную историю наблюдения/болезни животного
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+			<section class="about bg-gray" id="about" data-anchor>
+  <div class="container">
+    <h2 class="about__title title">
+      Как работает <span class="red">HAISCAN?</span>
+    </h2>
+    <div class="about__inner">
+      <div class="about__video">
+        <button class="about__play" aria-label="Кпопка запуска видео"></button>
+        <video class="about__player" muted>
+          <source src="./video/video_ru.mp4#t=4" type="video/mp4">
+        </video>
+      </div>
+      <ul class="about__benefits">
+        <li class="about__item">
+          <div class="about__benefit bg-white">
+            Локализует и подсвечивает в реальном времени аномалии на основе анализа видео и фото изображения животного
+          </div>
+        </li>
+        <li class="about__item">
+          <div class="about__benefit bg-white">
+            Детально анализирует проблемные зоны и дает подсказки по возможным диагнозам на основе собственное базы знаний
+          </div>
+        </li>
+        <li class="about__item">
+          <div class="about__benefit bg-white">
+            Формирует подробный отчет в удобной форме для последующей обработки и
+            ведет визуальную историю наблюдений/болезни животного
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section> <section class="contacts" id="contacts" data-anchor>
+  <div class="container">
+    <h2 class="contacts__title title">
+      Сотрудничество с <span class="red">HAISCAN</span>
+    </h2>
+    <div class="contacts__descr">
+      Заполните форму и мы свяжемся с вами в ближайшее время:
+    </div>
+    <form class="contacts__form form" action="#">
+      <div class="form__inner">
+        <div class="form__inputs">
+          <label class="form__label">
+            <span class="sr-only">Поля для имени</span>
+            <input class="form__input input-name" data-validate-field="name" name="Имя" type="text" placeholder="Имя">
+          </label>
+          <label class="form__label">
+            <span class="sr-only">Поля для телефона и email</span>
+            <input class="form__input input-tel" data-validate-field="name" name="Имя или почта" type="text" placeholder="Телефон/Эл.почта">
+          </label>
+          <label class="form__label">
+            <span class="sr-only">Поле для комментария</span>
+            <textarea class="form__textarea input-textarea" name="Комментарий" placeholder="Комментарий"></textarea>
+          </label>
+        </div>
+        <button class="form__btn" type="submit">
+          Отправить
+        </button>
+      </div>
+      <div class="form__box">
+        <p class="form__descr">
+          Или свяжитесь с нами в мессенджерах
+        </p>
+        <ul class="social" title="Социальные сети">
+          <li class="social__item">
+            <a href="https://wa.me/905342657043" target="_blank" class="social__link social__link--wa" aria-label="Наша страничка в ватсапе" style="background-image: url('./images/icons/wa.svg');"></a>
+          </li>
+          <li class="social__item">
+            <a href="https://telegram.me/haiscan_com" target=" _blank" class="social__link social__link--tg" aria-label="Наша страничка во телеграмме" style="background-image: url('./images/icons/tg.svg');"></a>
+          </li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</section>
+		</main>
+		<footer class="footer bg-gray">
+  <div class="container footer__container">
+    <div class="footer__left">
+      <a class="footer__logo logo" href="#">
+        Haiscan
+      </a>
+      <p class="footer__copy">
+        HAISCAN © 2023 <a class="footer__link" href="https://haiscan.com">https://haiscan.com</a> Все права
+        защищены
+      </p>
+    </div>
+    <div class="footer__box footer__box--middle">
+      <span class="footer__title">
+        Мы открыты для сотрудничества!
+      </span>
+      <p class="footer__text">
+        Задать любой ваш вопрос вы можете воспользовавшись формой на сайте, позвонив или связавшись с нами в любом, удобном для вас мессенджере
+      </p>
+    </div>
+    <div class="footer__box">
+      <span class="footer__title">
+        Контакты
+      </span>
+      <a class="footer__tel" href="tel:+79035667319">
+        +7 903 566 7319
+      </a>
+      <ul class="social" title="Социальные сети">
+        <li class="social__item">
+          <a href="https://wa.me/905342657043" target="_blank" class="social__link social__link--wa" aria-label="Наша страничка в ватсапе" style="background-image: url('./images/icons/wa.svg');"></a>
+        </li>
+        <li class="social__item">
+          <a href="https://telegram.me/haiscan_com" target="_blank" class="social__link social__link--tg" aria-label="Наша страничка во телеграмме" style="background-image: url('./images/icons/tg.svg');"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer> <div class="modal modal--received" data-modal="received">
+  <div class="modal__container bg-gray" role="dialog" aria-modal="true">
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content">
+      <span class="modal__title">
+        Спасибо!
+      </span>
+      <p class="modal__text">
+        Ваша заявка получена, мы с вами скоро свяжемся!
+      </p>
+      <button class="modal__btn btn border-radius">
+        Закрыть
+      </button>
+    </div>
+  </div>
+</div>
+
+		<script src="js/main.min.js"></script>
+	</body>
+</html>
