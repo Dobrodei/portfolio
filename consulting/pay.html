@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+  <title>Pay</title>
+  <link rel="preload" as="font" href="./fonts/Gilroy-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body">
+  <main class="main">
+    <h1 class="sr-only">
+      Страница оплаты
+    </h1>
+    <section class="pay">
+  <div class="pay__container border-radius">
+    <h2 class="pay__title">
+      Оплатить
+    </h2>
+    <form class="pay__form" action="">
+      <div class="pay__flex">
+        <label class="field-pay">
+          <span class="field-pay__descr">
+            Имя
+          </span>
+          <input class="field-pay__input" type="text" placeholder="Имя">
+        </label>
+        <label class="field-pay">
+          <span class="field-pay__descr">
+            Фамилия
+          </span>
+          <input class="field-pay__input" type="text" placeholder="Фамилия">
+        </label>
+      </div>
+      <div class="pay__flex">
+        <label class="field-pay">
+          <span class="field-pay__descr">
+            Номер договора
+          </span>
+          <input class="field-pay__input" type="text" placeholder="1020304050607080">
+        </label>
+        <label class="field-pay">
+          <span class="field-pay__descr">
+            Почта
+          </span>
+          <input class="field-pay__input" type="mail" placeholder="mail@consultingplus24.ru">
+        </label>
+      </div>
+      <div class="pay__flex pay__flex--width pay__flex--mobile">
+        <label class="field-pay field-pay--mr">
+          <span class="field-pay__descr">
+            Сумма
+          </span>
+          <input class="field-pay__input" type="text" placeholder="100,00">
+        </label>
+        <div class="custom-select">
+          <button class="custom-select__value">
+            EUR €
+          </button>
+          <ul class="custom-select__list">
+            <li class="custom-select__item">
+              <button class="custom-select__option" data-value="eur">
+                EUR €
+              </button>
+            </li>
+            <li class="custom-select__item">
+              <button class="custom-select__option" data-value="usd">
+                USD $
+              </button>
+            </li>
+            <li class="custom-select__item">
+              <button class="custom-select__option" data-value="rub">
+                RUB ₽
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="pay__btn btn btn--blue">
+        Далее
+      </button>
+    </form>
+  </div>
+</section>
+  </main>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

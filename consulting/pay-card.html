@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+  <title>Pay</title>
+  <link rel="preload" as="font" href="./fonts/Gilroy-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body">
+  <main class="main">
+    <h1 class="sr-only">
+      Страница оплаты
+    </h1>
+    <section class="pay">
+  <div class="pay__container border-radius">
+    <h2 class="pay__title">
+      Оплатить
+    </h2>
+    <ul class="pay__list">
+      <li class="pay__item">
+        <div class="pay__img">
+          <img src="./images/icons/visa.svg" alt="Карта виза" width="120" height="60">
+        </div>
+      </li>
+      <li class="pay__item">
+        <div class="pay__img">
+          <img src="./images/icons/master.svg" alt="Карта мастеркард" width="120" height="60">
+        </div>
+      </li>
+      <li class="pay__item">
+        <div class="pay__img">
+          <img src="./images/icons/mir.svg" alt="Карта мир" width="120" height="60">
+        </div>
+      </li>
+    </ul>
+    <form class="pay__form pay__form--width" action="">
+      <div class="pay__flex pay__flex--block">
+        <label class="field-pay">
+          <span class="field-pay__descr">
+            Номер карты
+          </span>
+          <input class="field-pay__input" type="text" placeholder="1234 4321 5678 8765 ">
+        </label>
+      </div>
+      <div class="pay__flex pay__flex--mobile">
+        <label class="field-pay field-pay--mr ">
+          <span class="field-pay__descr">
+            Срок действия
+          </span>
+          <input class="field-pay__input" type="text" placeholder="06/25">
+        </label>
+        <label class="field-pay field-pay--mr">
+          <span class="field-pay__descr">
+            CVC
+          </span>
+          <input class="field-pay__input" type="number" placeholder="777">
+        </label>
+      </div>
+      <div class="pay__flex pay__flex--block">
+        <label class="field-pay">
+          <span class="field-pay__descr">
+            Имя держателя
+          </span>
+          <input class="field-pay__input" type="text" placeholder="Имя держателя ">
+        </label>
+      </div>
+      <div class="pay__flex pay__flex--column">
+        <span class="field-pay__descr">
+          К оплате
+        </span>
+        <span class="field-pay__price">
+          8349,00 ₽
+        </span>
+        <span class="field-pay__descr field-pay__descr--fz">
+          1 EUR = 83,49 RUB
+        </span>
+      </div>
+      <button class="pay__btn btn btn--blue">
+        Оплатить
+      </button>
+    </form>
+  </div>
+</section>
+  </main>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
