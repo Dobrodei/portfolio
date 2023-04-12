@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+  <title>Pay</title>
+  <link rel="preload" as="font" href="./fonts/Gilroy-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body">
+  <main class="main">
+    <h1 class="sr-only">
+      Страница оплаты
+    </h1>
+    <section class="pay">
+  <div class="pay__container border-radius">
+    <div class="pay__pagination"></div>
+    <div class="swiper pay__slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <h2 class="pay__title">
+            Оплатить
+          </h2>
+          <form class="pay__form pay__form-date" action="">
+            <div class="pay__flex">
+              <label class="field-pay">
+                <span class="field-pay__descr">
+                  Имя
+                </span>
+                <input class="field-pay__input pay-input-text" type="text" placeholder="Имя" data-validate-field="name" name="name">
+              </label>
+              <label class="field-pay">
+                <span class="field-pay__descr">
+                  Фамилия
+                </span>
+                <input class="field-pay__input pay-input-surname" type="text" placeholder="Фамилия" data-validate-field="surname" name="surname">
+              </label>
+            </div>
+            <div class="pay__flex">
+              <label class="field-pay">
+                <span class="field-pay__descr">
+                  Номер договора
+                </span>
+                <input class="field-pay__input pay-input-contract" type="text" placeholder="1020304050607080" data-validate-field="contract" name="contract">
+              </label>
+              <label class="field-pay">
+                <span class="field-pay__descr">
+                  Почта
+                </span>
+                <input class="field-pay__input pay-input-email" type="mail" placeholder="mail@consultingplus24.ru" data-validate-field="email" name="email">
+              </label>
+            </div>
+            <div class="pay__flex pay__flex--width pay__flex--mobile">
+              <label class="field-pay field-pay--mr">
+                <span class="field-pay__descr">
+                  Сумма
+                </span>
+                <input class="field-pay__input pay-input-price" type="text" placeholder="100,00" data-validate-field="price" name="price">
+              </label>
+              <label class="field-pay field-pay--mr">
+                <span class="sr-only">
+                  Выберете валюту
+                </span>
+                <select class="field-pay__select js-choice" id="select-sort" name="currency">
+                  <option value="eur" selected>
+                    EUR €
+                  </option>
+                  <option value="rub">
+                    USD $
+                  </option>
+                  <option value="rub">
+                    RUB ₽
+                  </option>
+                  <option value="gpb">
+                    GBP £
+                  </option>
+                  <option value="uah">
+                    UAH ₴
+                  </option>
+                </select>
+              </label>
+            </div>
+            <button class="pay__btn btn btn--blue">
+              Далее
+            </button>
+          </form>
+        </div>
+        <div class="swiper-slide">
+          <h2 class="pay__title">
+            Оплатить
+          </h2>
+          <ul class="pay__list">
+            <li class="pay__item">
+              <div class="pay__img">
+                <img src="./images/icons/visa.svg" alt="Карта виза" width="120" height="60">
+              </div>
+            </li>
+            <li class="pay__item">
+              <div class="pay__img">
+                <img src="./images/icons/master.svg" alt="Карта мастеркард" width="120" height="60">
+              </div>
+            </li>
+            <li class="pay__item">
+              <div class="pay__img">
+                <img src="./images/icons/mir.svg" alt="Карта мир" width="120" height="60">
+              </div>
+            </li>
+          </ul>
+          <form class="pay__form pay__form-card pay__form--width" action="">
+            <div class="pay__flex pay__flex--block">
+              <label class="field-pay">
+                <span class="field-pay__descr">
+                  Номер карты
+                </span>
+                <input class="field-pay__input pay-input-card" type="texts" placeholder="1234 4321 5678 8765" data-validate-field="num-card" name="card">
+              </label>
+            </div>
+            <div class="pay__flex pay__flex--mobile">
+              <label class="field-pay field-pay--mr ">
+                <span class="field-pay__descr">
+                  Срок действия
+                </span>
+                <input class="field-pay__input pay-input-date" type="text" placeholder="06/25" data-validate-field="date" name="date">
+              </label>
+              <label class="field-pay field-pay--mr">
+                <span class="field-pay__descr">
+                  CVC
+                </span>
+                <input class="field-pay__input pay-input-cvc" type="text" placeholder="777" data-validate-field="cvc" name="cvc">
+              </label>
+            </div>
+            <div class="pay__flex pay__flex--block">
+              <label class="field-pay">
+                <span class="field-pay__descr">
+                  Имя держателя
+                </span>
+                <input class="field-pay__input pay-input-user" type="text" placeholder="Имя держателя" data-validate-field="name" name="name">
+              </label>
+            </div>
+            <div class="pay__flex pay__flex--column">
+              <span class="field-pay__descr">
+                К оплате
+              </span>
+              <span class="field-pay__price">
+                8349,00 ₽
+              </span>
+              <span class="field-pay__descr field-pay__descr--fz">
+                1 EUR = 83,49 RUB
+              </span>
+            </div>
+            <button class="pay__btn btn btn--blue">
+              Оплатить
+            </button>
+          </form>
+        </div>
+        <div class="swiper-slide">
+          <div class="pay__box">
+            <div class="pay__apply">
+              <img src="./images/icons/apply.png" aria-hidden="true" alt="Галочка пройденной оплаты" width="245" height="245">
+            </div>
+            <span class="pay__price">
+              8 349,00 ₽
+            </span>
+            <p class="pay__descr">
+              Платеж успешно завершен
+            </p>
+          </div>
+          <a class="pay__btn btn btn--blue" href="index.html">
+            Готово
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
