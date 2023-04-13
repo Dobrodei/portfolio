@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Real</title>
+  <link rel="preload" as="font" href="./fonts/Inter-Light.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Inter-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Inter-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Lora-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body">
+
+  <header class="header">
+  <div class="container header__container">
+    <div class="header__rate">
+      <button class="header__price">
+        <div class="header__img">
+          <img src="./images/icons/btc.svg" alt="photo btc" width="24" height="24">
+        </div>
+        <span>~$21,822.74</span>
+      </button>
+    </div>
+    <a class="header__logo logo" href="#">
+      showmehome.io
+    </a>
+    <div class="header__lang">
+      <button class="header__btn">
+        <div class="header__img">
+          <img src="./images/icons/eng.svg" alt="photo lang" width="24" height="24">
+        </div>
+        <span>Eng</span>
+      </button>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <h1 class="sr-only">
+      Website for houses for sale
+    </h1>
+    <section class="hero" style="background-image: url('./images/hero-bg.jpg');">
+  <div class="container">
+    <div class="swiper hero__slider" data-mobile="false">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="hero__box">
+            <h2 class="hero__title">
+              About
+            </h2>
+            <p class="hero__text">
+              The project allows you to purchase unique objects and items. You can pay for all properties using cryptocurrency payments. We make it simple quickly and secure for you
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="hero__box">
+            <h2 class="hero__title">
+              Premium
+            </h2>
+            <p class="hero__text">
+              After buying a property through our service you get private access to a privileged
+              club with the opportunity to purchase the rarely gems or art objects
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="hero__box">
+            <h2 class="hero__title">
+              Residence permit
+            </h2>
+            <p class="hero__text">
+              We help in getting the residence permit of any countries through the purchase of real estate on our service
+            </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="hero__box">
+            <h2 class="hero__title">
+              Make an enquire
+            </h2>
+            <p class="hero__text">
+              You can make an request for any question or suggestion. Our experts will contact you asap
+            </p>
+            <a class="hero__link" href="#">
+              get in touch
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+    <section class="products">
+  <div class="container">
+    <h2 class="sr-only">All products</h2>
+    <div class="products__top">
+      <div class="products__filters">
+        <button class="products__btn" data-modal="modal-filter">
+          <svg>
+            <use xlink:href="images/sprite.svg#filter"></use>
+          </svg>
+          <span>Filter</span>
+        </button>
+        <div class="products__inner">
+          <ul class="products__items">
+            <li class="products__item">
+              <button class="products__filter products__filter--active" data-category="all">
+                <svg>
+                  <use xlink:href="images/sprite.svg#all"></use>
+                </svg>
+                <span>All</span>
+              </button>
+            </li>
+            <li class="products__item">
+              <button class="products__filter" data-category="1">
+                <svg>
+                  <use xlink:href="images/sprite.svg#seaside"></use>
+                </svg>
+                <span>Seaside</span>
+              </button>
+            </li>
+            <li class="products__item">
+              <button class="products__filter" data-category="2">
+                <svg>
+                  <use xlink:href="images/sprite.svg#mountains"></use>
+                </svg>
+                <span>Mountains</span>
+              </button>
+            </li>
+            <li class="products__item">
+              <button class="products__filter" data-category="3">
+                <svg>
+                  <use xlink:href="images/sprite.svg#historical"></use>
+                </svg>
+                <span>Historical</span>
+              </button>
+            </li>
+            <li class="products__item">
+              <button class="products__filter" data-category="4">
+                <svg>
+                  <use xlink:href="images/sprite.svg#residence"></use>
+                </svg>
+                <span>Residence</span>
+              </button>
+            </li>
+            <li class="products__item">
+              <button class="products__filter" data-category="5">
+                <svg>
+                  <use xlink:href="images/sprite.svg#life"></use>
+                </svg>
+                <span>For life</span>
+              </button>
+            </li>
+            <li class="products__item">
+              <button class="products__filter" data-category="6">
+                <svg>
+                  <use xlink:href="images/sprite.svg#city"></use>
+                </svg>
+                <span>Big city life</span>
+              </button>
+            </li>
+            <li class="products__item">
+              <button class="products__filter" data-category="7">
+                <svg>
+                  <use xlink:href="images/sprite.svg#prestige"></use>
+                </svg>
+                <span>Prestige</span>
+              </button>
+            </li>
+            <li class="products__item">
+              <button class="products__filter" data-category="8">
+                <svg>
+                  <use xlink:href="images/sprite.svg#investment"></use>
+                </svg>
+                <span>Investment</span>
+              </button>
+            </li>
+            <li class="products__item">
+              <button class="products__filter" data-category="9">
+                <svg>
+                  <use xlink:href="images/sprite.svg#commecial"></use>
+                </svg>
+                <span>Commecial</span>
+              </button>
+            </li>
+            <li class="products__item">
+              <button class="products__filter" data-category="10">
+                <svg>
+                  <use xlink:href="images/sprite.svg#designers"></use>
+                </svg>
+                <span>Designer’s</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="products__wrapper">
+        <button class="products__btn products__btn--mobile" data-modal="modal-filter">
+          <svg>
+            <use xlink:href="images/sprite.svg#filter2"></use>
+          </svg>
+          <span>Filter</span>
+        </button>
+        <ul class="products__sorts">
+          <li class="products__sort">
+            <button class="products__sort-btn products__sort-btn--active" data-sort="all">
+              All
+            </button>
+          </li>
+          <li class="products__sort">
+            <button class="products__sort-btn" data-sort="1">
+              Sell
+            </button>
+          </li>
+          <li class="products__sort">
+            <button class="products__sort-btn" data-sort="2">
+              Rent
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="products__list">
+      <!-- <li class="products__item">
+        <article class="product">
+          <a href="#" class="product__images">
+            <div class="swiper product__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product__img">
+                    <img src="images/products/1.jpg" alt="Макбук" width="400" height="400">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__img">
+                    <img src="images/products/1.jpg" alt="Макбук" width="400" height="400">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__img">
+                    <img src="images/products/1.jpg" alt="Макбук" width="400" height="400">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </a>
+          <div class="product__inner">
+            <div class="product__box">
+              <h3 class="product__title">
+                <a href="#">Modern Villa 55 with Pool</a>
+              </h3>
+              <address class="product__address">
+                Al Marsa Street, 66, Dubai
+              </address>
+            </div>
+            <div class="product__info">
+              <div class="product__prices">
+                <span class="product__price">Sale: 105,56 </span>
+                <span class="product__price">Rent: 2,5</span>
+              </div>
+              <ul class="product__list">
+                <li class="product__item">
+                  <button class="product__btn product__btn--active" style="background-image: url('./images/icons/btc.svg');">
+                    <span class="sr-only">
+                      btc
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/usdt.svg');">
+                    <span class="sr-only">
+                      usdt
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/eth.svg');">
+                    <span class="sr-only">
+                      eth
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/dh.svg');">
+                    <span class="sr-only">
+                      dh
+                    </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </li> -->
+      <!-- <li class="products__item">
+        <article class="product">
+          <a href="#" class="product__image">
+            <div class="product__switch image-switch">
+              <div class="image-switch__item">
+                <div class="image-switch__img">
+                  <img src="images/products/1.jpg" alt="Макбук" width="400" height="400">
+                </div>
+              </div>
+              <div class="image-switch__item">
+                <div class="image-switch__img">
+                  <img src="images/products/2.jpg" alt="Макбук" width="400" height="400">
+                </div>
+              </div>
+              <div class="image-switch__item">
+                <div class="image-switch__img">
+                  <img src="images/products/3.jpg" alt="Макбук" width="400" height="400">
+                </div>
+              </div>
+            </div>
+            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+          </a>
+          <div class="product__inner">
+            <div class="product__box">
+              <h3 class="product__title">
+                <a href="#">Modern Villa 55 with Pool</a>
+              </h3>
+              <address class="product__address">
+                Al Marsa Street, 66, Dubai
+              </address>
+            </div>
+            <div class="product__info">
+              <div class="product__prices">
+                <span class="product__price">Sale: 105,56 </span>
+                <span class="product__price">Rent: 2,5</span>
+              </div>
+              <ul class="product__list">
+                <li class="product__item">
+                  <button class="product__btn product__btn--active" style="background-image: url('./images/icons/btc.svg');">
+                    <span class="sr-only">
+                      btc
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/usdt.svg');">
+                    <span class="sr-only">
+                      usdt
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/eth.svg');">
+                    <span class="sr-only">
+                      eth
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/dh.svg');">
+                    <span class="sr-only">
+                      dh
+                    </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </li> -->
+      <!-- <li class="products__item">
+        <article class="product">
+          <a href="#" class="product__image">
+            <div class="product__switch image-switch">
+              <div class="image-switch__item">
+                <div class="image-switch__img">
+                  <img src="images/products/1.jpg" alt="Макбук" width="400" height="400">
+                </div>
+              </div>
+              <div class="image-switch__item">
+                <div class="image-switch__img">
+                  <img src="images/products/2.jpg" alt="Макбук" width="400" height="400">
+                </div>
+              </div>
+              <div class="image-switch__item">
+                <div class="image-switch__img">
+                  <img src="images/products/3.jpg" alt="Макбук" width="400" height="400">
+                </div>
+              </div>
+            </div>
+            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+          </a>
+          <div class="product__inner">
+            <div class="product__box">
+              <h3 class="product__title">
+                <a href="#">Modern Villa 55 with Pool</a>
+              </h3>
+              <address class="product__address">
+                Al Marsa Street, 66, Dubai
+              </address>
+            </div>
+            <div class="product__info">
+              <div class="product__prices">
+                <span class="product__price">Sale: 105,56 </span>
+                <span class="product__price">Rent: 2,5</span>
+              </div>
+              <ul class="product__list">
+                <li class="product__item">
+                  <button class="product__btn product__btn--active" style="background-image: url('./images/icons/btc.svg');">
+                    <span class="sr-only">
+                      btc
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/usdt.svg');">
+                    <span class="sr-only">
+                      usdt
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/eth.svg');">
+                    <span class="sr-only">
+                      eth
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/dh.svg');">
+                    <span class="sr-only">
+                      dh
+                    </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="products__item">
+        <article class="product">
+          <a href="#" class="product__image">
+            <div class="product__switch image-switch">
+              <div class="image-switch__item">
+                <div class="image-switch__img">
+                  <img src="images/products/1.jpg" alt="Макбук" width="400" height="400">
+                </div>
+              </div>
+              <div class="image-switch__item">
+                <div class="image-switch__img">
+                  <img src="images/products/2.jpg" alt="Макбук" width="400" height="400">
+                </div>
+              </div>
+              <div class="image-switch__item">
+                <div class="image-switch__img">
+                  <img src="images/products/3.jpg" alt="Макбук" width="400" height="400">
+                </div>
+              </div>
+            </div>
+            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+          </a>
+          <div class="product__inner">
+            <div class="product__box">
+              <h3 class="product__title">
+                <a href="#">Modern Villa 55 with Pool</a>
+              </h3>
+              <address class="product__address">
+                Al Marsa Street, 66, Dubai
+              </address>
+            </div>
+            <div class="product__info">
+              <div class="product__prices">
+                <span class="product__price">Sale: 105,56 </span>
+                <span class="product__price">Rent: 2,5</span>
+              </div>
+              <ul class="product__list">
+                <li class="product__item">
+                  <button class="product__btn product__btn--active" style="background-image: url('./images/icons/btc.svg');">
+                    <span class="sr-only">
+                      btc
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/usdt.svg');">
+                    <span class="sr-only">
+                      usdt
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/eth.svg');">
+                    <span class="sr-only">
+                      eth
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/dh.svg');">
+                    <span class="sr-only">
+                      dh
+                    </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="products__item">
+        <article class="product">
+          <a href="#" class="product__image">
+            <div class="product__switch image-switch">
+              <div class="image-switch__item">
+                <div class="image-switch__img">
+                  <img src="images/products/1.jpg" alt="Макбук" width="400" height="400">
+                </div>
+              </div>
+              <div class="image-switch__item">
+                <div class="image-switch__img">
+                  <img src="images/products/2.jpg" alt="Макбук" width="400" height="400">
+                </div>
+              </div>
+              <div class="image-switch__item">
+                <div class="image-switch__img">
+                  <img src="images/products/3.jpg" alt="Макбук" width="400" height="400">
+                </div>
+              </div>
+            </div>
+            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+          </a>
+          <div class="product__inner">
+            <div class="product__box">
+              <h3 class="product__title">
+                <a href="#">Modern Villa 55 with Pool</a>
+              </h3>
+              <address class="product__address">
+                Al Marsa Street, 66, Dubai
+              </address>
+            </div>
+            <div class="product__info">
+              <div class="product__prices">
+                <span class="product__price">Sale: 105,56 </span>
+                <span class="product__price">Rent: 2,5</span>
+              </div>
+              <ul class="product__list">
+                <li class="product__item">
+                  <button class="product__btn product__btn--active" style="background-image: url('./images/icons/btc.svg');">
+                    <span class="sr-only">
+                      btc
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/usdt.svg');">
+                    <span class="sr-only">
+                      usdt
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/eth.svg');">
+                    <span class="sr-only">
+                      eth
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/dh.svg');">
+                    <span class="sr-only">
+                      dh
+                    </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </li>
+      <li class="products__item">
+        <article class="product">
+          <a href="#" class="product__image">
+            <div class="product__switch image-switch">
+              <div class="image-switch__item">
+                <div class="image-switch__img">
+                  <img src="images/products/1.jpg" alt="Макбук" width="400" height="400">
+                </div>
+              </div>
+              <div class="image-switch__item">
+                <div class="image-switch__img">
+                  <img src="images/products/2.jpg" alt="Макбук" width="400" height="400">
+                </div>
+              </div>
+              <div class="image-switch__item">
+                <div class="image-switch__img">
+                  <img src="images/products/3.jpg" alt="Макбук" width="400" height="400">
+                </div>
+              </div>
+            </div>
+            <ul class="product__image-pagination image-pagination" aria-hidden="true"></ul>
+          </a>
+          <div class="product__inner">
+            <div class="product__box">
+              <h3 class="product__title">
+                <a href="#">Modern Villa 55 with Pool</a>
+              </h3>
+              <address class="product__address">
+                Al Marsa Street, 66, Dubai
+              </address>
+            </div>
+            <div class="product__info">
+              <div class="product__prices">
+                <span class="product__price">Sale: 105,56 </span>
+                <span class="product__price">Rent: 2,5</span>
+              </div>
+              <ul class="product__list">
+                <li class="product__item">
+                  <button class="product__btn product__btn--active" style="background-image: url('./images/icons/btc.svg');">
+                    <span class="sr-only">
+                      btc
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/usdt.svg');">
+                    <span class="sr-only">
+                      usdt
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/eth.svg');">
+                    <span class="sr-only">
+                      eth
+                    </span>
+                  </button>
+                </li>
+                <li class="product__item">
+                  <button class="product__btn" style="background-image: url('./images/icons/dh.svg');">
+                    <span class="sr-only">
+                      dh
+                    </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </li> -->
+    </ul>
+  </div>
+</section>
+  </main>
+  <div class="modal" data-modal="modal-filter">
+  <div class="modal__container filter" role="dialog" aria-modal="true">
+    <div class="filter__top">
+      <h3 class="filter__title">
+        Filter
+      </h3>
+      <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    </div>
+    <form class="filter__form" action="">
+      <div class="filter__box">
+        <label class="filter__label" for="select-sort">
+          Sort by
+        </label>
+        <select class="js-choice" id="select-sort" name="sort" multiple>
+          <option value="All">
+            All
+          </option>
+          <option value="1">
+            Buy
+          </option>
+          <option value="2">
+            Rent
+          </option>
+        </select>
+      </div>
+      <div class="filter__box">
+        <label class="filter__label" for="select-country">
+          Choose country
+        </label>
+        <select class="js-choice" id="select-country" name="country" multiple>
+          <option value="All">
+            All
+          </option>
+          <option value="Thailand">
+            Thailand
+          </option>
+          <option value="UAE">
+            UAE
+          </option>
+        </select>
+      </div>
+      <div class="filter__box">
+        <label class="filter__label" for="select-city">
+          Choose city
+        </label>
+        <select class="js-choice" id="select-city" name="city" multiple>
+          <option value="All">
+            All
+          </option>
+          <option value="Bangkok">
+            Bangkok
+          </option>
+          <option value="Dubai">
+            Dubai
+          </option>
+          <option value="Pattaya">
+            Pattaya
+          </option>
+          <option value="Samui">
+            Samui
+          </option>
+        </select>
+      </div>
+      <div class="filter__box">
+        <label class="filter__label" for="select-type">
+          Select type of property
+        </label>
+        <select class="js-choice" id="select-type" name="type" multiple>
+          <option value="All">
+            All
+          </option>
+          <option value="Condominium">
+            Condominium
+          </option>
+          <option value="Apartaments">
+            Apartaments
+          </option>
+          <option value="Islands">
+            Islands
+          </option>
+          <option value="Castles">
+            Castles
+          </option>
+          <option value="Villas">
+            Villas
+          </option>
+          <option value="Mansions">
+            Mansions
+          </option>
+          <option value="Houses">
+            Houses
+          </option>
+          <option value="Land Plot">
+            Land Plot
+          </option>
+          <option value="Hotels">
+            Hotels
+          </option>
+          <option value="Chalets">
+            Chalets
+          </option>
+          <option value="Residental">
+            Residental Complexes
+          </option>
+          <option value="Penthouses">
+            Penthouses
+          </option>
+          <option value="Commercial">
+            Commercial
+          </option>
+          <option value="Townhouses">
+            Townhouses
+          </option>
+        </select>
+      </div>
+      <div class="filter__box">
+        <label class="filter__label" for="select-type">
+          Price range (BTC)
+        </label>
+        <div id="slider-range1" data-min="0" data-max="1000" data-type="price[btc]"></div>
+        <div class="filter__inner filter__inner--mb">
+          <label class="filter__label filter__label--mb">
+            <span class="sr-only">
+              Price min
+            </span>
+            <input class="filter__input" id="slider-input1" type="number" placeholder="min">
+          </label>
+          <label class="filter__label filter__label--mb">
+            <span class="sr-only">
+              Price max
+            </span>
+            <input class="filter__input" id="slider-input2" type="number" placeholder="max">
+          </label>
+        </div>
+        <label class="checkbox" for="checkbox-care">
+          <span class="checkbox__box">
+            <input class="checkbox__input checkbox-input" id="checkbox-care" type="checkbox">
+            <span class="checkbox__check"></span>
+          </span>
+          <span class="checkbox__text">
+            I don’t care
+          </span>
+        </label>
+      </div>
+      <div class="filter__box">
+        <label class="filter__label" for="select-type">
+          Year of construction
+        </label>
+        <div id="slider-range2" data-min="0" data-max="2050" data-type="buildYear"></div>
+        <div class="filter__inner filter__inner--mb">
+          <label class="filter__label filter__label--mb">
+            <span class="sr-only">
+              Year min
+            </span>
+            <input class="filter__input" id="slider-input2" type="number" placeholder="min">
+          </label>
+          <label class="filter__label filter__label--mb">
+            <span class="sr-only">
+              Year max
+            </span>
+            <input class="filter__input" id="slider-input3" type="number" placeholder="max">
+          </label>
+        </div>
+        <label class="checkbox" for="checkbox-ready">
+          <span class="checkbox__box">
+            <input class="checkbox__input checkbox-input" id="checkbox-ready" type="checkbox">
+            <span class="checkbox__check"></span>
+          </span>
+          <span class="checkbox__text">
+            Ready to move in
+          </span>
+        </label>
+        <label class="checkbox" for="checkbox-unbuilt">
+          <span class="checkbox__box">
+            <input class="checkbox__input checkbox-input" id="checkbox-unbuilt" type="checkbox">
+            <span class="checkbox__check"></span>
+          </span>
+          <span class="checkbox__text">
+            Still being built
+          </span>
+        </label>
+      </div>
+      <div class="filter__box">
+        <label class="filter__label" for="select-type">
+          Square (m2)
+        </label>
+        <div id="slider-range3" data-min="0" data-max="1000" data-type="square"></div>
+        <div class="filter__inner filter__inner--mb">
+          <label class="filter__label filter__label--mb">
+            <span class="sr-only">
+              Square min
+            </span>
+            <input class="filter__input" id="slider-input4" type="number" placeholder="min">
+          </label>
+          <label class="filter__label filter__label--mb">
+            <span class="sr-only">
+              Square max
+            </span>
+            <input class="filter__input" id="slider-input5" type="number" placeholder="max">
+          </label>
+        </div>
+      </div>
+      <div class="filter__box">
+        <label class="filter__label" for="select-type">
+          Bedrooms
+        </label>
+        <div class="filter-counter">
+          <button class="filter-counter__btn filter-counter__btn--minus" type="button">-</button>
+          <input class="filter-counter__input" type="number" value="1">
+          <button class="filter-counter__btn filter-counter__btn--plus" type="button">+</button>
+        </div>
+      </div>
+      <button class="filter__submit">
+        Confirm
+      </button>
+      <button class="filter__reset" type="reset">
+        Clear all information
+      </button>
+    </form>
+  </div>
+</div>
+
+
+  <script src="js/main.min.js">
+  </script>
+</body>
+
+</html>
