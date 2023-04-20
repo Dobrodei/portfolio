@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" as="font" href="./fonts/GothamPro.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Mania-Oblique-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <title>Crypto</title>
+</head>
+
+<body class="body">
+
+  <header class="header">
+  <div class="container header__container">
+    <a class="header__logo logo" href="index.html">
+      <img src="./images/logo.png" alt="Логотип" width="115" height="25">
+    </a>
+    <div class="header__wrapper">
+      <div class="header__menu">
+        <nav class="nav" title="Навигация по сайту">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Как работает бот
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Рейтинг трейдеров
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="training.html">
+                Обучение
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Доходность
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Отзывы
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__users">
+        <select class="header__language" name="language">
+          <option value="rus">rus</option>
+          <option value="eng">eng</option>
+          <option value="spa">spa</option>
+          <option value="por">por</option>
+        </select>
+        <button class="header__profile" aria-label="Профиль" data-modal="auth">
+          <svg>
+            <use xlink:href="images/sprite.svg#user"></use>
+          </svg>
+        </button>
+      </div>
+      <button class="burger-btn" aria-label="Открыть и закрыть меню" aria-expanded="false" data-burger>
+        <span class="burger-btn__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <section class="training">
+  <div class="container">
+    <h2 class="training__title title">
+      Обучение
+    </h2>
+    <ul class="training__list">
+      <li class="training__item">
+        <div class="training__accordion accordion accordion--inactive">
+          <div class="accordion__head border-radius">
+            <h3 class="accordion__title">
+              1. Как зарегистрироваться на бирже, пройти верификацию.
+            </h3>
+            <button class="accordion__btn" aria-label="Открытие и закртие вопроса">
+            </button>
+          </div>
+          <div class="accordion__box border-radius">
+            <div class="training__video border-radius">
+              <button class="training__play" aria-label="Запустить видео"></button>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="training__item">
+        <div class="training__accordion accordion accordion--inactive">
+          <div class="accordion__head border-radius">
+            <h3 class="accordion__title">
+              2. Как завести деньги на биржу, будут показаны все возможные способы ввода
+            </h3>
+            <button class="accordion__btn" aria-label="Открытие и закртие вопроса">
+            </button>
+          </div>
+          <div class="accordion__box border-radius">
+            <div class="training__video border-radius">
+              <button class="training__play" aria-label="Запустить видео"></button>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="training__item">
+        <div class="training__accordion accordion accordion--inactive">
+          <div class="accordion__head border-radius">
+            <h3 class="accordion__title">
+              3. Как сгенерировать ключи API биржи, которые необходимы для использования нашего ПО
+            </h3>
+            <button class="accordion__btn" aria-label="Открытие и закртие вопроса">
+            </button>
+          </div>
+          <div class="accordion__box border-radius">
+            <div class="training__video border-radius">
+              <button class="training__play" aria-label="Запустить видео"></button>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="training__item">
+        <div class="training__accordion accordion accordion--inactive">
+          <div class="accordion__head border-radius">
+            <h3 class="accordion__title">
+              4. Как настроить наше ПО для использования
+            </h3>
+            <button class="accordion__btn" aria-label="Открытие и закртие вопроса">
+            </button>
+          </div>
+          <div class="accordion__box border-radius">
+            <div class="training__video border-radius">
+              <button class="training__play" aria-label="Запустить видео"></button>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="training__item">
+        <div class="training__accordion accordion accordion--inactive">
+          <div class="accordion__head border-radius">
+            <h3 class="accordion__title">
+              5. Как торговать при помощи нашего ПО
+            </h3>
+            <button class="accordion__btn" aria-label="Открытие и закртие вопроса">
+            </button>
+          </div>
+          <div class="accordion__box border-radius">
+            <div class="training__video border-radius">
+              <button class="training__play" aria-label="Запустить видео"></button>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="training__item">
+        <div class="training__accordion accordion accordion--inactive">
+          <div class="accordion__head border-radius">
+            <h3 class="accordion__title">
+              6. Как присоединяться к авто следованию других трейдеров нашего ПО
+            </h3>
+            <button class="accordion__btn" aria-label="Открытие и закртие вопроса">
+            </button>
+          </div>
+          <div class="accordion__box border-radius">
+            <div class="training__video border-radius">
+              <button class="training__play" aria-label="Запустить видео"></button>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="training__item">
+        <div class="training__accordion accordion accordion--inactive">
+          <div class="accordion__head border-radius">
+            <h3 class="accordion__title">
+              7. Как подключать авто торговлю к ботам по различным стратегиям
+            </h3>
+            <button class="accordion__btn" aria-label="Открытие и закртие вопроса">
+            </button>
+          </div>
+          <div class="accordion__box border-radius">
+            <div class="training__video border-radius">
+              <button class="training__play" aria-label="Запустить видео"></button>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="training__item">
+        <div class="training__accordion accordion accordion--inactive">
+          <div class="accordion__head border-radius">
+            <h3 class="accordion__title">
+              8. Как выводить криптовалюту и деньги с биржи на карту или банковский счет
+            </h3>
+            <button class="accordion__btn" aria-label="Открытие и закртие вопроса">
+            </button>
+          </div>
+          <div class="accordion__box border-radius">
+            <div class="training__video border-radius">
+              <button class="training__play" aria-label="Запустить видео"></button>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="contacts section-pt">
+  <div class="container">
+    <h3 class="contacts__subtitle">
+      Не нашли ответ на свой вопрос?
+    </h3>
+    <p class="contacts__text">
+      Заполните форму, мы вам поможем
+    </p>
+    <form class="contacts__form" action="#">
+      <div class="contacts__box">
+        <label class="contacts__label contacts__label--select">
+          <span class="sr-only">
+            Выберите причину
+          </span>
+          <select class="contacts__select" name="reason">
+            <option value="1">Выберите причину</option>
+            <option value="2">Выберите причину2</option>
+            <option value="3">Выберите причину3</option>
+          </select>
+        </label>
+        <label class="contacts__label">
+          <span class="sr-only">
+            Тема
+          </span>
+          <input class="contacts__input border-radius" type="text" placeholder="Тема">
+        </label>
+        <label class="contacts__label">
+          <span class="sr-only">
+            Электронная почта
+          </span>
+          <input class="contacts__input border-radius" type="email" placeholder="Электронная почта" required>
+        </label>
+        <label class="contacts__label contacts__label--textarea">
+          <span class="sr-only">
+            Введите текст
+          </span>
+          <textarea class="contacts__textarea border-radius" placeholder="Ваше сообщение"></textarea>
+        </label>
+      </div>
+      <button class="contacts__btn btn" type="submit">
+        Отправить
+      </button>
+    </form>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="container footer__container">
+    <a class="footer__logo logo" href="#">
+      <img src="./images/logo.png" alt="Логотип" width="125" height="30">
+    </a>
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a class="footer__link" href="#">
+          Политика конфиденциальности
+        </a>
+      </li>
+      <li class="footer__item">
+        <a class="footer__link" href="#">
+          Служба поддержки
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+  <div class="modal" data-modal="auth">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content border-radius tabs">
+      <ul class="tabs__list">
+        <li class="tabs__item">
+          <button class="tabs__btn tabs__btn--active" data-tab="1">
+            Регистрация
+          </button>
+        </li>
+        <li class="tabs__item">
+          <button class="tabs__btn" data-tab="2">
+            Вход
+          </button>
+        </li>
+      </ul>
+      <div class="tabs__container">
+        <div class="tabs__box tabs__box--visible" data-tabs-box="1">
+          <form class="form-auth form-auth--required" action="#">
+            <div class="form-auth__box">
+              <label class="form-auth__label">
+                <span class="form-auth__descr">
+                  Имя (логин)
+                </span>
+                <input class="form-auth__input border-radius" type="text" required>
+              </label>
+              <label class="form-auth__label">
+                <span class="form-auth__descr">
+                  E-mail
+                </span>
+                <input class="form-auth__input border-radius" type="email" required>
+              </label>
+              <label class="form-auth__label">
+                <span class="form-auth__descr">
+                  Телефон
+                </span>
+                <input class="form-auth__input border-radius" type="text" required>
+              </label>
+              <label class="form-auth__label">
+                <span class="form-auth__descr">
+                  Пароль
+                </span>
+                <input class="form-auth__input border-radius" type="text" required>
+              </label>
+              <label class="form-auth__label">
+                <span class="form-auth__descr">
+                  Повторите пароль
+                </span>
+                <input class="form-auth__input border-radius" type="text" required>
+              </label>
+            </div>
+            <button class="form-auth__btn btn" type="submit">
+              зарегистрироваться
+            </button>
+          </form>
+        </div>
+        <div class="tabs__box" data-tabs-box="2">
+          <form class="form-auth form-auth--login" action="#">
+            <div class="form-auth__box">
+              <label class="form-auth__label">
+                <span class="form-auth__descr">
+                  E-mail (телефон)
+                </span>
+                <input class="form-auth__input border-radius" type="text" required>
+              </label>
+              <label class="form-auth__label form-auth__label--support">
+                <span class="form-auth__descr">
+                  Пароль
+                </span>
+                <input class="form-auth__input border-radius" type="text" required>
+                <span class="form-auth__right">
+                  <a class="form-auth__sup" href="#">Забыли пароль?</a>
+                </span>
+              </label>
+            </div>
+            <button class="form-auth__btn btn" type="submit">
+              войти
+            </button>
+            <div class="centred">
+              <p class="form-auth__text">
+                Или войдите через
+              </p>
+            </div>
+            <ul class="social" title="Социальные сети">
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank" rel="noreferrer noopener" aria-label="Наша страничка в Фейсбуке" style="background-image: url('./images/icons/fb.svg');"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank" rel="noreferrer noopener" aria-label="Наша страничка в Яндексе" style="background-image: url('./images/icons/yan.svg');"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank" rel="noreferrer noopener" aria-label="Наша страничка в твитере" style="background-image: url('./images/icons/tw.svg');"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank" rel="noreferrer noopener" aria-label="Наша страничка в вконтаке" style="background-image: url('./images/icons/vk.svg');"></a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank" rel="noreferrer noopener" aria-label="Наша страничка в гугл" style="background-image: url('./images/icons/google.svg');"></a>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
