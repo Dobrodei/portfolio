@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.1/swiper-bundle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/choices.js/10.2.0/choices.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  
+  <main class="main">
+    <div class="widget">
+  <div class="swiper widget__slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" data-slide="start">
+        <div class="widget__box widget-start">
+          <h3 class="widget__title">
+            Выберите номинал карты
+          </h3>
+          <form class="widget__form" action="#" data-form="start">
+            <label class="widget__label widget__label--mb">
+              <span class="sr-only">
+                Номининал карты
+              </span>
+              <select class="widget__select" name="select">
+                <option value="30">30 €</option>
+                <option value="35">35 €</option>
+                <option value="40">40 €</option>
+                <option value="45">45 €</option>
+                <option value="50">50 €</option>
+                <option value="55">55 €</option>
+                <option value="60">60 €</option>
+                <option value="65">65 €</option>
+                <option value="70">70 €</option>
+                <option value="75">75 €</option>
+              </select>
+            </label>
+            <label class="widget__label">
+              <span class="sr-only">
+                Введите имя и фамилию
+              </span>
+              <input class="widget__input input-fullname" type="text" name="fullName" placeholder="Имя и Фамилия">
+            </label>
+            <label class="widget__label">
+              <span class="sr-only">
+                Введите E-mail
+              </span>
+              <input class="widget__input input-email" type="email" name="email" placeholder="E-mail">
+            </label>
+            <label class="widget__label">
+              <span class="sr-only">
+                Номер телефона*
+              </span>
+              <input class="widget__input input-phone" type="email" name="email" placeholder="Номер телефона*" required>
+            </label>
+            <span class="widget__descr">
+              *Для получения проверочных кодов 3D Secure
+            </span>
+            <h4 class="widget__subtitle">
+              Выберите способ оплаты
+            </h4>
+            <div class="widget__flex">
+              <label class="widget__label" for="radio-usdt">
+                <input class="widget__checked sr-only" type="radio" id="radio-usdt" name="radio-button" value="usdt" checked required>
+                <span class="widget__radio widget__radio--usdt">
+                  usdt
+                </span>
+              </label>
+              <label class="widget__label" for="radio-rub">
+                <input class="widget__checked sr-only" type="radio" id="radio-rub" name="radio-button" value="card" required>
+                <span class="widget__radio widget__radio--cards">
+                  rub
+                </span>
+              </label>
+            </div>
+            <div class="widget__wrapper">
+              <span class="widget__price">
+                К оплате: <span>157,17 USDT </span>
+              </span>
+              <button class="widget__btn" type="submit">
+                Выпустить карту
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="swiper-slide" data-slide="usdt">
+        <div class="widget__box widget__box--usdt">
+          <h3 class="widget__title">
+            Оплата в USDT
+          </h3>
+          <div class="widget__timer">
+            <span class="widget__time">
+              29:59
+            </span>
+            <span class="widget__mins">
+              <span>
+                Мин.
+              </span>
+              <span>
+                Сек.
+              </span>
+            </span>
+          </div>
+          <div class="tabs">
+            <ul class="tabs__nav">
+              <li class="tabs__nav-item">
+                <button class="tabs__nav-btn tabs__nav-btn--active" type="button" data-tab="tab1">
+                  Tether (ERC-20)
+                </button>
+              </li>
+              <li class="tabs__nav-item">
+                <button class="tabs__nav-btn" type="button" data-tab="tab2">
+                  Tether (TRC-20)
+                </button>
+              </li>
+            </ul>
+            <div class="tabs__content">
+              <div class="tabs__panel tabs__panel--visible" data-tabBox="tab1">
+                <div class="tabs__wrapper">
+                  <label class="tabs__label">
+                    <span class="sr-only">Код для оплты</span>
+                    <input class="tabs__input" type="text" value="0x9F9aB0329b37aC58986E95028c2e77b6f99135f7">
+                  </label>
+                  <button class="tabs__copy" aria-label="Скопировать"></button>
+                </div>
+                <div class="tabs__qrcode">
+                  <img src="./images/qr.png" alt="qrcode" width="140" height="140">
+                </div>
+                <p class="tabs__descr">
+                  Убедитесь в использовании выбранной сети ERC-20
+                </p>
+              </div>
+              <div class="tabs__panel" data-tabBox="tab2">
+                <div class="tabs__wrapper">
+                  <label class="tabs__label">
+                    <input class="tabs__input" type="text" value="0x9F9aB0329b37aC58986E95028c2e77b6f99135f7">
+                  </label>
+                  <button class="tabs__copy" aria-label="Скопировать"></button>
+                </div>
+                <div class="tabs__qrcode">
+                  <img src="./images/qr.png" alt="qrcode" width="140" height="140">
+                </div>
+                <p class="tabs__descr">
+                  Убедитесь в использовании выбранной сети (TRC-20)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="widget__wrapper widget__wrapper--remove">
+            <span class="widget__price">
+              К оплате: <span>157,17 USDT </span>
+            </span>
+            <a class="widget__btn" href="https://prosto.cards/thanks.html">
+              Я оплатил
+            </a>
+            <button class="widget__remove" type="button">
+              Отказаться от оплаты
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide" data-slide="card">
+        <div class="widget__box">
+          <h3 class="widget__title">
+            Оплата картой
+          </h3>
+          <form class="form-card" action="#">
+            <ul class="form-card__list">
+              <li class="form-card__item">
+                <div class="form-card__img">
+                  <img src="./images/visa.png" alt="visa card" width="45" height="18">
+                </div>
+              </li>
+              <li class="form-card__item">
+                <div class="form-card__img">
+                  <img src="./images/mir.png" alt="mir card" width="45" height="18">
+                </div>
+              </li>
+              <li class="form-card__item">
+                <div class="form-card__img">
+                  <img src="./images/mastercard.png" alt="mastercard card" width="50" height="40">
+                </div>
+              </li>
+            </ul>
+            <div class="form-card__container">
+              <div class="form-card__row">
+                <label class="form-card__label">
+                  <span class="sr-only">
+                    Введите номер карты
+                  </span>
+                  <input class="form-card__input pay-input-card" type="text" placeholder="Номер карты">
+                </label>
+              </div>
+              <div class="form-card__row form-card__row--flex">
+                <label class="form-card__label">
+                  <span class="sr-only">
+                    Введите месяц карты
+                  </span>
+                  <input class="form-card__input pay-input-month" type="text" placeholder="MM">
+                </label>
+                <label class="form-card__label">
+                  <span class="sr-only">
+                    Введите год карты
+                  </span>
+                  <input class="form-card__input pay-input-year" type="text" placeholder="YY">
+                </label>
+                <label class="form-card__label">
+                  <span class="sr-only">
+                    Введите CVV карты
+                  </span>
+                  <input class="form-card__input pay-input-cvc" type="text" placeholder="CVV">
+                </label>
+              </div>
+              <div class="form-card__row">
+                <label class="form-card__label">
+                  <span class="sr-only">
+                    Введите имя держателя карты карты
+                  </span>
+                  <input class="form-card__input pay-input-user" type="text" placeholder="Имя держателя карты">
+                </label>
+              </div>
+            </div>
+            <div class="widget__wrapper widget__wrapper--remove">
+              <span class="widget__price">
+                К оплате: <span>157,17 USDT </span>
+              </span>
+              <button class="widget__btn" type="submit">
+                Я оплатил
+              </button>
+              <button class="widget__remove" type="button">
+                Отказаться от оплаты
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.1/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/just-validate@4.2.0/dist/just-validate.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/choices.js/10.2.0/choices.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
