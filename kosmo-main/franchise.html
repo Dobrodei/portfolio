@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+ <html lang="ru">
+
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>Планетарий с технологией FullDome - кинотеатра и углом обзора в 360°</title>
+   <link rel="preload" as="font" href="./fonts/Gilroy-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" as="font" href="./fonts/Gilroy-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+   <link rel="preload" as="font" href="./fonts/Gilroy-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+   <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+   <link href="favicon.ico" rel="icon" type="image/x-icon">
+ </head>
+
+ <body class="body body--franchise" id="body">
+
+   <main class="main">
+     <h1 class="sr-only">
+       Франшиза космо-центра
+     </h1>
+     <section class="franchise">
+  <div class="container">
+    <div class="franchise__wrapper">
+      <h2 class="franchise__title title">
+        Разработка и продвижение FullDome кинотеатров
+      </h2>
+      <div class="franchise__flex">
+        <div class="franchise__content">
+          <p class="franchise__text">
+            Мы всегда открыты к сотрудничеству и готовы помочь вам в организации нового Планетария в Вашем родном городе. Нашим партнерам доступны: консультирование по технической и организационной части работы, обучение персонала и даже создание работоспособного FullDome кинотеатра под ключ.
+          </p>
+          <button class="franchise__btn btn" data-modal="franchise">
+            Связаться
+          </button>
+        </div>
+        <div class="franchise__img">
+          <img src="./images/all-img/servatoriy.png" alt="Серваторий" width="500" height="500">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+   </main>
+   <div class="modal" data-modal="franchise">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content">
+      <form class="feedback-form" action="#" data-form="franchise">
+        <h3 class="feedback-form__title">
+          Консультация
+        </h3>
+        <p class="feedback-form__descr">
+          Мы вам перезвоним в течение 20 мин
+        </p>
+        <label class="feedback-form__label">
+          <span class="sr-only">
+            Введите ваше имя
+          </span>
+          <input class="feedback-form__input input-name-franchise" type="text" data-validate-field="name" name="Имя" placeholder="Имя">
+        </label>
+        <label class="feedback-form__label">
+          <span class="sr-only">
+            Введите ваш мобильный телефон
+          </span>
+          <input class="feedback-form__input input-tel-franchise" type="tel" data-validate-field="tel" name="Телефон" placeholder="+7">
+        </label>
+        <label class="feedback-form__label">
+          <span class="sr-only">
+            Введите ваше сообщение
+          </span>
+          <textarea class="feedback-form__textarea input-message-franchise" placeholder="Введите ваше сообщение" name="Сообщение" data-validate-field="message"></textarea>
+        </label>
+        <label class="checkbox" for="checkbox-data">
+          <span class="checkbox__box">
+            <input class="checkbox__input checkbox-franchise" id="checkbox-data" type="checkbox" checked required>
+            <span class="checkbox__check"></span>
+          </span>
+          <span class="checkbox__text">
+            Согласие на <a class="checkbox__link" href="policy.html">обработку персональных данных.</a>
+          </span>
+        </label>
+        <button class="feedback-form__btn btn" type="submit">
+          Отправить
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+   <div class="modal modal--received" data-modal="received">
+  <div class="modal__container" role="dialog" aria-modal="true">
+    <button class="modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="modal__content">
+      <span class="modal__title">
+        Спасибо!
+      </span>
+      <p class="modal__text">
+        Ваша заявка получена, мы вам перезвоним
+      </p>
+      <button class="modal__btn btn">
+        Закрыть
+      </button>
+    </div>
+  </div>
+</div>
+
+
+   <script src="js/main.min.js"></script>
+ </body>
+
+ </html>
