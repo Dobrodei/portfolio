@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Kliger</title>
+  <link rel="preload" as="font" href="./fonts/Raleway-Light.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Raleway-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/CormorantSC-Light.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/CormorantSC-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body class="body body--black" id="body">
+
+  <header class="header header--white">
+  <a class="header__logo" href="#">
+    <svg>
+      <use xlink:href="./images/sprite.svg#logo"></use>
+    </svg>
+  </a>
+  <button class="burger-btn" aria-label="Открыть меню" aria-expanded="false">
+    <span class="burger-btn__line"></span>
+  </button>
+  <div class="header__wrapper">
+    <nav class="nav" title="Навигация по сайту">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+            Запросы
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+            услуги
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+            почему я?
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="header__social">
+      <li class="header__item">
+        <a class="header__link" href="#">
+          telegram
+        </a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">
+          email
+        </a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">
+          instagram
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+<!-- <header class="header header--white">
+  <a class="header__logo" href="#">
+    <img src="./images/logo-white.svg" alt="logo">
+  </a>
+  <nav class="header__nav">
+    <ul class="header__list">
+      <li class="header__item">
+        <a class="header__link" href="#">
+          Запросы
+        </a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">
+          услуги
+        </a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">
+          почему я?
+        </a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">
+          Контакты
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header> -->
+  <main class="main main--offsetY">
+    <h1 class='sr-only'>
+      Психолог & сексолог
+    </h1>
+    <section class="panel hero hero--main">
+  <div class="hero__wrapper">
+    <div class="hero__img">
+      <img src="./images/all-img/hero-main.jpg" aria-hidden='true' alt="bg">
+    </div>
+    <h2 class="hero__title">
+      Запросы
+    </h2>
+  </div>
+</section>
+    <section class="faq container">
+  <h2 class="sr-only">
+    faq
+  </h2>
+  <div class="faq__row">
+    <ul class="navigation">
+      <li class="navigation__item">
+        <a class="navigation__link navigation__link--active" href="#">
+          Мужчины
+        </a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="#">
+          женщины
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="faq__row faq__row--padding">
+    <ul class="faq__list">
+      <li class="faq__item">
+        <div class="faq__wrapper">
+          <div class="faq__header">
+            <h3 class="faq__subtitle">
+              Как понять действительно ли меня любят?
+            </h3>
+            <button class="faq__btn" aria-label='Открыть закрыть вопрос'>
+            </button>
+          </div>
+          <div class="faq__text">
+            <p>Вам приходится выпрашивать благодарность и уважение в свой адрес? Постоянно чувствуете, что вас
+              используют
+              и обесценивают? Выстроить гармоничные отношения с людьми бывает непросто, но возможно, применив правильные
+              инструменты. К вам относятся ровно так, как вы себя позиционируете. Правильно обозначать себя в
+              пространстве
+              вам позволит система из грамотно выстроенных личных границ и вербальных, невербальных проявлений. Помощь в
+              конструировании схемы и ее последующей реализации я могу предоставить в своем кабинете.</p>
+          </div>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__wrapper">
+          <div class="faq__header">
+            <h3 class="faq__subtitle">
+              Как понять действительно ли меня любят?
+            </h3>
+            <button class="faq__btn" aria-label='Открыть закрыть вопрос'>
+            </button>
+          </div>
+          <div class="faq__text">
+            <p>Вам приходится выпрашивать благодарность и уважение в свой адрес? Постоянно чувствуете, что вас
+              используют
+              и обесценивают? Выстроить гармоничные отношения с людьми бывает непросто, но возможно, применив правильные
+              инструменты. К вам относятся ровно так, как вы себя позиционируете. Правильно обозначать себя в
+              пространстве
+              вам позволит система из грамотно выстроенных личных границ и вербальных, невербальных проявлений. Помощь в
+              конструировании схемы и ее последующей реализации я могу предоставить в своем кабинете.</p>
+          </div>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__wrapper faq__wrapper--visible">
+          <div class="faq__header">
+            <h3 class="faq__subtitle">
+              Как понять действительно ли меня любят?
+            </h3>
+            <button class="faq__btn" aria-label='Открыть закрыть вопрос'>
+            </button>
+          </div>
+          <div class="faq__text">
+            <p>Вам приходится выпрашивать благодарность и уважение в свой адрес? Постоянно чувствуете, что вас
+              используют
+              и обесценивают? Выстроить гармоничные отношения с людьми бывает непросто, но возможно, применив правильные
+              инструменты. К вам относятся ровно так, как вы себя позиционируете. Правильно обозначать себя в
+              пространстве
+              вам позволит система из грамотно выстроенных личных границ и вербальных, невербальных проявлений. Помощь в
+              конструировании схемы и ее последующей реализации я могу предоставить в своем кабинете.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="faq__img faq__img--full">
+      <img src="./images/all-img/faq-img1.jpg" alt="Екатерина Юзефовна">
+    </div>
+  </div>
+  <div class="faq__row faq__row--reverse">
+    <ul class="faq__list">
+      <li class="faq__item">
+        <div class="faq__wrapper">
+          <div class="faq__header">
+            <h3 class="faq__subtitle">
+              Как понять действительно ли меня любят?
+            </h3>
+            <button class="faq__btn" aria-label='Открыть закрыть вопрос'>
+            </button>
+          </div>
+          <div class="faq__text">
+            <p>Вам приходится выпрашивать благодарность и уважение в свой адрес? Постоянно чувствуете, что вас
+              используют
+              и обесценивают? Выстроить гармоничные отношения с людьми бывает непросто, но возможно, применив правильные
+              инструменты. К вам относятся ровно так, как вы себя позиционируете. Правильно обозначать себя в
+              пространстве
+              вам позволит система из грамотно выстроенных личных границ и вербальных, невербальных проявлений. Помощь в
+              конструировании схемы и ее последующей реализации я могу предоставить в своем кабинете.</p>
+          </div>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__wrapper">
+          <div class="faq__header">
+            <h3 class="faq__subtitle">
+              Как понять действительно ли меня любят?
+            </h3>
+            <button class="faq__btn" aria-label='Открыть закрыть вопрос'>
+            </button>
+          </div>
+          <div class="faq__text">
+            <p>Вам приходится выпрашивать благодарность и уважение в свой адрес? Постоянно чувствуете, что вас
+              используют
+              и обесценивают? Выстроить гармоничные отношения с людьми бывает непросто, но возможно, применив правильные
+              инструменты. К вам относятся ровно так, как вы себя позиционируете. Правильно обозначать себя в
+              пространстве
+              вам позволит система из грамотно выстроенных личных границ и вербальных, невербальных проявлений. Помощь в
+              конструировании схемы и ее последующей реализации я могу предоставить в своем кабинете.</p>
+          </div>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__wrapper">
+          <div class="faq__header">
+            <h3 class="faq__subtitle">
+              Как понять действительно ли меня любят?
+            </h3>
+            <button class="faq__btn" aria-label='Открыть закрыть вопрос'>
+            </button>
+          </div>
+          <div class="faq__text">
+            <p>Вам приходится выпрашивать благодарность и уважение в свой адрес? Постоянно чувствуете, что вас
+              используют
+              и обесценивают? Выстроить гармоничные отношения с людьми бывает непросто, но возможно, применив правильные
+              инструменты. К вам относятся ровно так, как вы себя позиционируете. Правильно обозначать себя в
+              пространстве
+              вам позволит система из грамотно выстроенных личных границ и вербальных, невербальных проявлений. Помощь в
+              конструировании схемы и ее последующей реализации я могу предоставить в своем кабинете.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="faq__img">
+      <img src="./images/all-img/faq-img2.jpg" alt="Екатерина Юзефовна">
+    </div>
+  </div>
+  <div class="faq__row">
+    <ul class="faq__list">
+      <li class="faq__item">
+        <div class="faq__wrapper">
+          <div class="faq__header">
+            <h3 class="faq__subtitle">
+              Как понять действительно ли меня любят?
+            </h3>
+            <button class="faq__btn" aria-label='Открыть закрыть вопрос'>
+            </button>
+          </div>
+          <div class="faq__text">
+            <p>Вам приходится выпрашивать благодарность и уважение в свой адрес? Постоянно чувствуете, что вас
+              используют
+              и обесценивают? Выстроить гармоничные отношения с людьми бывает непросто, но возможно, применив правильные
+              инструменты. К вам относятся ровно так, как вы себя позиционируете. Правильно обозначать себя в
+              пространстве
+              вам позволит система из грамотно выстроенных личных границ и вербальных, невербальных проявлений. Помощь в
+              конструировании схемы и ее последующей реализации я могу предоставить в своем кабинете.</p>
+          </div>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__wrapper">
+          <div class="faq__header">
+            <h3 class="faq__subtitle">
+              Как понять действительно ли меня любят?
+            </h3>
+            <button class="faq__btn" aria-label='Открыть закрыть вопрос'>
+            </button>
+          </div>
+          <div class="faq__text">
+            <p>Вам приходится выпрашивать благодарность и уважение в свой адрес? Постоянно чувствуете, что вас
+              используют
+              и обесценивают? Выстроить гармоничные отношения с людьми бывает непросто, но возможно, применив правильные
+              инструменты. К вам относятся ровно так, как вы себя позиционируете. Правильно обозначать себя в
+              пространстве
+              вам позволит система из грамотно выстроенных личных границ и вербальных, невербальных проявлений. Помощь в
+              конструировании схемы и ее последующей реализации я могу предоставить в своем кабинете.</p>
+          </div>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__wrapper">
+          <div class="faq__header">
+            <h3 class="faq__subtitle">
+              Как понять действительно ли меня любят?
+            </h3>
+            <button class="faq__btn" aria-label='Открыть закрыть вопрос'>
+            </button>
+          </div>
+          <div class="faq__text">
+            <p>Вам приходится выпрашивать благодарность и уважение в свой адрес? Постоянно чувствуете, что вас
+              используют
+              и обесценивают? Выстроить гармоничные отношения с людьми бывает непросто, но возможно, применив правильные
+              инструменты. К вам относятся ровно так, как вы себя позиционируете. Правильно обозначать себя в
+              пространстве
+              вам позволит система из грамотно выстроенных личных границ и вербальных, невербальных проявлений. Помощь в
+              конструировании схемы и ее последующей реализации я могу предоставить в своем кабинете.</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="faq__img">
+      <img src="./images/all-img/faq-img3.jpg" alt="Екатерина Юзефовна">
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="footer container">
+  <div class="footer__wrapper">
+    <a class="footer__link" href="#">
+      политика конфиденциальности
+    </a>
+    <span class="footer__copy">
+      2023© все права защищены
+    </span>
+  </div>
+</footer>
+  <div class="fixed-feedback">
+  <div class="fixed-feedback__content">
+    <div class="fixed-feedback__img">
+      <img src="./images/all-img/contacts-img.png" alt="Екатерина Юзефовна" width='58' height='58'>
+    </div>
+    <div class="fixed-feedback__info">
+      <span class="fixed-feedback__name">
+        Екатерина
+      </span>
+      <span class="fixed-feedback__job">
+        психолог & сексолог
+      </span>
+    </div>
+  </div>
+  <a class="fixed-feedback__link" href="feedback.html">
+    Записаться
+  </a>
+</div>
+  
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
