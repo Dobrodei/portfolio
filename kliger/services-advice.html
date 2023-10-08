@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Kliger</title>
+  <link rel="preload" as="font" href="./fonts/Raleway-Light.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Raleway-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/CormorantSC-Light.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/CormorantSC-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body class="body body--black" id="body">
+
+  <header class="header header--white">
+  <a class="header__logo" href="#">
+    <svg>
+      <use xlink:href="./images/sprite.svg#logo"></use>
+    </svg>
+  </a>
+  <button class="burger-btn" aria-label="Открыть меню" aria-expanded="false">
+    <span class="burger-btn__line"></span>
+  </button>
+  <div class="header__wrapper">
+    <nav class="nav" title="Навигация по сайту">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="faq.html">
+            Запросы
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="services-advice.html">
+            услуги
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="about.html">
+            почему я?
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="contacts.html">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="header__social">
+      <li class="header__item">
+        <a class="header__link" href="#">
+          telegram
+        </a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">
+          email
+        </a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">
+          instagram
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+<!-- <header class="header header--white">
+  <a class="header__logo" href="#">
+    <img src="./images/logo-white.svg" alt="logo">
+  </a>
+  <nav class="header__nav">
+    <ul class="header__list">
+      <li class="header__item">
+        <a class="header__link" href="#">
+          Запросы
+        </a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">
+          услуги
+        </a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">
+          почему я?
+        </a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">
+          Контакты
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header> -->
+  <main class="main main--offsetY">
+    <!-- <main class="main main--mt"> -->
+    <h1 class='sr-only'>
+      Психолог & сексолог
+    </h1>
+    <section class="panel hero hero--main" data-mobile="true">
+  <div class="hero__wrapper">
+    <div class="hero__img">
+      <img src="./images/all-img/hero-main.jpg" aria-hidden='true' alt="bg">
+    </div>
+    <h2 class="hero__title">
+      Услуги
+    </h2>
+  </div>
+</section>
+    <section class="services container container-padding">
+  <h2 class="sr-only">
+    Мои услуги
+  </h2>
+  <div class="services__nav">
+    <ul class="navigation">
+      <li class="navigation__item">
+        <a class="navigation__link navigation__link--active" href="#">
+          Консультативный пакет услуг
+        </a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link" href="services-therapy.html">
+          Терапевтический пакет услуг
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="services__row">
+    <div class="services__img">
+      <img src="./images/all-img/services-img1.jpg" aria-hidden='true' alt="Екатерина Юзефовна" width='280'
+        height='360'>
+    </div>
+    <div class="services__box">
+      <span class="services__descr">
+        Что входит?
+      </span>
+      <ul class="services__list">
+        <li class="services__item">
+          <p class="services__point">
+            10 сессий по 55 минут
+          </p>
+        </li>
+        <li class="services__item">
+          <p class="services__point">
+            индивидуальный набор доп. материалов (Литература и практики)
+          </p>
+        </li>
+        <li class="services__item">
+          <p class="services__point">
+            комплект психологических тестов
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="services__row">
+    <div class="services__box">
+      <div class="services__heading">
+        <h3 class="services__subtitle">
+          Ознакомительная консультация
+        </h3>
+        <span class="services__text">
+          Бесплатно
+        </span>
+      </div>
+      <span class="services__descr">
+        Стоимость пакета услуг
+      </span>
+      <ul class="services__list">
+        <li class="services__item">
+          <div class="services__flex">
+            <span class="services__price">
+              35.000₽
+            </span>
+            <span class="services__text">
+              (оплата в два этапа)
+            </span>
+          </div>
+        </li>
+        <li class="services__item">
+          <div class="services__flex">
+            <span class="services__price">
+              4.000₽
+            </span>
+            <span class="services__text">
+              (оплата за доп. час)
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="services__img services__img--none">
+      <img src="./images/all-img/services-img2.jpg" aria-hidden='true' alt="Екатерина Юзефовна" width='280'
+        height='380'>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="footer container">
+  <div class="footer__wrapper">
+    <a class="footer__link" href="#">
+      политика конфиденциальности
+    </a>
+    <span class="footer__copy">
+      2023© все права защищены
+    </span>
+  </div>
+</footer>
+  <div class="fixed-feedback">
+  <div class="fixed-feedback__content">
+    <div class="fixed-feedback__img">
+      <img src="./images/all-img/contacts-img.png" alt="Екатерина Юзефовна" width='58' height='58'>
+    </div>
+    <div class="fixed-feedback__info">
+      <span class="fixed-feedback__name">
+        Екатерина
+      </span>
+      <span class="fixed-feedback__job">
+        психолог & сексолог
+      </span>
+    </div>
+  </div>
+  <a class="fixed-feedback__link" href="feedback.html">
+    Записаться
+  </a>
+</div>
+  <div class="loader">
+  <div class="loader__logo">
+    <svg class='blinking-icon'>
+      <use xlink:href="./images/sprite.svg#logo"></use>
+    </svg>
+  </div>
+  <span class="loader__descr">
+    DR.K
+  </span>
+  <span class="loader__name">
+    Ekaterina Yuzefovna
+  </span>
+</div>
+  
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

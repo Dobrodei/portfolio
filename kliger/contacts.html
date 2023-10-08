@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Kliger</title>
+  <link rel="preload" as="font" href="./fonts/Raleway-Light.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Raleway-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/CormorantSC-Light.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/CormorantSC-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body class="body body--black" id="body">
+
+  <header class="header header--white">
+  <a class="header__logo" href="#">
+    <svg>
+      <use xlink:href="./images/sprite.svg#logo"></use>
+    </svg>
+  </a>
+  <button class="burger-btn" aria-label="Открыть меню" aria-expanded="false">
+    <span class="burger-btn__line"></span>
+  </button>
+  <div class="header__wrapper">
+    <nav class="nav" title="Навигация по сайту">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="faq.html">
+            Запросы
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="services-advice.html">
+            услуги
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="about.html">
+            почему я?
+          </a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="contacts.html">
+            Контакты
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="header__social">
+      <li class="header__item">
+        <a class="header__link" href="#">
+          telegram
+        </a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">
+          email
+        </a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">
+          instagram
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+<!-- <header class="header header--white">
+  <a class="header__logo" href="#">
+    <img src="./images/logo-white.svg" alt="logo">
+  </a>
+  <nav class="header__nav">
+    <ul class="header__list">
+      <li class="header__item">
+        <a class="header__link" href="#">
+          Запросы
+        </a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">
+          услуги
+        </a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">
+          почему я?
+        </a>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">
+          Контакты
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header> -->
+  <main class="main main--offsetY">
+    <h1 class='sr-only'>
+      Психолог & сексолог
+    </h1>
+    <section class="panel hero hero--main" data-mobile="true">
+  <div class="hero__wrapper">
+    <div class="hero__img">
+      <img src="./images/all-img/hero-main.jpg" aria-hidden='true' alt="bg">
+    </div>
+    <h2 class="hero__title">
+      Контакты
+    </h2>
+  </div>
+</section>
+    <section class="contacts container container-padding">
+  <!-- <div class="container container-padding"> -->
+  <h2 class="sr-only">
+    Контакты Екатерины Юзефовны
+  </h2>
+  <div class="contacts__row">
+    <h3 class="contacts__title">
+      соц.сети для связи
+    </h3>
+    <div class="contacts__box">
+      <h4 class="contacts__subtitle">
+        Telegram
+      </h4>
+      <div class="contacts__card">
+        <div class="contacts__info">
+          <div class="contacts__author">
+            <img src="./images/all-img/contacts-img.png" alt="Екатерина Юзефовна" width='53' height='53'>
+          </div>
+          <div class="contacts__inner">
+            <span class="contacts__name">
+              Екатерина
+            </span>
+            <a class="contacts__tg" href="https://t.me/dryuzefovna">
+              @dryuzefovna
+            </a>
+          </div>
+        </div>
+        <a class="contacts__link" href="https://t.me/dryuzefovna">
+          Перейти
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="contacts__row contacts__row--slider">
+    <div class="swiper contacts__slider" data-mobile='false'>
+      <div class="swiper-wrapper">
+        <div class="contacts__slide slider-container__slide">
+          <div class="contacts__img contacts__img--medium">
+            <img src="./images/all-img/contacts-demo.jpg" alt="Фото кабинета">
+          </div>
+        </div>
+        <div class="contacts__slide slider-container__slide contacts__slide--mt">
+          <div class="contacts__img contacts__img--small">
+            <img src="./images/all-img/contacts-demo.jpg" alt="Екатерина Юзефовна">
+          </div>
+        </div>
+        <div class="contacts__slide slider-container__slide">
+          <div class="contacts__img contacts__img--big">
+            <img src="./images/all-img/contacts-demo.jpg" alt="Фото кабинета">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contacts__row contacts__row--full">
+    <div class="contacts__bottom container container-padding">
+      <div class="contacts__col">
+        <div class="contacts__item">
+          <span class="contacts__descr">
+            адрес:
+          </span>
+          <address class="contacts__address">
+            г. Санкт-Петербург
+            ул. Садовая
+            д. 35
+            оф. 112
+          </address>
+        </div>
+        <div class="contacts__item">
+          <span class="contacts__descr">
+            телефон:
+          </span>
+          <a class="contacts__tel" href="tel:+7(999)9909087">
+            +7 (999) 990-90-87
+          </a>
+        </div>
+      </div>
+      <div class="contacts__map">
+        <img src="./images/all-img/map.jpg" alt="Карта">
+      </div>
+    </div>
+    <!-- </div> -->
+</section>
+  </main>
+  <footer class="footer container">
+  <div class="footer__wrapper">
+    <a class="footer__link" href="#">
+      политика конфиденциальности
+    </a>
+    <span class="footer__copy">
+      2023© все права защищены
+    </span>
+  </div>
+</footer>
+  <div class="fixed-feedback">
+  <div class="fixed-feedback__content">
+    <div class="fixed-feedback__img">
+      <img src="./images/all-img/contacts-img.png" alt="Екатерина Юзефовна" width='58' height='58'>
+    </div>
+    <div class="fixed-feedback__info">
+      <span class="fixed-feedback__name">
+        Екатерина
+      </span>
+      <span class="fixed-feedback__job">
+        психолог & сексолог
+      </span>
+    </div>
+  </div>
+  <a class="fixed-feedback__link" href="feedback.html">
+    Записаться
+  </a>
+</div>
+  <div class="loader">
+  <div class="loader__logo">
+    <svg class='blinking-icon'>
+      <use xlink:href="./images/sprite.svg#logo"></use>
+    </svg>
+  </div>
+  <span class="loader__descr">
+    DR.K
+  </span>
+  <span class="loader__name">
+    Ekaterina Yuzefovna
+  </span>
+</div>
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
