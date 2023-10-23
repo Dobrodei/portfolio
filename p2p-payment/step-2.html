@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>P2P form</title>
+  <link rel="preload" as="font" href="./fonts/TTNorms-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/TTNorms-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body" id="body">
+
+  <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="header__logo" href="#">p2p</a>
+      <div class="header__flex">
+        <a class="header__link" href='#'>
+          Terms & Conditions
+        </a>
+        <!-- <div class="header__select">
+
+        </div> -->
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <h1 class="sr-only">
+      Страница оплаты
+    </h1>
+    <section class="payment-section">
+      <div class="container">
+        <div class="payment-section__inner">
+          <div class="payment-section__info">
+            <div class="payment-info bg-white border-radius">
+  <div class="payment-info__row">
+    <span class="payment-info__descr">
+      Order
+    </span>
+    <div class="payment-info__box">
+      <span class="payment-info__order">
+        #test_1695030089
+      </span>
+      <div class="payment-info__id">
+        ID: 556894209437
+      </div>
+    </div>
+  </div>
+  <div class="payment-info__row">
+    <span class="payment-info__descr">
+      Amount
+    </span>
+    <span class="payment-info__price">
+      $ 1 000,00
+    </span>
+  </div>
+</div>
+            <div class="payment-attention border-radius bg-white">
+  <span class="payment-attention__title">
+    Attention
+  </span>
+  <ul class="payment-attention__list">
+    <li class="payment-attention__item">
+      <p class="payment-attention__descr payment-attention__descr--chat">
+        It is strictly forbidden to enter any comments in the banking application when transferring funds.
+      </p>
+    </li>
+    <li class="payment-attention__item">
+      <p class="payment-attention__descr payment-attention__descr--money">
+        The transfer amount must be the same as in the application form, with all decimal places considered. No
+        crediting of underpaid or overpaid funds will be made.
+      </p>
+    </li>
+    <li class="payment-attention__item">
+      <p class="payment-attention__descr payment-attention__descr--transfer">
+        The funds are sent by intra-bank transfer or according to the rules of the selected payment system. For bank
+        transfers, the funds must be sent from the bank selected in the order.
+      </p>
+    </li>
+  </ul>
+</div>
+          </div>
+          <div class="payment-section__steps">
+            <div class="payment-steps bg-white border-radius">
+  <ol class="payment-steps__list">
+    <li class="payment-steps__item">
+      <div class="payment-steps__box payment-steps__box--active">
+        <p class="payment-steps__descr">
+          Set Options
+        </p>
+      </div>
+    </li>
+    <li class="payment-steps__item">
+      <div class="payment-steps__box payment-steps__box--active">
+        <p class="payment-steps__descr">
+          Transfer Funds
+        </p>
+      </div>
+    </li>
+    <li class="payment-steps__item">
+      <div class="payment-steps__box">
+        <p class="payment-steps__descr">
+          Confirm
+        </p>
+      </div>
+    </li>
+  </ol>
+</div>
+            <div class="step-option bg-white border-radius">
+  <div class="step-option__container step-qr">
+    <div class="step-qr__header">
+      <span class="step-qr__timer">
+        You can pay within <span>19 min 59 sec</span>
+      </span>
+      <p class="step-qr__text">
+        Log in to your internet bank and make a transfer according to the deals
+      </p>
+    </div>
+    <div class="step-qr__box">
+      <span class="step-qr__descr">
+        QR Code (One time use only)
+      </span>
+      <div class="step-qr__flex">
+        <div class="step-qr__code">
+          qr
+        </div>
+        <div class="step-qr__col">
+          <label class="input-copy input-copy--uncopy">
+            <span class="input-copy__descr">
+              Time of creation
+            </span>
+            <input class="input-copy__field" value='18.09.23 | 18:02 IST' type="text" readonly>
+            <button class="input-copy__btn" aria-label='copy'></button>
+          </label>
+          <label class="input-copy input-copy--uncopy">
+            <span class="input-copy__descr">
+              Amount
+            </span>
+            <input class="input-copy__field" value='92 597 INR' type="text" readonly>
+            <button class="input-copy__btn" aria-label='copy'></button>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            <div class="step-option bg-white border-radius">
+  <div class="step-option__container">
+    <ul class="step-option__list">
+      <li class="step-option__item">
+        <label class="input-copy">
+          <span class="input-copy__descr">
+            UPI
+          </span>
+          <input class="input-copy__field" value='georgiy@tst' type="text" readonly>
+          <button class="input-copy__btn" aria-label='copy'></button>
+        </label>
+      </li>
+      <li class="step-option__item">
+        <label class="label-input">
+          <span class="label-input__descr">
+            Reference No. (RRN) or UTR No.:
+          </span>
+          <input class="label-input__field" type="text" placeholder='Reference No. (RRN) or UTR No.:'>
+          <span class="label-input__text">
+            Only 12 digits
+          </span>
+        </label>
+      </li>
+      <li class="step-option__item">
+        <label class="label-input">
+          <span class="label-input__descr">
+            Screenshot of a transfer
+          </span>
+          <input class="label-input__field" type="text" placeholder='Screenshot of a transfer'>
+          <span class="label-input__text label-input__text--red">
+            Not attaching a receipt will delay the deposit
+          </span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+            <div class="step-option bg-white border-radius">
+  <div class="step-option__container">
+    <div class="step-option__prices">
+      <span class="step-option__descr">
+        Amount
+      </span>
+      <span class="step-option__price">
+        $ 10 000,00
+      </span>
+    </div>
+    <div class="step-option__btns">
+      <button class="step-option__btn">
+        Confirm
+      </button>
+      <button class="step-option__btn step-option__btn--gray">
+        Cancel
+      </button>
+    </div>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  
+  
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
