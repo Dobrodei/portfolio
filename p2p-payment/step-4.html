@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>P2P form</title>
+  <link rel="preload" as="font" href="./fonts/TTNorms-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/TTNorms-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+</head>
+
+<body class="body" id="body">
+
+  <header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <a class="header__logo" href="#">p2p</a>
+      <div class="header__flex">
+        <a class="header__link" href='#'>
+          Terms & Conditions
+        </a>
+        <div class="header__select">
+          <div class="custom-select">
+            <select class="selectUI" name="country">
+              <option value="eng">
+                English
+              </option>
+              <option value="rus">Russian</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <h1 class="sr-only">
+      Страница оплаты
+    </h1>
+    <section class="payment-section">
+      <h2 class="sr-only">
+        Шаги оплаты
+      </h2>
+      <div class="container">
+        <div class="payment-section__inner">
+          <div class="payment-section__info">
+            <div class="payment-info bg-white border-radius">
+  <div class="payment-info__row">
+    <span class="payment-info__descr">
+      Order
+    </span>
+    <div class="payment-info__box">
+      <span class="payment-info__order">
+        #test_1695030089
+      </span>
+      <span class="payment-info__id">
+        ID: 556894209437
+      </span>
+    </div>
+  </div>
+  <div class="payment-info__row">
+    <span class="payment-info__descr">
+      Amount
+    </span>
+    <span class="payment-info__price">
+      $ 1 000,00
+    </span>
+    <div class="payment-info__rate">
+      <span class="payment-info__descr">
+        ₹92,597.00
+      </span>
+      <span class="payment-info__id">
+        Rate: 92.6
+      </span>
+    </div>
+  </div>
+</div>
+            <div class="payment-attention border-radius bg-white">
+  <span class="payment-attention__title">
+    Attention
+  </span>
+  <ul class="payment-attention__list">
+    <li class="payment-attention__item">
+      <p class="payment-attention__descr payment-attention__descr--time">
+        If you made a transfer but did not meet the 20-minute time limit - no need to create repeated transactions, you
+        should inform the Service you are paying for and attach receipts confirming the payment.
+      </p>
+    </li>
+    <li class="payment-attention__item">
+      <p class="payment-attention__descr payment-attention__descr--chat">
+        If you have made a funds transfer and have not clicked on the Payment completed button or clicked on the Cancel
+        button, you should inform the support of the Service you are paying.
+      </p>
+    </li>
+    <li class="payment-attention__item">
+      <p class="payment-attention__descr payment-attention__descr--close">
+        It is strictly forbidden to enter any comments in the banking application when transferring funds.
+      </p>
+    </li>
+    <li class="payment-attention__item">
+      <p class="payment-attention__descr payment-attention__descr--transfer">
+        Sending funds should be made exactly according to the details that are displayed to you. It is forbidden to send
+        the transfer again without receiving new details. When sending funds to the details that are not related to the
+        ones shown, crediting is not made.
+      </p>
+    </li>
+  </ul>
+</div>
+          </div>
+          <div class="payment-section__steps">
+            <div class="payment-steps bg-white border-radius">
+  <ol class="payment-steps__list">
+    <li class="payment-steps__item">
+      <div class="payment-steps__box payment-steps__box--active">
+        <p class="payment-steps__descr">
+          Set Options
+        </p>
+      </div>
+    </li>
+    <li class="payment-steps__item">
+      <div class="payment-steps__box payment-steps__box--active">
+        <p class="payment-steps__descr">
+          Transfer Funds
+        </p>
+      </div>
+    </li>
+    <li class="payment-steps__item">
+      <div class="payment-steps__box  payment-steps__box--active">
+        <p class="payment-steps__descr">
+          Confirm
+        </p>
+      </div>
+    </li>
+  </ol>
+</div>
+            <div class="step-option bg-white border-radius">
+  <div class="step-option__container step-finally">
+    <div class="step-finally__header">
+      <div class="step-finally__img">
+        <img src="./images/icons/danger.svg" alt="danger">
+      </div>
+      <p class="step-finally__text">
+        If you made a payment and clicked the "Cancel" button, the payment will not be credited.
+      </p>
+    </div>
+    <div class="step-option__btns">
+      <button class="step-option__btn buttonUI">
+        Return
+      </button>
+      <button class="step-option__btn buttonUI buttonUI--gray">
+        Cancel
+      </button>
+    </div>
+    <p class="step-option__terms">
+      By making a payment, you agree to <a href='#'>Terms and Conditions</a>.
+    </p>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
