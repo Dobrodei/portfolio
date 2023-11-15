@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Form</title>
+  <link rel="preload" as="font" href="./fonts/Nominee-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Nominee-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body" id="body">
+  <main class="main">
+    <h1 class="sr-only">
+      Payment page
+    </h1>
+    <section class="payment-forms">
+  <h2 class="sr-only">
+    Payment form
+  </h2>
+  <div class="payment-forms__container">
+    <ul class="payment-steps">
+      <li class="payment-steps__item">
+        <div class="payment-steps__step">
+          <span class="sr-only">
+            Шаг 1
+          </span>
+        </div>
+      </li>
+      <li class="payment-steps__item">
+        <div class="payment-steps__step">
+          <span class="sr-only">
+            Шаг 2
+          </span>
+        </div>
+      </li>
+      <li class="payment-steps__item">
+        <div class="payment-steps__step  payment-steps__step--active">
+          <span class="sr-only">
+            Шаг 3
+          </span>
+        </div>
+      </li>
+    </ul>
+    <div class="payment-forms__finally">
+      <div class="payment-forms__img">
+        <img src="./images/icons/apply.svg" alt="apply">
+      </div>
+      <p class="payment-forms__text">
+        Payment was successful
+      </p>
+    </div>
+    <button class="buttonUI">
+      Done
+    </button>
+  </div>
+</section>
+  </main>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

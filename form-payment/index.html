@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Form</title>
+  <link rel="preload" as="font" href="./fonts/Nominee-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Nominee-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body" id="body">
+  <main class="main">
+    <h1 class="sr-only">
+      Payment page
+    </h1>
+    <section class="payment-forms">
+  <h2 class="sr-only">
+    Payment form
+  </h2>
+  <div class="payment-forms__container">
+    <ul class="payment-steps">
+      <li class="payment-steps__item">
+        <div class="payment-steps__step payment-steps__step--active">
+          <span class="sr-only">
+            Шаг 1
+          </span>
+        </div>
+      </li>
+      <li class="payment-steps__item">
+        <div class="payment-steps__step">
+          <span class="sr-only">
+            Шаг 2
+          </span>
+        </div>
+      </li>
+      <li class="payment-steps__item">
+        <div class="payment-steps__step">
+          <span class="sr-only">
+            Шаг 3
+          </span>
+        </div>
+      </li>
+    </ul>
+    <form class="payment-forms__form form-payment" action="#">
+      <span class="payment-forms__title">
+        Enter data
+      </span>
+      <div class="form-payment__box">
+        <label class="form-payment__label">
+          <span class="form-payment__descr">
+            Amount
+          </span>
+          <input class="form-payment__input" type="text" placeholder='10 000 000' required>
+        </label>
+        <div class="form-payment__label">
+          <span class="form-payment__descr">
+            Paysystem
+          </span>
+          <div class="dropdownUI__select">
+            <div class="dropdownUI__header">
+              <span class="dropdownUI__paysystem" data-value="brl">
+                BRL
+              </span>
+              <button class="dropdownUI__btn" aria-label="Открыть Select" type='button'></button>
+            </div>
+            <ul class="dropdownUI__dropdown">
+              <li class="dropdownUI__option">
+                <button class="dropdownUI__value" type='button' data-value="cop">
+                  COP
+                </button>
+              </li>
+              <li class="dropdownUI__option">
+                <button class="dropdownUI__value" type='button' data-value="ars">
+                  ARS
+                </button>
+              </li>
+              <li class="dropdownUI__option">
+                <button class="dropdownUI__value" type='button' data-value="mxn">
+                  MXN
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <button class="form-payment__btn buttonUI" type='submit'>
+        Pay
+      </button>
+    </form>
+  </div>
+</section>
+  </main>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
