@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Vmire dropbox</title>
+  <link rel="preload" as="font" href="./fonts/Steppe-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Steppe-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Steppe-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body" id="body">
+  <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a class="header__logo logo" href="#">
+        <img src="./images/logo.svg" alt="logo">
+        <span>Vmire.Dropbox</span>
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href='index.html'>
+              Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href='privacy.html'>
+              Privacy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <h1 class="sr-only">
+      Сайт vmire-dropbox
+    </h1>
+    <section class="hero">
+  <div class="container">
+    <h2 class="sr-only">
+      Загрузка файлов
+    </h2>
+    <div class="hero__wrapper">
+      <div class="hero__box">
+  <h3 class="hero__subtitle">
+    Создать папку
+  </h3>
+  <form action="#" class="hero__form form">
+    <div class="form__item">
+      <label class="form__label">
+        <span class="sr-only">
+          Название папки
+        </span>
+        <input class="form__input" name='name-file' type="text" placeholder='Название папки' required>
+      </label>
+    </div>
+    <button class='form__btn' data-modal='feedback'>
+      Создать
+    </button>
+  </form>
+</div>
+      <div class="hero__box">
+  <h3 class="hero__subtitle">
+    Загрузить файл
+  </h3>
+  <form action="#" class="hero__form form">
+    <div class="form__item">
+      <div class="file-input">
+        <label class="file-input__label" for="input-file">
+          Select a file
+          <input class="file-input__field" id="input-file" type="file" hidden>
+        </label>
+        <span class="file-input__text">
+        </span>
+      </div>
+    </div>
+    <button class='form__btn'>
+      Добавить
+    </button>
+  </form>
+</div>
+      <div class="hero__box hero__box--full">
+  <ul class="breadcrumbs">
+    <li class="breadcrumbs__item">
+      <button class="breadcrumbs__btn">
+        Путь 1
+      </button>
+    </li>
+    <li class="breadcrumbs__item">
+      <button class="breadcrumbs__btn">
+        Путь 2
+      </button>
+    </li>
+    <li class="breadcrumbs__item">
+      <button class="breadcrumbs__btn breadcrumbs__btn--active">
+        Путь 3
+      </button>
+    </li>
+  </ul>
+  <ul class="folders">
+    <li class="folders__item">
+      <div class="folders__box">
+        <div class="folders__main">
+          <span class="folders__name">
+            <span>
+              Название папки
+            </span>
+          </span>
+          <div class="folders__flex">
+            <button class="folders__btn folders__btn--download" aria-label='Скачать файл'>
+            </button>
+            <button class="folders__btn folders__btn--delete" aria-label='Удалить файл'>
+            </button>
+          </div>
+        </div>
+        <div class="folders__main folders__main--file">
+          <div class="folders__flex">
+            <button class="folders__btn folders__btn--download" aria-label='Скачать файл'>
+            </button>
+            <button class="folders__btn folders__btn--delete" aria-label='Удалить файл'>
+            </button>
+          </div>
+          <span class="folders__file">
+            Название файла
+          </span>
+        </div>
+        <div class="folders__main folders__main--file">
+          <div class="folders__flex">
+            <button class="folders__btn folders__btn--download" aria-label='Скачать файл'>
+            </button>
+            <button class="folders__btn folders__btn--delete" aria-label='Удалить файл'>
+            </button>
+          </div>
+          <span class="folders__file">
+            Название_файла_БЕЗ_пробела_на_мобилке_уходит_в_точки
+          </span>
+        </div>
+      </div>
+    </li>
+    <li class="folders__item">
+      <div class="folders__box">
+        <div class="folders__main">
+          <span class="folders__name">
+            <span>
+              Название папки
+            </span>
+          </span>
+          <div class="folders__flex">
+            <button class="folders__btn folders__btn--download" aria-label='Скачать файл'>
+            </button>
+            <button class="folders__btn folders__btn--delete" aria-label='Удалить файл'>
+            </button>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <p class="hero__empty">
+    Пусто. Добавьте новый файл
+  </p>
+</div>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__flex">
+      <p class="footer__copy">
+        © 2023 - Vmire.Dropbox
+      </p>
+      <a class="footer__link" href="privacy.html">
+        Privacy
+      </a>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
