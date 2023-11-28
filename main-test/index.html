@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Main test</title>
+  <link rel="preload" as="font" href="./fonts/Montserrat-Light.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Montserrat-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Montserrat-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Montserrat-ExtraBold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Montserrat-Black.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body" id="body">
+
+  <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a class="header__logo logo" href="#">
+        <img src="./images/logo.svg" alt="Логотип" width='140' height='45'>
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              О нас
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Связаться
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__btns">
+        <a class="header__btn buttonUI buttonUI--transparent" href='#'>
+          Вход
+        </a>
+        <a class="header__btn buttonUI" href='#'>
+          Регистрация
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <section class="hero">
+  <div class="hero__bg">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Сертификационные экзамены онлайн
+          </h1>
+          <p class="hero__text">
+            Дистанционный прием экзаменов в защищенной среде с мониторингом процесса сдачи онлайн
+          </p>
+          <div class="hero__btns">
+            <a class="hero__btn buttonUI buttonUI--white" href="#">
+              Войти
+            </a>
+            <a class="hero__btn buttonUI buttonUI--opacity" href="#">
+              Подробнее
+            </a>
+          </div>
+        </div>
+        <div class="hero__img">
+          <img src="./images/hero-img.png" alt="Сертификационные экзамены онлайн" width='630' height='500'>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="about">
+  <div class="container">
+    <div class="about__header">
+      <span class="about__suptitle sup-title">
+        Почему мы
+      </span>
+      <h2 class="about__title title-section">
+        Возможности
+      </h2>
+    </div>
+    <ol class="about__list">
+      <li class="about__item">
+        <div class="about__box">
+          <h3 class="about__subtitle">
+            Онлайн
+          </h3>
+          <p class="about__text">
+            Обеспечиваем проверку процесса сдачи экзамена из любой подходящей локации.
+          </p>
+        </div>
+      </li>
+      <li class="about__item">
+        <div class="about__box">
+          <h3 class="about__subtitle">
+            Для всех
+          </h3>
+          <p class="about__text">
+            Для сдачи необходим компьютер и мобильный телефон.
+          </p>
+        </div>
+      </li>
+      <li class="about__item">
+        <div class="about__box">
+          <h3 class="about__subtitle">
+            Контроль
+          </h3>
+          <p class="about__text">
+            Видео процесса сдачи экзамена обрабатывается ИИ, сохраняется на наших серверах.
+          </p>
+        </div>
+      </li>
+      <li class="about__item">
+        <div class="about__box">
+          <h3 class="about__subtitle">
+            Надежность
+          </h3>
+          <p class="about__text">
+            Все результаты сдачи экзаменов сохраняются в личном кабинете.
+          </p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+    <section class="partners">
+  <div class="partners__bg">
+    <div class="container">
+      <div class="partners__header">
+        <div class="partners__left">
+          <span class="partners__suptitle sup-title">
+            Для организаций
+          </span>
+          <h2 class="partners__title title-section">
+            Производителям, поставщикам ПО, другим организациям
+          </h2>
+        </div>
+        <div class="partners__btns swiper-slider">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrap-p">
+      <div class="swiper partners__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="partners__box">
+              <p class="partners__text">
+                Обеспечение гарантии качества обслуживания продукции сертифицированными специалистами.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="partners__box">
+              <p class="partners__text">
+                Управление сроками обновления полученных сертификаций.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="partners__box">
+              <p class="partners__text">
+                Создание платных сертификационных экзаменов.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="partners__box">
+              <p class="partners__text">
+                Управление компетенциями партнеров и эксплуатантов ваших продуктов.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="partners__box">
+              <p class="partners__text">
+                Управление иерархией статусов в зависимости от квалификации.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="education">
+  <div class="container">
+    <div class="education__inner">
+      <div class="education__left">
+        <div class="education__header">
+          <span class="education__suptitle sup-title">
+            Для образования
+          </span>
+          <h2 class="education__title title-section">
+            Для образовательных учреждений
+          </h2>
+        </div>
+        <div class="education__content">
+          <ul class="education__list">
+            <li class="education__item">
+              <div class="education__box benefit-box">
+                Высокая репрезентативность результатов экзаменов.
+              </div>
+            </li>
+            <li class="education__item">
+              <div class="education__box benefit-box">
+                Возможность массовой проверки знаний.
+              </div>
+            </li>
+            <li class="education__item">
+              <div class="education__box benefit-box">
+                Удобный конструктор тестов и экзаменов онлайн.
+              </div>
+            </li>
+            <li class="education__item">
+              <div class="education__box benefit-box">
+                Обеспечение корректной сдачи тестов и экзаменов.
+              </div>
+            </li>
+            <li class="education__item">
+              <div class="education__box benefit-box">
+                Возможность автоматического выставления оценок в зависимости от результатов.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="education__img">
+        <img src="./images/education-img.png" alt="Обучение" width='550' height='550'>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="specialist">
+  <div class="container">
+    <div class="specialist__inner">
+      <div class="specialist__img">
+        <img src="./images/specialist-img.png" alt="Обучение" width='550' height='550'>
+      </div>
+      <div class="specialist__left">
+        <div class="specialist__header">
+          <span class="specialist__suptitle sup-title">
+            Для образования
+          </span>
+          <h2 class="specialist__title title-section">
+            Для образовательных учреждений
+          </h2>
+        </div>
+        <div class="specialist__content">
+          <ul class="specialist__list">
+            <li class="specialist__item">
+              <div class="specialist__box benefit-box">
+                Возможность сдачи экзаменов дистанционно.
+              </div>
+            </li>
+            <li class="specialist__item">
+              <div class="specialist__box benefit-box">
+                Цифровые сертификаты по результатам сдачи.
+              </div>
+            </li>
+            <li class="specialist__item">
+              <div class="specialist__box benefit-box">
+                Удобное представление списка своих сертификатов прямой ссылкой.
+              </div>
+            </li>
+            <li class="specialist__item">
+              <div class="specialist__box benefit-box">
+                Все сертификаты в личном кабинете.
+              </div>
+            </li>
+            <li class="specialist__item">
+              <div class="specialist__box benefit-box">
+                Доказательство своего опыта и знаний для работодателей или учебных заведений.
+              </div>
+            </li>
+            <li class="specialist__item">
+              <div class="specialist__box benefit-box">
+                Удобное управление сроками ресертификаций.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="benefits">
+  <div class="benefits__bg">
+    <div class="container">
+      <div class="benefits__header">
+        <span class="benefits__spatitle spa-title">
+          Приемущества
+        </span>
+        <h2 class="benefits__title title-section">
+          Почему мы
+        </h2>
+      </div>
+      <ul class="benefits__list">
+        <li class="benefits__item">
+          <div class="benefits__box benefits__box--intel">
+            <h3 class="benefits__subtitle">
+              Интеллект
+            </h3>
+            <p class="benefits__text">
+              Использование ИИ для контроля процесса сдачи экзаменов
+            </p>
+          </div>
+        </li>
+        <li class="benefits__item">
+          <div class="benefits__box benefits__box--apply">
+            <h3 class="benefits__subtitle">
+              Актуальность
+            </h3>
+            <p class="benefits__text">
+              Возможность просмотреть процесс сдачи любого экзамена в ручном режиме
+            </p>
+          </div>
+        </li>
+        <li class="benefits__item">
+          <div class="benefits__box benefits__box--comfort">
+            <h3 class="benefits__subtitle">
+              Удобство
+            </h3>
+            <p class="benefits__text">
+              Управление сроками действия сертификатов
+            </p>
+          </div>
+        </li>
+        <li class="benefits__item">
+          <div class="benefits__box benefits__box--access">
+            <h3 class="benefits__subtitle">
+              Доступность
+            </h3>
+            <p class="benefits__text">
+              Сдавать эказмены можно из любой точки мира, достаточно компьютера и телефона
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+    <section class="feedback">
+  <div class="container">
+    <h2 class="feedback__title title-section">
+      Связаться
+    </h2>
+    <p class="feedback__text">
+      Напишите свое имя и почту, и мы свяжемся с вами как можно скорее
+    </p>
+    <form class="feedback__form" action="#">
+      <div class="feedback__flex">
+        <label class="feedback__label">
+          <span class="sr-only">
+            Введите ваше имя
+          </span>
+          <input class="feedback__input" type="text" name='name' placeholder='Имя...' required>
+        </label>
+        <label class="feedback__label">
+          <span class="sr-only">
+            Введите вашу почту
+          </span>
+          <input class="feedback__input" type="email" name='email' placeholder='Почта...' required>
+        </label>
+      </div>
+      <button class="feedback__btn buttonUI" type='submit'>
+        Регистрация
+      </button>
+    </form>
+  </div>
+</section>
+    <section class="faq">
+  <div class="container">
+    <span class="faq__suptitle sup-title">
+      Ответы на вопросы
+    </span>
+    <h2 class="faq__title title-section">
+      Часто задаваемые вопросы
+    </h2>
+    <ul class="faq__list">
+      <li class="faq__item">
+        <div class="faq__accordion accordion">
+          <div class="accordion__header">
+            <h3 class="accordion__title">
+              Сколько стоит экзамен?
+            </h3>
+            <button class="accordion__btn" aria-label='Откртие/закртие аккордиона'>
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__accordion accordion">
+          <div class="accordion__header">
+            <h3 class="accordion__title">
+              Могут ли результаты экзамена быть пересмотрены?
+            </h3>
+            <button class="accordion__btn" aria-label='Откртие/закртие аккордиона'>
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__accordion accordion">
+          <div class="accordion__header">
+            <h3 class="accordion__title">
+              Что будет, если произошёл технический сбой в процессе сдачи экзамена?
+            </h3>
+            <button class="accordion__btn" aria-label='Откртие/закртие аккордиона'>
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__accordion accordion">
+          <div class="accordion__header">
+            <h3 class="accordion__title">
+              Что можно сделать, если я не согласен с результатом экзамена?
+            </h3>
+            <button class="accordion__btn" aria-label='Откртие/закртие аккордиона'>
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__accordion accordion">
+          <div class="accordion__header">
+            <h3 class="accordion__title">
+              Если я считаю, что вопрос экзамена поставлен некорректно, что я могу сделать?
+            </h3>
+            <button class="accordion__btn" aria-label='Откртие/закртие аккордиона'>
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__accordion accordion">
+          <div class="accordion__header">
+            <h3 class="accordion__title">
+              Что я могу делать в процессе экзамена?
+            </h3>
+            <button class="accordion__btn" aria-label='Откртие/закртие аккордиона'>
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__accordion accordion">
+          <div class="accordion__header">
+            <h3 class="accordion__title">
+              Кто такой «поставщик экзаменов»?
+            </h3>
+            <button class="accordion__btn" aria-label='Откртие/закртие аккордиона'>
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="faq__item">
+        <div class="faq__accordion accordion">
+          <div class="accordion__header">
+            <h3 class="accordion__title">
+              Можно ли вернуть средства, оплаченные за экзамен?
+            </h3>
+            <button class="accordion__btn" aria-label='Откртие/закртие аккордиона'>
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <a class="footer__logo logo" href="#">
+        <img src="./images/logo.svg" alt="Логотип" width='140' height='45'>
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              О нас
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              Связаться
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__btns">
+        <a class="footer__btn buttonUI buttonUI--transparent" href='#'>
+          Вход
+        </a>
+        <a class="footer__btn buttonUI" href='#'>
+          Регистрация
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
