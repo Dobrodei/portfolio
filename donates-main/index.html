@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>ClickContent - платформа для продажи авторских цифровых товаров</title>
+  <link rel="preload" as="font" href="./fonts/Montserrat-Light.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Montserrat-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Montserrat-ExtraBold.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="body" id="body">
+  <header class="header">
+  <div class="container header__container">
+    <a class="header__logo logo" href="#">
+      <img src="./images/logo.svg" alt="Логотип">
+    </a>
+    <div class="header__btns">
+      <button class="header__btn header__btn--padding buttonUI buttonUI--transparent">
+        Войти
+      </button>
+      <button class="header__btn header__btn--width buttonUI buttonUI--border">
+        Регистрация
+      </button>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <section class="hero">
+  <div class="container hero__container">
+    <h1 class="hero__title">
+      <span>
+        Монетизируй
+      </span>
+      <span>
+        Творчество
+      </span>
+      <span>
+        с&nbsp;Clickcontent
+      </span>
+    </h1>
+    <div class="hero__box">
+      <p class="hero__text">
+        Сервис для легальной продажи контента и приема донатов
+      </p>
+      <a class="hero__link buttonUI buttonUI--bold" href="#">
+        Попробовать
+      </a>
+    </div>
+    <picture class="hero__img">
+      <source media="(max-width: 400px)" srcset="./images/all-img/heromobile-bg.png">
+      <img src="./images/all-img/hero-bg.png" aria-hidden='true' alt="Фоновая картинка">
+    </picture>
+  </div>
+</section>
+    <section class="rivals">
+  <div class="container">
+    <h2 class="title rivals__title">
+      Мы предлагаем:
+    </h2>
+    <ul class="rivals__list">
+      <li class="rivals__item">
+        <div class="rivals__box rivals__box--img">
+          <span class="rivals__descr rivals__descr--big">
+            9%
+          </span>
+          <h3 class="rivals__subtitle">
+            единая комиссия
+          </h3>
+          <div class="rivals__img rivals__img--procent">
+            <img src="./images/all-img/rivals1-img.jpg" aria-hidden="true" alt="единая комиссия">
+          </div>
+        </div>
+      </li>
+      <li class="rivals__item">
+        <div class="rivals__box">
+          <span class="rivals__descr">
+            Без регистрации
+          </span>
+          <h3 class="rivals__subtitle">
+            покупка контента и донаты
+          </h3>
+        </div>
+      </li>
+      <li class="rivals__item">
+        <div class="rivals__box">
+          <span class="rivals__descr rivals__descr--big">
+            500 рублей
+          </span>
+          <h3 class="rivals__subtitle">
+            минимальная сумма вывода
+          </h3>
+          <div class="rivals__img rivals__img--sum">
+            <img src="./images/all-img/rivals3-img.jpg" aria-hidden="true" alt="минимальная сумма вывод">
+          </div>
+        </div>
+      </li>
+      <li class="rivals__item">
+        <div class="rivals__box rivals__box--bottom rivals__box--height rivals__box--lock">
+          <h3 class="rivals__subtitle">
+            Данные и перевод под защитой Тинькофф
+          </h3>
+        </div>
+      </li>
+      <li class="rivals__item">
+        <div class="rivals__box rivals__box--img rivals__box--height">
+          <span class="rivals__descr">
+            Партнерские программы
+          </span>
+          <h3 class="rivals__subtitle">
+            при большом трафике
+          </h3>
+          <div class="rivals__img rivals__img--partners">
+            <img src="./images/all-img/rivals2-img.jpg" aria-hidden="true" alt="Партнерские программы">
+          </div>
+        </div>
+      </li>
+      <li class="rivals__item">
+        <div class="rivals__box rivals__box--bottom rivals__box--height rivals__box--email">
+          <h3 class="rivals__subtitle">
+            Отправка оплаченного контента в мессенджеры или на e-mail
+          </h3>
+        </div>
+      </li>
+    </ul>
+    <!-- <div class="rivals__scroll">
+      <div class="rivals__table">
+        <div class="rivals__row">
+          <div class="rivals__col">
+            <span class="sr-only">
+              Логотипы компаний
+            </span>
+          </div>
+          <div class="rivals__col" data-col>
+            <div class="rivals__img">
+              <img src="./images/icons/vmire.svg" alt="vmire логотип" width='45' height='45'>
+            </div>
+          </div>
+          <div class="rivals__col">
+            <div class="rivals__img">
+              <img src="./images/icons/vk.svg" alt="vk логотип" width='45' height='45'>
+            </div>
+          </div>
+          <div class="rivals__col">
+            <div class="rivals__img rivals__img--big">
+              <img src="./images/icons/boosty.svg" alt="boostyлоготип" width='95' height='45'>
+            </div>
+          </div>
+          <div class="rivals__col">
+            <div class="rivals__img rivals__img--donate">
+              <img src="./images/icons/donate.svg" alt="donate логотип" width='180' height='45'>
+            </div>
+          </div>
+        </div>
+        <div class="rivals__row">
+          <div class="rivals__col">
+            <h3 class="rivals__subtitle">
+              Комиссия за вывод средств
+            </h3>
+          </div>
+          <div class="rivals__col">
+            <p class="rivals__descr rivals__descr--white">
+              Единая комиссия 9% не зависимо от суммы доната и банка обслуживания карты блогера
+            </p>
+          </div>
+          <div class="rivals__col">
+            <p class="rivals__descr">
+              10% на банковскую карту, VK Pay без комиссии
+            </p>
+          </div>
+          <div class="rivals__col">
+            <p class="rivals__descr">
+              до 10% на банковскую карту
+            </p>
+          </div>
+          <div class="rivals__col">
+            <p class="rivals__descr">
+              до 15%
+            </p>
+          </div>
+        </div>
+        <div class="rivals__row">
+          <div class="rivals__col">
+            <h3 class="rivals__subtitle">
+              Вывод денег
+            </h3>
+          </div>
+          <div class="rivals__col">
+            <p class="rivals__descr rivals__descr--white">
+              Банковская карта
+            </p>
+          </div>
+          <div class="rivals__col">
+            <p class="rivals__descr">
+              Банковская карта, VK Pay
+            </p>
+          </div>
+          <div class="rivals__col">
+            <p class="rivals__descr">
+              Банковская карта, VK Pay
+            </p>
+          </div>
+          <div class="rivals__col">
+            <p class="rivals__descr">
+              Банковская карта, VK Pay, ЮМоnеу, QIWI
+            </p>
+          </div>
+        </div>
+        <div class="rivals__row">
+          <div class="rivals__col">
+            <h3 class="rivals__subtitle">
+              Доставка приобретенного контента
+            </h3>
+          </div>
+          <div class="rivals__col">
+            <p class="rivals__descr rivals__descr--white">
+              Моментальная доставка через мобильные мессенджеры и e-mail
+            </p>
+          </div>
+          <div class="rivals__col">
+            <p class="rivals__descr">
+              При регистрации пользователя на платформе
+            </p>
+          </div>
+          <div class="rivals__col">
+            <p class="rivals__descr">
+              При регистрации пользователя на платформе
+            </p>
+          </div>
+          <div class="rivals__col">
+            <p class="rivals__descr">
+              При регистрации пользователя на платформе
+            </p>
+          </div>
+        </div>
+        <div class="rivals__row">
+          <div class="rivals__col">
+            <h3 class="rivals__subtitle">
+              Необходимость перехода на сторонние сервисы
+            </h3>
+          </div>
+          <div class="rivals__col">
+            <p class="rivals__descr rivals__descr--white">
+              Отсутствие миграции пользователей на сторонние площадки
+            </p>
+          </div>
+          <div class="rivals__col">
+            <p class="rivals__descr">
+              Использование сервиса донатов возможно только на площадке VK
+            </p>
+          </div>
+          <div class="rivals__col">
+            <p class="rivals__descr">
+              Обязательная регистрация пользователя на площадке
+            </p>
+          </div>
+          <div class="rivals__col">
+            <p class="rivals__descr">
+              Обязательная регистрация пользователя на площадке
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+    <section class="steps">
+  <div class="container">
+    <h2 class="steps__title title">
+      Как монетизировать контент?
+    </h2>
+    <ol class="steps__list">
+      <li class="steps__item">
+        <div class="steps__box">
+          <p class="steps__text">
+            Сгенерируйте уникальную сcылку на контент
+          </p>
+        </div>
+      </li>
+      <li class="steps__item">
+        <div class="steps__box">
+          <p class="steps__text">
+            Разместите ссылку в соцсетях, на стриме или в профиле
+          </p>
+        </div>
+      </li>
+      <li class="steps__item">
+        <div class="steps__box steps__box--right">
+          <p class="steps__text">
+            Подписчики оплачивают доступ к вашему контенту
+          </p>
+        </div>
+      </li>
+      <li class="steps__item">
+        <div class="steps__box steps__box--right">
+          <p class="steps__text">
+            Выплаты начисляются на привязанную карту
+          </p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+    <section class="benefits">
+  <div class="container">
+    <div class="benefits__smallimg">
+      <img src="./images/all-img/benefits-smallimg.jpg" aria-hidden='true' alt="Фото" width='160' height='160'>
+    </div>
+    <div class="benefits__top">
+      <h2 class="benefits__title title">
+        Мы гарантируем:
+      </h2>
+      <div class="benefits__img">
+        <img src="./images/all-img/benefits-img.jpg" alt="фото" width='300' height='330'>
+      </div>
+    </div>
+    <ul class="benefits__list">
+      <li class="benefits__item">
+        <div class="benefits__box">
+          <p class="benefits__text">
+            Проведение сделок с соблюдением требований Росфинмониторинга
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box">
+          <p class="benefits__text">
+            Защищенные P2P платежи, проводимые в партнерстве с Банком Тинькофф
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box">
+          <p class="benefits__text">
+            Моментальное получение денег на банковскую карту
+          </p>
+        </div>
+      </li>
+      <!-- <li class="benefits__item">
+        <div class="benefits__box">
+          <p class="benefits__text">
+            Минимальная сумма для вывода&nbsp;- 500&nbsp;руб.
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box">
+          <p class="benefits__text">
+            Низкая
+            комиссия за вывод средств
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box">
+          <p class="benefits__text">
+            Расчеты через накопительный счет
+          </p>
+        </div>
+      </li>
+      <li class="benefits__item">
+        <div class="benefits__box">
+          <p class="benefits__text">
+            Сделки осуществляются в РФ
+          </p>
+        </div>
+      </li> -->
+    </ul>
+  </div>
+</section>
+    <section class="text-animation">
+  <h2 class="sr-only">
+    Информациионный блок
+  </h2>
+  <p class="text-animation__descr">
+    Моментальные выплаты <span>Моментальные выплаты</span>
+  </p>
+  <p class="text-animation__descr text-animation__descr--right">
+    Моментальные выплаты <span>Моментальные выплаты</span> Моментальные выплаты
+  </p>
+  <p class="text-animation__descr">
+    <span>Моментальные выплаты</span> Моментальные выплаты <span>Моментальные выплаты</span>
+  </p>
+</section>
+    <section class="join">
+  <div class="container join__container">
+    <h2 class="join__title">
+      <span>
+        присоединяйся
+      </span>
+      <span>
+        к сервису
+      </span>
+    </h2>
+    <a class="join__link buttonUI buttonUI--bold" href="#">
+      Попробовать
+    </a>
+    <picture class="join__img">
+      <source media="(max-width: 400px)" srcset="./images/all-img/joinmobile-bg.png">
+      <img src="./images/all-img/join-bg.png" aria-hidden='true' alt="Фоновая фото">
+    </picture>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__container">
+      <a class="footer__logo logo" href="#">
+        <img src="./images/logo.svg" alt="Логотип">
+      </a>
+      <div class="footer__btns">
+        <button class="footer__btn footer__btn--padding buttonUI buttonUI--transparent">
+          Войти
+        </button>
+        <button class="footer__btn footer__btn--width buttonUI buttonUI--border">
+          Регистрация
+        </button>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__links">
+        <a class="footer__link" href="#">
+          Пользовательское соглашение
+        </a>
+        <a class="footer__link" href="#">
+          Политика конфиденциальности
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
