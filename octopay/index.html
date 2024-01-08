@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Octopay</title>
+  <link rel="preload" as="font" href="./fonts/Gilroy-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body class="body" id="body">
+  <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a class="header__logo logo" href="#body" data-scroll>
+        <img src="./images/logo.svg" alt="logo" width='220' height='70'>
+      </a>
+      <button class="burger-btn" aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger-btn__line"></span>
+      </button>
+      <div class="header__menu">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#body" data-scroll>
+                Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#about-section" data-scroll>
+                About us
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#services-section" data-scroll>
+                Our services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contacts-section" data-scroll>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <section class="hero" style='background-image: url("./images/all-img/hero-bg.jpg");'>
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          Easy, low-fee
+          payment services
+        </h1>
+        <p class="hero__text">
+          Conecting all your payment needs
+        </p>
+        <a class="hero__btn buttonUI" href='#contacts-section' data-scroll>
+          Get Started For Free
+        </a>
+      </div>
+      <div class="hero__img" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+        <img src="./images/all-img/hero-app.png" alt="octopay app" width='650' height='450'>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="payment" id='services-section'>
+  <div class="container">
+    <h2 class="payment__title title" data-aos="fade-down" data-aos-offset="200" data-aos-delay="50"
+      data-aos-duration="1000" data-aos-easing="ease-in-out">
+      We are glad to present our payment services
+    </h2>
+  </div>
+  <div class="container container--pr">
+    <div class="swiper payment__slider custom-slider" data-mobile='false'>
+      <div class="swiper-wrapper">
+        <div class="payment__slide slider-container__slide" data-aos="fade-left" data-aos-offset="50"
+          data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <div class="payment__box">
+            <div class="payment__icon">
+              <img src="./images/icons/payment-icon1.svg" aria-hidden='true' loading="lazy" alt="biss icon" width='100'
+                height='100'>
+            </div>
+            <h3 class="payment__subtitle">
+              Online Business
+            </h3>
+            <p class="payment__text">
+              Explore the power of simpler and smarter payment services. Automate routine work and streamline your
+              workflow. Don’t waste time.
+            </p>
+          </div>
+        </div>
+        <div class="payment__slide slider-container__slide" data-aos="fade-left" data-aos-offset="50"
+          data-aos-delay="300" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <div class="payment__box">
+            <div class="payment__icon">
+              <img src="./images/icons/payment-icon2.svg" aria-hidden='true' loading="lazy" alt="biss icon" width='130'
+                height='82'>
+            </div>
+            <h3 class="payment__subtitle">
+              Make accounting painless
+            </h3>
+            <p class="payment__text">
+              Accounting is important, but so is your sanity. Take stress out of bookkeeping by eliminating unnecessary
+              bureaucracy.
+            </p>
+          </div>
+        </div>
+        <div class="payment__slide slider-container__slide" data-aos="fade-left" data-aos-offset="50"
+          data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <div class="payment__box">
+            <div class="payment__icon">
+              <img src="./images/icons/payment-icon3.svg" aria-hidden='true' loading="lazy" alt="biss icon" width='65'
+                height='105'>
+            </div>
+            <h3 class="payment__subtitle">
+              Mobile app
+            </h3>
+            <p class="payment__text">
+              Keep track of your transfers on the go with the OctoPAY mobile app. Make new or repeat transfers —
+              wherever
+              you are — at the touch of a button.
+            </p>
+          </div>
+        </div>
+        <div class="payment__slide slider-container__slide" data-aos="fade-left" data-aos-offset="50"
+          data-aos-delay="700" data-aos-duration="1000" data-aos-easing="ease-in-out">
+          <div class="payment__box">
+            <div class="payment__icon">
+              <img src="./images/icons/payment-icon4.svg" aria-hidden='true' loading="lazy" alt="Cut unnecessary costs"
+                width='110' height='105'>
+            </div>
+            <h3 class="payment__subtitle">
+              Cut unnecessary costs
+            </h3>
+            <p class="payment__text">
+              Save on rubbish exchange rates, cross border transfers and other fees. Traditional banks charge you
+              unnecessarily — we will not.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+    <section class="about" id='about-section' style='background-image: url("./images/all-img/hero-bg.jpg");'>
+  <div class="container">
+    <div class="about__wrapper">
+      <div class="about__img" data-aos="fade-right" data-aos-offset="50" data-aos-delay="100" data-aos-duration="1000"
+        data-aos-easing="ease-in-out">
+        <img src="./images/all-img/hero-app.png" alt="octopay app" loading="lazy" width='530' height='360'>
+      </div>
+      <div class="about__content" data-aos="fade-left" data-aos-offset="50" data-aos-delay="700" data-aos-duration="700"
+        data-aos-easing="ease-in-out">
+        <h2 class="about__title">
+          About OctoPAY
+        </h2>
+        <p class="about__text">
+          Comprehensive information about your balance, accepted payments, transactions and payees. So you can focus on
+          targeting you market more effectively.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="steps">
+  <div class="container">
+    <div class="steps__top" data-aos="fade-down" data-aos-offset="50" data-aos-delay="700" data-aos-duration="700"
+      data-aos-easing="ease-in-out">
+      <h2 class="steps__title title">
+        How OctoPAY works
+      </h2>
+      <p class="steps__descr">
+        Join our global community and get access to a better way to manage your money​
+      </p>
+    </div>
+    <ul class="steps__list">
+      <li class="steps__item" data-aos="fade-left" data-aos-offset="50" data-aos-delay="700" data-aos-duration="700"
+        data-aos-easing="ease-in-out">
+        <div class="steps__box">
+          <div class="steps__icon">
+            <img src="./images/icons/steps-icon1.svg" aria-hidden='true' loading="lazy" alt="Register for free​"
+              width='240' height='135'>
+          </div>
+          <div class="steps__inner">
+            <h3 class="steps__subtitle">
+              1. Register for free​
+            </h3>
+            <p class="steps__text">
+              Sign up online or in our app for free. All you need is an email address, or a Google or Facebook account.​
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="steps__item" data-aos="fade-left" data-aos-offset="50" data-aos-delay="700" data-aos-duration="700"
+        data-aos-easing="ease-in-out">
+        <div class="steps__box">
+          <div class="steps__icon">
+            <img src="./images/icons/steps-icon2.svg" aria-hidden='true' loading="lazy" alt="Choose an amount to send"
+              width='240' height='135'>
+          </div>
+          <div class="steps__inner">
+            <h3 class="steps__subtitle">
+              2. Choose an amount to send
+            </h3>
+            <p class="steps__text">
+              Tell us how much you want to send. We’ll show you our fees upfront, and tell you when your money should
+              arrive.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="steps__item" data-aos="fade-left" data-aos-offset="50" data-aos-delay="700" data-aos-duration="700"
+        data-aos-easing="ease-in-out">
+        <div class="steps__box">
+          <div class="steps__icon">
+            <img src="./images/icons/steps-icon3.svg" aria-hidden='true' loading="lazy"
+              alt="Add recipient’s bank details" width='240' height='135'>
+          </div>
+          <div class="steps__inner">
+            <h3 class="steps__subtitle">
+              3. Add recipient’s bank details
+            </h3>
+            <p class="steps__text">
+              Fill in the details of your recipient’s bank account. If you don’t know their details, we can request them
+              for you.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="steps__item" data-aos="fade-left" data-aos-offset="50" data-aos-delay="700" data-aos-duration="700"
+        data-aos-easing="ease-in-out">
+        <div class="steps__box">
+          <div class="steps__icon">
+            <img src="./images/icons/steps-icon4.svg" aria-hidden='true' loading="lazy" alt="Verify your identity"
+              width='82' height='142'>
+          </div>
+          <div class="steps__inner">
+            <h3 class="steps__subtitle">
+              4. Verify your identity
+            </h3>
+            <p class="steps__text">
+              For some currencies, or for large transfers, we need a photo of your ID. This helps us keep your money
+              safe.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="steps__item" data-aos="fade-left" data-aos-offset="50" data-aos-delay="700" data-aos-duration="700"
+        data-aos-easing="ease-in-out">
+        <div class="steps__box">
+          <div class="steps__icon">
+            <img src="./images/icons/steps-icon5.svg" aria-hidden='true' loading="lazy" alt="Pay for your transfer"
+              width='200' height='162'>
+          </div>
+          <div class="steps__inner">
+            <h3 class="steps__subtitle">
+              5. Pay for your transfer
+            </h3>
+            <p class="steps__text">
+              Send your money with a bank transfer, or a debit or credit card.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="steps__item" data-aos="fade-left" data-aos-offset="50" data-aos-delay="700" data-aos-duration="700"
+        data-aos-easing="ease-in-out">
+        <div class="steps__box">
+          <div class="steps__icon">
+            <img src="./images/icons/steps-icon6.svg" aria-hidden='true' loading="lazy" alt="Pay for your transfer"
+              width='240' height='135'>
+          </div>
+          <div class="steps__inner">
+            <h3 class="steps__subtitle">
+              6. That’s it
+            </h3>
+            <p class="steps__text">
+              We’ll handle the rest. You can track your transfer in your account, and we'll tell your recipient it's
+              coming.
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="benefits">
+  <div class="container">
+    <div class="benefits__top" data-aos="fade-down" data-aos-offset="50" data-aos-delay="700" data-aos-duration="700"
+      data-aos-easing="ease-in-out">
+      <h2 class="benefits__title title">
+        Small- to medium-
+        sized businesses
+      </h2>
+      <p class="benefits__descr">
+        We offer an array of products that make it possible to pay anywhere, on any device. We’re bringing solutions to
+        life to change the way you pay — through our innovative digital wallet service.
+      </p>
+    </div>
+  </div>
+  <div class="container container--pr">
+    <div class="swiper benefits__slider custom-slider" data-mobile='false'>
+      <div class="swiper-wrapper">
+        <div class="payment__slide slider-container__slide" data-aos="fade-left" data-aos-offset="50"
+          data-aos-delay="700" data-aos-duration="700" data-aos-easing="ease-in-out">
+          <div class="benefits__box">
+            <div class="benefits__icon">
+              <img src="./images/icons/transfer.svg" aria-hidden='true' loading="lazy" alt="Easy transfers" width='110'
+                height='95'>
+            </div>
+            <h3 class="benefits__subtitle">
+              Easy transfers
+            </h3>
+          </div>
+        </div>
+        <div class="payment__slide slider-container__slide" data-aos="fade-left" data-aos-offset="50"
+          data-aos-delay="900" data-aos-duration="700" data-aos-easing="ease-in-out">
+          <div class="benefits__box">
+            <div class="benefits__icon">
+              <img src="./images/icons/payment-icon1.svg" aria-hidden='true' loading="lazy"
+                alt="Business without borders" width='103' height='97'>
+            </div>
+            <h3 class="benefits__subtitle">
+              Business without borders
+            </h3>
+          </div>
+        </div>
+        <div class="payment__slide slider-container__slide" data-aos="fade-left" data-aos-offset="50"
+          data-aos-delay="1100" data-aos-duration="700" data-aos-easing="ease-in-out">
+          <div class="benefits__box">
+            <div class="benefits__icon">
+              <img src="./images/icons/deposit.svg" aria-hidden='true' loading="lazy" alt="Deposit checks instantly"
+                width='90' height='90'>
+            </div>
+            <h3 class="benefits__subtitle">
+              Deposit checks instantly
+            </h3>
+          </div>
+        </div>
+        <div class="payment__slide slider-container__slide" data-aos="fade-left" data-aos-offset="50"
+          data-aos-delay="1300" data-aos-duration="700" data-aos-easing="ease-in-out">
+          <div class="benefits__box">
+            <div class="benefits__icon">
+              <img src="./images/icons/api.svg" aria-hidden='true' loading="lazy" alt="Cut unnecessary costs"
+                width='140' height='110'>
+            </div>
+            <h3 class="benefits__subtitle">
+              A powerful open API
+            </h3>
+          </div>
+        </div>
+        <div class="payment__slide slider-container__slide" data-aos="fade-left" data-aos-offset="50"
+          data-aos-delay="1500" data-aos-duration="700" data-aos-easing="ease-in-out">
+          <div class="benefits__box">
+            <div class="benefits__icon">
+              <img src="./images/icons/world.svg" aria-hidden='true' loading="lazy" alt="Coverage around the world"
+                width='130' height='105'>
+            </div>
+            <h3 class="benefits__subtitle">
+              Coverage around the world
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+    <section class="banner-finance" style='background-image: url("./images/all-img/hero-bg.jpg");'>
+  <div class="container">
+    <div class="banner-finance__wrapper">
+      <div class="banner-finance__content" data-aos="fade-right" data-aos-offset="50" data-aos-delay="700"
+        data-aos-duration="700" data-aos-easing="ease-in-out">
+        <h2 class="banner-finance__title">
+          Take control of your finances. With
+          OctoPAY.
+        </h2>
+        <p class="banner-finance__text">
+          No more worries about your cash expenses. With the help of our application, you will have the opportunity to
+          check and regulate your finances anytime you want.
+        </p>
+      </div>
+      <div class="banner-finance__img" data-aos="fade-left" data-aos-offset="50" data-aos-delay="1400"
+        data-aos-duration="700" data-aos-easing="ease-in-out">
+        <img src="./images/all-img/mobile-app.png" alt="octopay app" loading="lazy" width='270' height='480'>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="services">
+  <div class="container">
+    <div class="services__wrapper">
+      <div class="services__img" data-aos="fade-right" data-aos-offset="50" data-aos-delay="700" data-aos-duration="700"
+        data-aos-easing="ease-in-out">
+        <img src="./images/icons/card.svg" aria-hidden='true' loading="lazy" alt="card" width='420' height='270'>
+      </div>
+      <div class="services__content" data-aos="fade-left" data-aos-offset="50" data-aos-delay="1400"
+        data-aos-duration="700" data-aos-easing="ease-in-out">
+        <h2 class="services__title title">
+          Making internet a&nbsp;brand new experience
+        </h2>
+        <p class="services__descr">
+          Online services services can save you a lot of time and effort, you can undertake most transactions from the
+          comforts of your home. However, it is crucial to use internet banking safely
+        </p>
+      </div>
+    </div>
+    <ul class="services__list">
+      <li class="services__item" data-aos="fade-left" data-aos-offset="50" data-aos-delay="1400" data-aos-duration="700"
+        data-aos-easing="ease-in-out">
+        <div class="services__box">
+          <div class="services__icon">
+            <img src="./images/icons/safety.svg" aria-hidden='true' loading="lazy" alt="Safe & Security" width='100'
+              height='123'>
+          </div>
+          <div class="services__inner">
+            <h3 class="services__subtitle">
+              Safe & Security
+            </h3>
+            <p class="services__text">
+              We take the safety and security of your business funds and information seriously. We’ve built tools to
+              ensure that your business is protected
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="services__item" data-aos="fade-left" data-aos-offset="50" data-aos-delay="1600" data-aos-duration="700"
+        data-aos-easing="ease-in-out">
+        <div class="services__box">
+          <div class="services__icon">
+            <img src="./images/icons/fees.svg" aria-hidden='true' loading="lazy" alt="Low fees" width='115'
+              height='105'>
+          </div>
+          <div class="services__inner">
+            <h3 class="services__subtitle">
+              Low fees
+            </h3>
+            <p class="services__text">
+              We’re on a mission to bring transparency to finance. We charge as little as possible, and we always show
+              you
+              upfront. No hidden fees. No bad exchange rates. No surprises.
+            </p>
+          </div>
+        </div>
+      </li>
+      <li class="services__item" data-aos="fade-left" data-aos-offset="50" data-aos-delay="1800" data-aos-duration="700"
+        data-aos-easing="ease-in-out">
+        <div class="services__box">
+          <div class="services__icon">
+            <img src="./images/icons/chart.svg" aria-hidden='true' loading="lazy" alt="Professional Services"
+              width='150' height='98'>
+          </div>
+          <div class="services__inner">
+            <h3 class="services__subtitle">
+              Professional Services
+            </h3>
+            <p class="services__text">
+              OctoPAY is a business account platform for domestic and international payments, designed to save you time
+              and money.
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="banner-analyze">
+  <div class="container">
+    <div class="banner-analyze__box">
+      <div class="banner-analyze__img" data-aos="fade-right" data-aos-offset="50" data-aos-delay="700"
+        data-aos-duration="700" data-aos-easing="ease-in-out">
+        <img src="./images/all-img/mobile-reg.png" aria-hidden="true" loading="lazy" alt="mobile register" width='270'
+          height='470'>
+      </div>
+      <div class="banner-analyze__content" data-aos="fade-left" data-aos-offset="50" data-aos-delay="1400"
+        data-aos-duration="700" data-aos-easing="ease-in-out">
+        <h2 class="banner-analyze__title title">
+          Get clarity over your money, in ways you`d never expect
+        </h2>
+        <p class="banner-analyze__text">
+          In case you ever feel worried about the safety of your accounts, our application will give you completely
+          clear report based on your charges.
+        </p>
+        <a class="banner-analyze__btn buttonUI" href='#contacts-section' data-scroll>
+          Get Started For Free
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="contacts" id='contacts-section'>
+  <div class="container">
+    <h2 class="contacts__title title">
+      Contact us
+    </h2>
+    <div class="contacts__inner">
+      <div class="contacts__wrapper">
+        <div class="contacts__content" data-aos="fade-left" data-aos-offset="50" data-aos-delay="700"
+          data-aos-duration="700" data-aos-easing="ease-in-out">
+          <div class="contacts__text">
+            <p>
+              An experienced team of friendly and reliable technical support specialists will help you in solving
+              complicated and urgent questions.
+            </p>
+            <p>
+              We don’t do complicated, automated systems. We have offices around the world, full of people ready to help
+              you. Whenever you need it.
+            </p>
+          </div>
+        </div>
+        <div class="contacts__img" data-aos="fade-left" data-aos-offset="50" data-aos-delay="1400"
+          data-aos-duration="700" data-aos-easing="ease-in-out">
+          <img src="./images/icons/message.svg" aria-hidden="true" loading="lazy" alt="message" width='420'
+            height='220'>
+        </div>
+      </div>
+      <a class="contacts__btn buttonUI" href='#contact-form' data-scroll>
+        Get Started For Free
+      </a>
+    </div>
+  </div>
+  <div class="contacts__container" id='contact-form' style="background-image: url('./images/all-img/hero-bg.jpg');">
+    <div class="container">
+      <div class="contacts__box">
+        <h3 class="contacts__subtitle title">
+          Get the latest updates
+        </h3>
+        <form class="form" action="#">
+          <div class="form__row">
+            <label class="form__label">
+              <span class="sr-only">
+                Your email
+              </span>
+              <input class="form__input" type="email" placeholder='@Your E-mail' required>
+            </label>
+            <button class="form__btn buttonUI buttonUI--submit" type='submit'>
+              Subcribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <a class="footer__logo logo" href="#body" data-scroll>
+        <img src="./images/logo.svg" loading="lazy" alt="logo" width='200' height='60'>
+      </a>
+      <div class="footer__col">
+        <span class="footer__head">
+          Contact us
+        </span>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <div class="footer__flex">
+              <span class="footer__descr">
+                Address:
+              </span>
+              <address class="footer__info">
+                1 YONGE STREET #1801 TORONTO, ONTARIO M5E1W7 CANADA
+              </address>
+            </div>
+          </li>
+          <li class="footer__item">
+            <div class="footer__flex">
+              <span class="footer__descr">
+                Email:
+              </span>
+              <a class="footer__info" href='mail:info@octopay.ca'>
+                info@octopay.ca
+              </a>
+            </div>
+          </li>
+          <li class="footer__item">
+            <div class="footer__flex">
+              <span class="footer__descr">
+                Tel:
+              </span>
+              <a class="footer__info" href='tel:+16474907704'>
+                + 1 (647) 4907704
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span class="footer__copy">
+        © 2023 OctoPay Finance Inc. All rights reserved.
+      </span>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
