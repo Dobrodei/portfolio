@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Donate</title>
+  <link rel="preload" as="font" href="./fonts/Gilroy-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-Medium.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/Gilroy-SemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="favicon.ico" rel="icon" type="image/x-icon">
+</head>
+
+<body class="body" id="body">
+  <header class="header">
+  <div class="container">
+    <div class="header__flex">
+      <a class="header__logo logo" href="#">
+        <img src="./images/logo.svg" alt="Логотип" width='160' height='40'>
+      </a>
+      <div class="header__inner">
+        <a class="header__link" href="#" aria-label='Вход в профиль'>
+        </a>
+        <div class="dropdownUI">
+          <div class="dropdownUI__select">
+            <div class="dropdownUI__header">
+              <span class="dropdownUI__paysystem" data-value="rus">
+                RUS
+              </span>
+              <button class="dropdownUI__btn" aria-label="Открыть Select" type='button'></button>
+            </div>
+            <ul class="dropdownUI__dropdown">
+              <li class="dropdownUI__option">
+                <a class="dropdownUI__value" href='#' data-value="rus">
+                  rus
+                </a>
+              </li>
+              <li class="dropdownUI__option">
+                <a class="dropdownUI__value" href='#' data-value="en">
+                  en
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <section class="hero" style='background-image: url("./images/all-img/hero-bg.png");'>
+  <div class="hero__img">
+    <img src="./images/all-img/hero-img.png" aria-hidden='true' alt="img" width='690' height='690'>
+  </div>
+  <div class="container">
+    <div class="hero__box">
+      <div class="hero__top">
+        <h2 class="hero__title">
+          Лучший инструмент стримера и блогера
+        </h2>
+        <p class="hero__text">
+          Моментальное* зачисление средств на вашу банковскую карту
+        </p>
+      </div>
+      <button class="hero__btn buttonUI">
+        Начать принимать донаты
+      </button>
+      <p class="hero__text">
+        *В целях борьбы с мошенничеством введён холд 48 часов.
+      </p>
+    </div>
+  </div>
+</section>
+    <section class="steps">
+  <div class="container">
+    <h2 class="steps__title title">
+      Как это работает
+    </h2>
+    <ul class="steps__list">
+      <li class="steps__item">
+        <div class="steps__box">
+          <div class="steps__header">
+            <span class="steps__num">
+              01
+            </span>
+            <h3 class="steps__subtitle">
+              Генерируете ссылку на страницу сбора донатов
+            </h3>
+          </div>
+          <div class="steps__img">
+            <img src="./images/all-img/steps-img1.png" aria-hidden='true' loading="lazy" alt="img" width='230'
+              height='230'>
+          </div>
+        </div>
+      </li>
+      <li class="steps__item">
+        <div class="steps__box">
+          <div class="steps__header">
+            <span class="steps__num">
+              02
+            </span>
+            <h3 class="steps__subtitle">
+              Задаёте настройки
+              виджетам для
+              различных действий
+            </h3>
+          </div>
+          <div class="steps__img">
+            <img src="./images/all-img/steps-img2.png" aria-hidden='true' loading="lazy" alt="img" width='230'
+              height='230'>
+          </div>
+        </div>
+      </li>
+      <li class="steps__item">
+        <div class="steps__box">
+          <div class="steps__header">
+            <span class="steps__num">
+              03
+            </span>
+            <h3 class="steps__subtitle">
+              Зритель указывает сумму
+              доната, отправляет сообщение и совершает платёж
+            </h3>
+          </div>
+          <div class="steps__img">
+            <img src="./images/all-img/steps-img3.png" aria-hidden='true' loading="lazy" alt="img" width='230'
+              height='230'>
+          </div>
+        </div>
+      </li>
+      <li class="steps__item">
+        <div class="steps__box">
+          <div class="steps__header">
+            <span class="steps__num">
+              04
+            </span>
+            <h3 class="steps__subtitle">
+              Средства моментально
+              зачисляются на вашу
+              банковскую карту
+            </h3>
+          </div>
+          <div class="steps__img">
+            <img src="./images/all-img/steps-img4.png" aria-hidden='true' loading="lazy" alt="img" width='230'
+              height='230'>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="about">
+  <div class="container">
+    <div class="about__flex">
+      <div class="about__item about__item--small">
+        <div class="about__box about__box--pt">
+          <div class="about__img">
+            <img src="./images/all-img/plus.png" loading="lazy" aria-hidden='true' alt="фото" width='160' height='160'>
+          </div>
+          <h2 class="about__title">
+            Принимайте донаты на популярных площадках
+          </h2>
+          <p class="about__text">
+            С помощью данного сервиса вы можете принимать донаты от ваших зрителей и подписчиков на всех популярных
+            площадках.
+          </p>
+        </div>
+      </div>
+      <div class="about__item about__item--big">
+        <div class="about__box" style='background-image: url("./images/all-img/about-bg.jpg");'>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label='twitch'>
+                <img src="./images/icons/twitch.svg" width='140' height='50' alt="твитч">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label='twitch'>
+                <img src="./images/icons/youtube.svg" width='130' height='50' alt="ютуб">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label='twitch'>
+                <img src="./images/icons/vk.svg" width='50' height='50' alt="вк">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label='twitch'>
+                <img src="./images/icons/fb.svg" width='50' height='50' alt="фейсбук">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label='twitch'>
+                <img src="./images/icons/odn.svg" width='50' height='50' alt="одноклассники">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="feedback">
+  <div class="container">
+    <div class="feedback__flex">
+      <div class="feedback__box feedback__box--bg">
+        <div class="feedback__img">
+          <img src="./images/all-img/arrow.png" loading="lazy" aria-hidden="true" alt="Стрелка" width='535'
+            height='350'>
+        </div>
+        <div class="feedback__inner">
+          <h2 class='feedback__title'>
+            Пожаловаться на мошенничество
+          </h2>
+          <p class='feedback__text'>
+            Если вы перевели деньги по ошибке или у вас их выманили мошенники, немедленно сообщите нам, мы примем
+            все возможные меры по скорейшему возврату средств и блокировке мошенника.
+          </p>
+        </div>
+      </div>
+      <div class="feedback__box">
+        <form class="form" action="#">
+          <div class="form__box">
+            <label class="form__label">
+              <span class="sr-only">
+                Ваше имя
+              </span>
+              <input class="form__input" type="text" placeholder='Имя'>
+            </label>
+            <label class="form__label">
+              <span class="sr-only">
+                Ваша почта
+              </span>
+              <input class="form__input" type="email" placeholder='Почта'>
+            </label>
+            <label class="form__label">
+              <span class="sr-only">
+                URL сайта
+              </span>
+              <input class="form__input" type="text" placeholder='URL сайта'>
+            </label>
+            <label class="form__label">
+              <span class="sr-only">
+                Сумма
+              </span>
+              <input class="form__input" type="text" placeholder='Сумма'>
+            </label>
+            <label class="form__label">
+              <span class="sr-only">
+                Введите сообщение
+              </span>
+              <textarea class="form__textarea" placeholder='Сообщение'></textarea>
+            </label>
+          </div>
+          <button class='form__btn buttonUI' type='submit'>
+            Отправить
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__flex">
+      <a class="footer__logo logo" href="#">
+        <img src="./images/logo-footer.svg" loading="lazy" alt="Логотип" width='240' height='55'>
+      </a>
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Тарифы и комиссии
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Правила для отправителей
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Правила для получателей
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Политика конфиденциальности
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
