@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>DJ Squeeze</title>
+  <link rel="preload" as="font" href="./fonts/TT-Fellows-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/TT-Fellows-DemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/TT-Fellows-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/TT-Fellows-ExtraBold.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="header__flex">
+      <div class="header__dropdown">
+        <div class="dropdownUI">
+          <div class="dropdownUI__select">
+            <div class="dropdownUI__header">
+              <span class="dropdownUI__paysystem" data-value="en">
+                EN
+              </span>
+              <button class="dropdownUI__btn" aria-label="Открыть Select" type="button"></button>
+            </div>
+            <ul class="dropdownUI__dropdown">
+              <li class="dropdownUI__option">
+                <a class="dropdownUI__value" href="#" data-value="fr">
+                  FR
+                </a>
+              </li>
+              <li class="dropdownUI__option">
+                <a class="dropdownUI__value" href="#" data-value="es">
+                  ES
+                </a>
+              </li>
+              <li class="dropdownUI__option">
+                <a class="dropdownUI__value" href="#" data-value="de">
+                  DE
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a class="header__logo" href="#">
+        <img src="./images/logo.svg" alt="Логотип" width='108' height='82'>
+      </a>
+      <!-- <div class="header-menu">
+        <div class="header-menu__flex">
+          <div class="header-menu__left">
+            <div class="header-menu__links">
+              <a class="header-menu__link" href="#">
+                Our releases
+              </a>
+              <a class="header-menu__link" href="#">
+                Statistics
+              </a>
+            </div>
+            <div class="header-menu__social">
+              <span class="header-menu__descr">
+                Follow us
+              </span>
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="#" style='background-image: url("./images/icons/yt.svg");'
+                    aria-label='youtube'></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" style='background-image: url("./images/icons/tw.svg");'
+                    aria-label='twitter'></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" style='background-image: url("./images/icons/fb.svg");'
+                    aria-label='facebook'></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" style='background-image: url("./images/icons/inst.svg");'
+                    aria-label='instagram'></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" style='background-image: url("./images/icons/cloud.svg");'
+                    aria-label='cloud'></a>
+                </li>
+              </ul>
+              <span class="header-menu__descr">
+                Subscribe to news
+              </span>
+            </div>
+          </div>
+          <div class="header-menu__right">
+            <span class="header-menu__descr header-menu__descr--light">
+              Our Residents
+            </span>
+            <ul class="header-menu__list">
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  The Bossline
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Capital Boy
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Brother B
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Lioli
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  ZDM
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Some girl
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Teachcrasher
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  No Hopes
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Anton Ishutin
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+      <button class="burger-btn" aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger-btn__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <section class="hero hero--group" style="background-image: url('./images/img-all/hero-squeeze.jpg')">
+  <div class="container">
+    <h1 class="hero__title">
+      <span class='color-auntum'>DJ</span> Squeeze
+    </h1>
+    <p class="hero__text">
+      ZDM | Managing Partner
+    </p>
+  </div>
+</section>
+    <section class="about section-pt">
+  <div class="container">
+    <div class="about__head border-radius">
+      <h2 class="about__title title">
+        DJ <span class='color-auntum'>Squeeze</span>
+      </h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__col">
+        <div class="about__box border-radius">
+          <div class="about__text">
+            <p>
+              Денис Жуков, более известный в музыкальных кругах как<span class='color-auntum'>DJ Squeeze,</span> 
+              родился и вырос в Москве, где он окончил
+              престижную консерваторию, положив начало своему пути в мир музыки.
+            </p>
+            <p>
+              С самого начала своей карьеры в <span class='color-auntum'>2005</span> году, Денис начал
+              экспериментировать с различными жанрами, но особое
+              предпочтение отдавал <span class='color-auntum'>
+                солнечному вокальному и диско-хаусу,
+              </span> что и определило направление его ранних работ.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="about__col">
+        <div class="about__img about__img--small border-radius">
+          <img src="./images/img-all/about-squeeze.jpg" loading="lazy" alt="DJ Squeeze" width='450' height='550'>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="future section-pt">
+  <div class="container">
+    <h2 class="sr-only">
+      Мой путь
+    </h2>
+    <div class="future_grid">
+      <div class="future__box border-radius" style='background-image: url("./images/img-all/future-img1.jpg");'>
+        <p class="future__text">
+          В 2008 году, его талант и стремление к совершенству привели его на студию <span
+            class='color-auntum'>Soundworx,</span> которая принадлежала Ивану, известному в музыкальной индустрии
+          как Capital Boy.
+        </p>
+      </div>
+      <div class="future__box border-radius" style='background-image: url("./images/img-all/future-img2.jpg");'>
+        <p class="future__text">
+          Это знакомство оказалось судьбоносным не только для развития карьеры Дениса, но и для их личных отношений.
+
+          Иван стал не только саунд-продюсером и мастеринг-инженером Дениса, но и его близким другом и соратником
+          на музыкальном пути.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="single section-pt">
+  <div class="container">
+    <div class="single__head single__head--flex border-radius">
+      <h2 class="single__title title">
+        2022 год
+      </h2>
+      <p class="single__descr">
+        Приглашение присоединиться к лейблу Capitalism Music
+      </p>
+    </div>
+    <div class="single__inner">
+      <div class="single__box border-radius single__box--img"
+        style='background-image: url("./images/img-all/single-squeeze.jpg");'>
+      </div>
+      <div class="single__box single__box--mt border-radius">
+        <div class="single__text">
+          <p>
+            В 2022 году Денис получил приглашение присоединиться к лейблу Capitalism Music в качестве одного
+            из резидентов под новым псевдонимом ZDM.
+          </p>
+          <p>
+            Этот шаг открыл для него новые горизонты и возможности для творческого самовыражения и развития.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="info section-pt">
+  <div class="container">
+    <h2 class="sr-only">
+      Международное признание
+    </h2>
+    <div class="info__grid">
+      <div class="info__box info__box--col border-radius">
+        <h3 class="info__subtitle">
+          2023 год
+        </h3>
+        <p class="info__text">
+          После посещения International Music Summit на Ибице, Денис не только укрепил свои позиции в музыкальной
+          индустрии, но и был приглашён занять позицию топ-менеджера и управляющего лейбла Capitalism Music.
+        </p>
+      </div>
+      <div class="info__box border-radius info__box--auntum">
+        <p class="info__text info__text--big">
+          Кроме того, он вошёл в долю и стал главным партнёром Ивана, что стало логичным продолжением их многолетнего
+          сотрудничества и дружбы.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="news section-pt">
+  <h2 class="sr-only">
+    История DJ Squeeze
+  </h2>
+  <div class="container">
+    <div class="news__grid">
+      <div class="news__col news__col--bg border-radius"
+        style='background-image: url("./images/img-all/news-squeeze.jpg");'>
+        <p class="news__text">
+          Переезд в Испанию стал новой главой в жизни и карьере Дениса Жукова, подчёркивая его <span
+            class='color-auntum'>неутомимое стремление
+            к развитию и совершенствованию,</span>  а также его готовность к новым вызовам и возможностям.
+        </p>
+      </div>
+      <div class="news__col">
+        <div class="news__box border-radius">
+          <div class="news__texts">
+            <p class='news__text'>
+              Денис переезжает в <span class='color-auntum'>Испанию,</span> открывая новую главу в своей жизни
+              и карьере. Приняв Испанию в качестве нового дома, он продолжил активно работать над проектами лейбла
+              Capitalism Music, используя свой опыт и знания для продвижения лейбла и его артистов на европейском рынке.
+            </p>
+            <p class='news__text'>
+              Этот шаг также позволил ему ближе познакомиться с <span class='color-auntum'>европейской культурой
+                и музыкальными тенденциями,</span> что,
+              безусловно, отразилось на его творчестве и подходе к музыке.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="contacts contacts--group section-pt">
+  <div class="container">
+    <ul class="contacts__list">
+      <li class="contacts__item">
+        <div class="contacts__box border-radius" style="background-image: url('./images/img-all/contacts-groupbg.jpg')">
+          <h2 class="contacts__title title">
+            Контакты
+          </h2>
+        </div>
+      </li>
+      <li class="contacts__item">
+        <a class="contacts__link border-radius" href="https://www.youtube.com/@capitalismusic" target="_blank"
+          aria-label="Youtube link" style="background-image: url('./images/icons/yt.svg')">
+        </a>
+      </li>
+      <li class="contacts__item">
+        <a class="contacts__link border-radius" href="https://www.facebook.com/capitalismmusic" target="_blank"
+          aria-label="facebook link" style="background-image: url('./images/icons/fb.svg')">
+        </a>
+      </li>
+      <li class=" contacts__item">
+        <a class="contacts__link border-radius" href="https://www.instagram.com/capitalismusic" target="_blank"
+          aria-label="instagram link" style="background-image: url('./images/icons/inst.svg')">
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <a class="footer__logo" href="#">
+      <img src="./images/logo.svg" loading="lazy" alt="Logo" width="106" height="80">
+    </a>
+  </div>
+</footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

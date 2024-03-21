@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>The bossline</title>
+  <link rel="preload" as="font" href="./fonts/TT-Fellows-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/TT-Fellows-DemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/TT-Fellows-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/TT-Fellows-ExtraBold.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="header__flex">
+      <div class="header__dropdown">
+        <div class="dropdownUI">
+          <div class="dropdownUI__select">
+            <div class="dropdownUI__header">
+              <span class="dropdownUI__paysystem" data-value="en">
+                EN
+              </span>
+              <button class="dropdownUI__btn" aria-label="Открыть Select" type="button"></button>
+            </div>
+            <ul class="dropdownUI__dropdown">
+              <li class="dropdownUI__option">
+                <a class="dropdownUI__value" href="#" data-value="fr">
+                  FR
+                </a>
+              </li>
+              <li class="dropdownUI__option">
+                <a class="dropdownUI__value" href="#" data-value="es">
+                  ES
+                </a>
+              </li>
+              <li class="dropdownUI__option">
+                <a class="dropdownUI__value" href="#" data-value="de">
+                  DE
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a class="header__logo" href="#">
+        <img src="./images/logo.svg" alt="Логотип" width='108' height='82'>
+      </a>
+      <!-- <div class="header-menu">
+        <div class="header-menu__flex">
+          <div class="header-menu__left">
+            <div class="header-menu__links">
+              <a class="header-menu__link" href="#">
+                Our releases
+              </a>
+              <a class="header-menu__link" href="#">
+                Statistics
+              </a>
+            </div>
+            <div class="header-menu__social">
+              <span class="header-menu__descr">
+                Follow us
+              </span>
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="#" style='background-image: url("./images/icons/yt.svg");'
+                    aria-label='youtube'></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" style='background-image: url("./images/icons/tw.svg");'
+                    aria-label='twitter'></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" style='background-image: url("./images/icons/fb.svg");'
+                    aria-label='facebook'></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" style='background-image: url("./images/icons/inst.svg");'
+                    aria-label='instagram'></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" style='background-image: url("./images/icons/cloud.svg");'
+                    aria-label='cloud'></a>
+                </li>
+              </ul>
+              <span class="header-menu__descr">
+                Subscribe to news
+              </span>
+            </div>
+          </div>
+          <div class="header-menu__right">
+            <span class="header-menu__descr header-menu__descr--light">
+              Our Residents
+            </span>
+            <ul class="header-menu__list">
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  The Bossline
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Capital Boy
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Brother B
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Lioli
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  ZDM
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Some girl
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Teachcrasher
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  No Hopes
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Anton Ishutin
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+      <button class="burger-btn" aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger-btn__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <section class="hero hero--group" style="background-image: url('./images/img-all/hero-bg2.jpg')">
+  <div class="container">
+    <h1 class="hero__title">
+      <span class='color-auntum'>The</span> Bossline
+    </h1>
+    <p class="hero__text">
+      Испано-Американская Коллаборация, Покорившая Танцполы
+    </p>
+  </div>
+</section>
+    <section class="about section-pt">
+  <div class="container">
+    <div class="about__head border-radius">
+      <h2 class="about__title title">
+        The <span class='color-auntum'>Bossline</span>
+      </h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__col">
+        <div class="about__box border-radius">
+          <div class="about__text">
+            <p>
+              Коллектив <span class='color-auntum'>The Bossline,</span> результат уникального сотрудничества
+              между испано-американским
+              продюсерским
+              коллективом <span class='color-auntum'>Capital Boy</span>и ведущим российским ди-джеем, ныне проживающим
+              в Испании, <span class='color-auntum'>
+                Сергеем
+                Лосёвым,
+              </span>
+              продолжает набирать популярность на мировой музыкальной арене.
+            </p>
+            <p>
+              <span class='color-auntum'>
+                Мелодичный хаус
+              </span> с акцентом на плотные танцевальные биты, завоевала сердца слушателей по всему миру.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="about__col about__col--flex">
+        <div class="about__img border-radius">
+          <img src="./images/img-all/about-bosslineimg.jpg" loading="lazy" alt="Сергей Лосев" width='450' height='270'>
+        </div>
+        <div class="about__img border-radius">
+          <img src="./images/img-all/about-bosslineimg2.jpg" loading="lazy" alt="Capital boy" width='450' height='270'>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="single section-pt">
+  <div class="container">
+    <div class="single__head border-radius">
+      <h2 class="single__title title">
+        Прорыв с&nbsp;синглом <span class='color-auntum'>"Rapture"</span>
+      </h2>
+    </div>
+    <div class="single__inner">
+      <div class="single__box border-radius single__box--img"
+        style='background-image: url("./images/img-all/single.jpg");'>
+        <span class="single__stats">
+          >1,5 млн стримов
+        </span>
+      </div>
+      <div class="single__box single__box--mt border-radius">
+        <div class="single__text">
+          <p>
+            В 2023 году The Bossline выпустили совместный сингл с немецкой звездой <span class='color-auntum'>
+              Klaas
+            </span> под названием «Rapture»,
+            который мгновенно стал хитом.
+          </p>
+          <p>
+            Собрав более 1,5 млн стримов на Spotify в первую же неделю после выпуска, трек <span class='color-auntum'>
+              «Rapture»
+            </span> ворвался
+            в множество музыкальных чартов и стал неотъемлемой частью плейлистов любителей электронной музыки.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="info section-pt">
+  <div class="container">
+    <h2 class="sr-only">
+      Международное признание
+    </h2>
+    <div class="info__grid">
+      <div class="info__box info__box--col border-radius">
+        <h3 class="info__subtitle">
+          Международное <span class='color-auntum'>признание</span>
+        </h3>
+        <p class="info__text">
+          Сочетание талантов из <span class='color-auntum'>
+            Capital Boy
+          </span>  и мастерства <span class='color-auntum'>
+            Сергея Лосева
+          </span>, усиленное сотрудничеством с <span class='color-auntum'>
+            Klaas
+          </span>, демонстрирует
+          не только музыкальное разнообразие и инновации, но и способность этих артистов создавать треки, которые
+          резонируют с международной аудиторией.
+        </p>
+      </div>
+      <div class="info__box border-radius info__box--auntum">
+        <p class="info__text info__text--big">
+          The Bossline стали символом кросс-культурного взаимодействия в музыке, объединяя фанатов хауса со всего мира.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="future section-pt">
+  <div class="container">
+    <div class="future__head border-radius">
+      <h2 class="future__title title">
+        Планы на <span class='color-auntum'>будущее</span>
+      </h2>
+      <div class="future__icon">
+        <img src="./images/icons/bossline.svg" alt="icon" loading="lazy" width='130' height='130'>
+      </div>
+    </div>
+    <div class="future_grid">
+      <div class="future__box border-radius" style='background-image: url("./images/img-all/future-img1.jpg");'>
+        <p class="future__text future__text--big">
+          После успеха «Rapture», The Bossline не собираются останавливаться на достигнутом.
+        </p>
+      </div>
+      <div class="future__box border-radius" style='background-image: url("./images/img-all/future-img2.jpg");'>
+        <p class="future__text">
+          Коллектив планирует продолжить радовать своих поклонников новыми треками и выступлениями, сохраняя свою
+          <span class='color-auntum'>уникальную музыкальную идентичность</span> и дальше исследуя границы мелодичного
+          хауса.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="news section-pt">
+  <h2 class="sr-only">
+    Присоединяйтесь к нам
+  </h2>
+  <div class="container">
+    <div class="news__grid">
+      <div class="news__col news__col--flex">
+        <div class="news__img border-radius">
+          <img src="./images/img-all/news-bosslineimg.jpg" loading="lazy" alt="Capital Boy" width='450' height='270'>
+        </div>
+        <div class="news__img border-radius">
+          <img src="./images/img-all/news-bosslineimg2.jpg" loading="lazy" alt="Сергей Лосев" width='450' height='270'>
+        </div>
+      </div>
+      <div class="news__col">
+        <div class="news__box border-radius">
+          <div class="news__texts">
+            <p class='news__text'>
+              Для тех, кто жаждет погрузиться в мир мелодичного хауса и плотных танцевальных битов, следите за новостями
+              <span class='color-auntum'>The Bossline</span> на официальных страницах в социальных сетях и музыкальных
+              платформах.
+            </p>
+            <p class='news__text news__text--big'>
+              <span class='color-auntum'>Не упустите</span> возможность стать частью этого музыкального путешествия.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="contacts contacts--group section-pt">
+  <div class="container">
+    <ul class="contacts__list">
+      <li class="contacts__item">
+        <div class="contacts__box border-radius" style="background-image: url('./images/img-all/contacts-groupbg.jpg')">
+          <h2 class="contacts__title title">
+            Контакты
+          </h2>
+        </div>
+      </li>
+      <li class="contacts__item">
+        <a class="contacts__link border-radius" href="https://www.youtube.com/@capitalismusic" target="_blank"
+          aria-label="Youtube link" style="background-image: url('./images/icons/yt.svg')">
+        </a>
+      </li>
+      <li class="contacts__item">
+        <a class="contacts__link border-radius" href="https://www.facebook.com/capitalismmusic" target="_blank"
+          aria-label="facebook link" style="background-image: url('./images/icons/fb.svg')">
+        </a>
+      </li>
+      <li class=" contacts__item">
+        <a class="contacts__link border-radius" href="https://www.instagram.com/capitalismusic" target="_blank"
+          aria-label="instagram link" style="background-image: url('./images/icons/inst.svg')">
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <a class="footer__logo" href="#">
+      <img src="./images/logo.svg" loading="lazy" alt="Logo" width="106" height="80">
+    </a>
+  </div>
+</footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

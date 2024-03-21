@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Brother B</title>
+  <link rel="preload" as="font" href="./fonts/TT-Fellows-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/TT-Fellows-DemiBold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/TT-Fellows-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="./fonts/TT-Fellows-ExtraBold.woff2" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="header__flex">
+      <div class="header__dropdown">
+        <div class="dropdownUI">
+          <div class="dropdownUI__select">
+            <div class="dropdownUI__header">
+              <span class="dropdownUI__paysystem" data-value="en">
+                EN
+              </span>
+              <button class="dropdownUI__btn" aria-label="Открыть Select" type="button"></button>
+            </div>
+            <ul class="dropdownUI__dropdown">
+              <li class="dropdownUI__option">
+                <a class="dropdownUI__value" href="#" data-value="fr">
+                  FR
+                </a>
+              </li>
+              <li class="dropdownUI__option">
+                <a class="dropdownUI__value" href="#" data-value="es">
+                  ES
+                </a>
+              </li>
+              <li class="dropdownUI__option">
+                <a class="dropdownUI__value" href="#" data-value="de">
+                  DE
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <a class="header__logo" href="#">
+        <img src="./images/logo.svg" alt="Логотип" width='108' height='82'>
+      </a>
+      <!-- <div class="header-menu">
+        <div class="header-menu__flex">
+          <div class="header-menu__left">
+            <div class="header-menu__links">
+              <a class="header-menu__link" href="#">
+                Our releases
+              </a>
+              <a class="header-menu__link" href="#">
+                Statistics
+              </a>
+            </div>
+            <div class="header-menu__social">
+              <span class="header-menu__descr">
+                Follow us
+              </span>
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link" href="#" style='background-image: url("./images/icons/yt.svg");'
+                    aria-label='youtube'></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" style='background-image: url("./images/icons/tw.svg");'
+                    aria-label='twitter'></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" style='background-image: url("./images/icons/fb.svg");'
+                    aria-label='facebook'></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" style='background-image: url("./images/icons/inst.svg");'
+                    aria-label='instagram'></a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#" style='background-image: url("./images/icons/cloud.svg");'
+                    aria-label='cloud'></a>
+                </li>
+              </ul>
+              <span class="header-menu__descr">
+                Subscribe to news
+              </span>
+            </div>
+          </div>
+          <div class="header-menu__right">
+            <span class="header-menu__descr header-menu__descr--light">
+              Our Residents
+            </span>
+            <ul class="header-menu__list">
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  The Bossline
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Capital Boy
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Brother B
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Lioli
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  ZDM
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Some girl
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Teachcrasher
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  No Hopes
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+              <li class="header-menu__item">
+                <a href="#" class="header-menu__link">
+                  Anton Ishutin
+                </a>
+                <div class="header-menu__group">
+                  <div class="header-menu__img">
+                    <img src="./images/img-all/capital-boy.jpg" alt="capital-boy">
+                  </div>
+                  <div class="header-menu__logo">
+                    <img src="./images/icons/capital-boy.svg" alt="capital boy">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> -->
+      <button class="burger-btn" aria-label="Открыть меню" aria-expanded="false">
+        <span class="burger-btn__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+  <main class="main">
+    <section class="hero hero--group" style="background-image: url('./images/img-all/hero-brother.jpg')">
+  <div class="container">
+    <h1 class="hero__title">
+      Brother <span class='color-auntum'>B</span>
+    </h1>
+    <p class="hero__text">
+      Evil Jokes | музыкант
+    </p>
+  </div>
+</section>
+    <section class="about section-pt">
+  <div class="container">
+    <div class="about__head border-radius">
+      <h2 class="about__title title">
+        Brother <span class='color-auntum'>B</span>
+      </h2>
+    </div>
+    <div class="about__grid">
+      <div class="about__col">
+        <div class="about__box border-radius">
+          <div class="about__text">
+            <p>
+              Павел Б, широко известный в музыкальных кругах как Brother B и ранее как минимал-техно продюсер <span
+                class='color-auntum'>
+                Evil
+                Jokes.
+              </span>
+            </p>
+            <p>
+              Начал свою карьеру в 2008 году, когда, будучи московским диджеем, пришёл на студию Soundworx,
+              принадлежавшую Ивану, известному как Capital Boy.
+            </p>
+            <p>
+              С этого момента Павел стал первым и самым талантливым учеником Ивана, а треки под псевдонимом <span
+                class='color-auntum'>Evil Jokes</span>
+              получили огромную популярность, неоднократно войдя в различные мировые чарты.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="about__col">
+        <div class="about__img about__img--small border-radius">
+          <img src="./images/img-all/about-brother.jpg" loading="lazy" alt="Brother B" width='450' height='550'>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="future section-pt">
+  <div class="container">
+    <h2 class="sr-only">
+      Мой путь
+    </h2>
+    <div class="future_grid">
+      <div class="future__box border-radius" style='background-image: url("./images/img-all/future-img1.jpg");'>
+        <p class="future__text">
+          <span class='color-auntum'>В 2020 </span> году Павел вновь встретился с Иваном, который на тот момент жил в
+          Испании и приехал ненадолго в Москву.
+          Эта встреча заложила основу для их будущего сотрудничества и дружбы.
+        </p>
+      </div>
+      <div class="future__box border-radius" style='background-image: url("./images/img-all/future-img2.jpg");'>
+        <p class="future__text">
+          В 2022 году Павел получил приглашение стать резидентом Capitalism Music, что стало новым значимым этапом
+          в его карьере.
+
+          В своей работе Павел использует аналоговые синтезаторы Moog, Nord, Virus, а также обработку от Universal
+          Audio, что придаёт его музыке непревзойдённое качество звучания.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="single section-pt">
+  <div class="container">
+    <div class="single__head border-radius">
+      <h2 class="single__title title">
+        Музыка
+      </h2>
+    </div>
+    <div class="single__inner">
+      <div class="single__box border-radius single__box--img"
+        style='background-image: url("./images/img-all/single-brother.jpg");'>
+      </div>
+      <div class="single__box single__box--mt border-radius">
+        <div class="single__text">
+          <p>
+            Музыка Brother B представляет собой уникальный классический <span class='color-auntum'>клубный хаус,</span>
+            который мгновенно нашёл отклик у слушателей по всему миру и получил широкую поддержку в рамках Capitalism
+            Music.
+          </p>
+          <p>
+            Его творчество отличается глубоким пониманием музыкальной структуры и способностью создавать треки, которые
+            одновременно новаторские и классические, оставаясь при этом актуальными для широкой аудитории.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="info section-pt">
+  <div class="container">
+    <h2 class="sr-only">
+      Международное признание
+    </h2>
+    <div class="info__grid">
+      <div class="info__box info__box--white border-radius">
+        <p class="info__text info__text--white info__text--big">
+          <span class='color-auntum'>Brother B</span> продолжает вдохновлять и радовать поклонников по всему миру,
+          демонстрируя не только своё мастерство
+          и талант, но и неизменное стремление к совершенству.
+        </p>
+      </div>
+      <div class="info__box info__box--bg info__box--col border-radius">
+        <h3 class="info__subtitle">
+          Выступления
+        </h3>
+        <p class="info__text">
+          Его музыкальная карьера, начавшаяся с выступлений в московских клубах, привела его к международному признанию
+          и успеху, подтверждая статус Brother B как одного из самых востребованных и уважаемых артистов на современной
+          электронной сцене.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="contacts contacts--group section-pt">
+  <div class="container">
+    <ul class="contacts__list">
+      <li class="contacts__item">
+        <div class="contacts__box border-radius" style="background-image: url('./images/img-all/contacts-groupbg.jpg')">
+          <h2 class="contacts__title title">
+            Контакты
+          </h2>
+        </div>
+      </li>
+      <li class="contacts__item">
+        <a class="contacts__link border-radius" href="https://www.youtube.com/@capitalismusic" target="_blank"
+          aria-label="Youtube link" style="background-image: url('./images/icons/yt.svg')">
+        </a>
+      </li>
+      <li class="contacts__item">
+        <a class="contacts__link border-radius" href="https://www.facebook.com/capitalismmusic" target="_blank"
+          aria-label="facebook link" style="background-image: url('./images/icons/fb.svg')">
+        </a>
+      </li>
+      <li class=" contacts__item">
+        <a class="contacts__link border-radius" href="https://www.instagram.com/capitalismusic" target="_blank"
+          aria-label="instagram link" style="background-image: url('./images/icons/inst.svg')">
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <a class="footer__logo" href="#">
+      <img src="./images/logo.svg" loading="lazy" alt="Logo" width="106" height="80">
+    </a>
+  </div>
+</footer>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
