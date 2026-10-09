@@ -1,0 +1,1805 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FullDome — кинотеатр-планетарий в вашем городе</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+  <style>
+    @layer theme, base, components, utilities;
+
+    @import url("https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css") layer(components);
+
+    @layer utilities {
+      :root {
+        --bg: #0b0620;
+        --bg2: #150b35;
+        --ink: #f4f0ff;
+        --mute: #b8acd9;
+        --violet: #8b5cf6;
+        --pink: #ec4899;
+        --cyan: #22d3ee;
+        --gold: #fbbf24;
+        --grad: linear-gradient(90deg, #8b5cf6 0%, #ec4899 55%, #f59e0b 100%);
+      }
+
+      /* * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      } */
+
+      body {
+        background: var(--bg);
+        color: var(--ink);
+        font-family: Manrope, system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .body--hidden {
+        overflow: hidden;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .container.container {
+        display: block;
+        max-width: 1240px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      /* шапка */
+      .hdr {
+        position: fixed;
+        inset: 0 0 auto 0;
+        z-index: 5;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        background: linear-gradient(180deg,
+            rgba(11, 6, 32, 0.85) 60%,
+            rgba(11, 6, 32, 0) 100%);
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-family: Unbounded;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+      }
+
+      .logo i {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 35% 30%,
+            #fff 0 8%,
+            #c4b5fd 9% 30%,
+            #7c3aed 60%,
+            #1e1b4b 100%);
+        box-shadow: 0 0 22px #8b5cf6aa;
+      }
+
+      .burger {
+        flex-shrink: 0;
+        display: none;
+        margin-left: auto;
+        width: 42px;
+        height: 42px;
+        border-radius: 12px;
+        background: #ffffff14;
+        border: 1px solid #ffffff2a;
+        place-items: center;
+      }
+
+      .burger i {
+        width: 18px;
+        height: 2px;
+        background: #fff;
+        box-shadow:
+          0 -6px #fff,
+          0 6px #fff;
+      }
+
+      .nav {
+        display: flex;
+        gap: 30px;
+        font-size: 15px;
+        color: var(--mute);
+        margin-left: auto;
+      }
+
+      .nav a:hover {
+        color: #fff;
+      }
+
+      .hbtn {
+        padding: 12px 22px;
+        border-radius: 999px;
+        text-align: center;
+        border: 1px solid #ffffff40;
+        font-weight: 600;
+        font-size: 15px;
+        backdrop-filter: blur(6px);
+        background: #ffffff10;
+      }
+
+      /* первый экран */
+      .hero {
+        position: relative;
+        padding-top: 180px;
+        /* padding-bottom: 80px; */
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        background:
+          linear-gradient(90deg,
+            rgba(11, 6, 32, 0.96) 0%,
+            rgba(11, 6, 32, 0.78) 34%,
+            rgba(11, 6, 32, 0.15) 62%,
+            rgba(11, 6, 32, 0) 100%),
+          linear-gradient(0deg, var(--bg) 0%, rgba(11, 6, 32, 0) 22%),
+          var(--hero,
+            radial-gradient(ellipse at 75% 35%,
+              #7c3aed 0%,
+              #312e81 35%,
+              #0b0620 70%)) center/cover no-repeat;
+      }
+
+      .hero__slider {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+
+      @media (max-width:1024px) {
+        .hero__slider {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+        }
+      }
+
+      @media (max-width:768px) {
+        .hero {
+          padding-top: 125px;
+        }
+
+        .swiper-slide {
+          max-width: 300px;
+          width: 55%;
+        }
+
+        .hero__slider {
+          display: flex;
+          gap: 0;
+        }
+      }
+
+      .stars {
+        position: absolute;
+        inset: 0;
+        background-image:
+          radial-gradient(1.5px 1.5px at 12% 18%, #fff 50%, transparent 51%),
+          radial-gradient(1px 1px at 28% 72%, #fff 50%, transparent 51%),
+          radial-gradient(1.2px 1.2px at 44% 30%, #fff 50%, transparent 51%),
+          radial-gradient(1px 1px at 8% 58%, #fff 50%, transparent 51%),
+          radial-gradient(1.6px 1.6px at 36% 88%, #fff 50%, transparent 51%);
+        opacity: 0.7;
+        pointer-events: none;
+      }
+
+      .tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 8px 16px 8px 8px;
+        border-radius: 999px;
+        background: #ffffff12;
+        border: 1px solid #ffffff26;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+      }
+
+      .tag b {
+        padding: 5px 12px;
+        border-radius: 999px;
+        background: var(--grad);
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+
+      h1 {
+        font-family: Unbounded;
+        font-weight: 800;
+        font-size: 54px;
+        line-height: 1.06;
+        /* margin: 26px 0 22px; */
+        letter-spacing: -0.5px;
+      }
+
+      h1 span {
+        background: var(--grad);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .lead {
+        font-size: 21px;
+        line-height: 1.5;
+        color: #ddd3fb;
+        max-width: 560px;
+      }
+
+      .cta {
+        width: 100%;
+        display: flex;
+        gap: 16px;
+        /* margin-top: 38px; */
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        padding: 19px 30px;
+        border-radius: 16px;
+        font-weight: 700;
+        font-size: 17px;
+      }
+
+      .btn.main {
+        background: var(--grad);
+        box-shadow: 0 12px 40px -8px #ec4899aa;
+      }
+
+      .btn.alt {
+        background: #ffffff10;
+        border: 1px solid #ffffff33;
+      }
+
+      .facts {
+        display: flex;
+        flex-shrink: 0;
+        gap: 34px;
+      }
+
+      .fact b {
+        display: block;
+        font-family: Unbounded;
+        font-weight: 700;
+        font-size: 26px;
+      }
+
+      .fact span {
+        font-size: 14px;
+        color: var(--mute);
+      }
+
+      /* слайды слайдера */
+      /* .slides {
+        position: absolute;
+        z-index: 3;
+        right: 64px;
+        bottom: 44px;
+        display: flex;
+        gap: 14px;
+      } */
+
+      .sl {
+        /* max-width: 190px; */
+        width: 100%;
+        height: 100%;
+        min-height: 120px;
+        padding: 14px 16px;
+        border-radius: 16px;
+        background: rgba(21, 11, 53, 0.72);
+        border: 1px solid #ffffff22;
+        backdrop-filter: blur(10px);
+        font-size: 13.5px;
+        line-height: 1.35;
+        color: #e8e1ff;
+        transition: border-color 0.3s ease, background 0.3s ease;
+      }
+
+      .sl small {
+        display: block;
+        font-family: Unbounded;
+        font-size: 11px;
+        color: var(--mute);
+        margin-bottom: 6px;
+        letter-spacing: 1px;
+      }
+
+      /* .sl.swiper-slide-active.on {
+        border-color: transparent;
+        background:
+          linear-gradient(rgba(21, 11, 53, 0.85), rgba(21, 11, 53, 0.85)) padding-box,
+          var(--grad) border-box;
+        border: 1.5px solid transparent;
+      } */
+
+      .swiper-slide-active .sl {
+        border-color: transparent;
+        background:
+          linear-gradient(rgba(21, 11, 53, 0.85), rgba(21, 11, 53, 0.85)) padding-box,
+          var(--grad) border-box;
+        border: 1.5px solid transparent;
+      }
+
+      .bar {
+        height: 3px;
+        border-radius: 3px;
+        background: #ffffff22;
+        margin-top: 12px;
+        overflow: hidden;
+      }
+
+      .bar i {
+        display: block;
+        height: 100%;
+        width: 62%;
+        background: var(--grad);
+      }
+
+      .sec {
+        padding-top: 115px;
+        position: relative
+      }
+
+      .sec.alt {
+        background: linear-gradient(180deg, #0b0620 0%, #150b35 50%, #0b0620 100%)
+      }
+
+      .in {
+        max-width: 1240px;
+        margin: 0 auto
+      }
+
+      .kicker {
+        font-family: Unbounded;
+        font-size: 13px;
+        letter-spacing: 2px;
+        color: #c4b5fd;
+        text-transform: uppercase
+      }
+
+      h2 {
+        font-family: Unbounded;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 1.12;
+        /* margin: 14px 0 18px; */
+        letter-spacing: -.3px
+      }
+
+      h2 span {
+        background: var(--grad);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent
+      }
+
+      .sub {
+        font-size: 19px;
+        line-height: 1.55;
+        color: #cfc4f3;
+        max-width: 720px
+      }
+
+      .grid {
+        display: grid;
+        gap: 22px;
+        /* margin-top: 46px */
+      }
+
+
+      .g2 {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .g3 {
+        grid-template-columns: repeat(3, 1fr)
+      }
+
+      .g4 {
+        grid-template-columns: repeat(4, 1fr)
+      }
+
+      .g5 {
+        grid-template-columns: repeat(5, 1fr)
+      }
+
+      .card {
+        width: 100%;
+        height: 100%;
+        border-radius: 22px;
+        overflow: hidden;
+        background: #150b35;
+        border: 1px solid #ffffff1a;
+        position: relative
+      }
+
+      .card img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        aspect-ratio: 5/4;
+        object-fit: cover
+      }
+
+      /* .card .t {
+          padding: 20px 22px 24px
+        } */
+
+      .card h3 {
+        font-family: Unbounded;
+        font-size: 19px;
+        line-height: 1.25;
+        margin-bottom: 8px
+      }
+
+      .card p {
+        font-size: 15.5px;
+        line-height: 1.5;
+        color: #c9bff0
+      }
+
+      .num {
+        position: absolute;
+        top: 14px;
+        left: 14px;
+        font-family: Unbounded;
+        font-size: 12px;
+        padding: 6px 11px;
+        border-radius: 999px;
+        background: rgba(11, 6, 32, .7);
+        border: 1px solid #ffffff30
+      }
+
+      .tech {
+        display: grid;
+        grid-template-columns: 1.05fr 1fr;
+        gap: 56px;
+        align-items: center;
+      }
+
+      .tech img {
+        width: 100%;
+        border-radius: 24px;
+        border: 1px solid #ffffff1a
+      }
+
+      .specs {
+        display: grid;
+        gap: 14px
+      }
+
+      .spec {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+        padding: 18px 20px;
+        border-radius: 18px;
+        background: #ffffff08;
+        border: 1px solid #ffffff14
+      }
+
+      .spec b {
+        font-family: Unbounded;
+        font-size: 15px;
+        display: block;
+        margin-bottom: 4px
+      }
+
+      .spec span {
+        font-size: 15px;
+        color: #c9bff0;
+        line-height: 1.45
+      }
+
+      .ic {
+        flex: 0 0 42px;
+        height: 42px;
+        border-radius: 12px;
+        background: var(--grad);
+        display: grid;
+        place-items: center;
+        font-family: Unbounded;
+        font-weight: 800;
+        font-size: 15px
+      }
+
+      .adv {
+        width: 100%;
+        height: 100%;
+        padding: 28px 26px;
+        border-radius: 22px;
+        background: #ffffff08;
+        border: 1px solid #ffffff14
+      }
+
+      .adv .ic {
+        margin-bottom: 18px;
+        width: 42px
+      }
+
+      .adv h3 {
+        font-family: Unbounded;
+        font-size: 18px;
+        margin-bottom: 10px
+      }
+
+      .adv p {
+        font-size: 15.5px;
+        line-height: 1.5;
+        color: #c9bff0
+      }
+
+      .wide {
+        /* margin-top: 22px; */
+        padding: 30px 34px;
+        border-radius: 22px;
+        background: linear-gradient(120deg, #8b5cf633, #ec489922, #f59e0b22);
+        border: 1px solid #ffffff22;
+        font-size: 19px;
+        line-height: 1.5
+      }
+
+      .loc {
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative
+      }
+
+      .loc img {
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+        display: block
+      }
+
+      .loc b {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 40px 16px 16px;
+        font-family: Unbounded;
+        font-size: 16px;
+        background: linear-gradient(0deg, rgba(11, 6, 32, .9), transparent)
+      }
+
+      .video {
+        margin-top: 40px;
+        border-radius: 26px;
+        overflow: hidden;
+        position: relative;
+        aspect-ratio: 16/9;
+        background: #000 url(img/gory_zvezdy.jpg) center/cover
+      }
+
+      .video:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(11, 6, 32, .45)
+      }
+
+      .play {
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 108px;
+        height: 108px;
+        border-radius: 50%;
+        background: var(--grad);
+        display: grid;
+        place-items: center;
+        box-shadow: 0 0 60px #ec489988
+      }
+
+      .play i {
+        border-left: 32px solid #fff;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        margin-left: 8px
+      }
+
+      .vcap {
+        position: absolute;
+        z-index: 2;
+        left: 34px;
+        bottom: 28px;
+        font-family: Unbounded;
+        font-size: 18px
+      }
+
+      .proj {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+        margin-top: 22px
+      }
+
+      .proj div {
+        padding: 24px;
+        border-radius: 20px;
+        background: #ffffff08;
+        border: 1px solid #ffffff14
+      }
+
+      .proj b {
+        display: block;
+        font-family: Unbounded;
+        font-size: 30px;
+        margin-bottom: 6px;
+        background: var(--grad);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent
+      }
+
+      .proj span {
+        color: #c9bff0;
+        font-size: 15px
+      }
+
+      .price {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 28px;
+        /* margin-top: 40px */
+      }
+
+      .kit {
+        padding: 34px;
+        border-radius: 24px;
+        background: #ffffff08;
+        border: 1px solid #ffffff14
+      }
+
+      .kit ul {
+        list-style: none;
+        display: grid;
+        gap: 12px;
+        /* margin-top: 6px */
+      }
+
+      .kit li {
+        display: flex;
+        gap: 12px;
+        font-size: 16px;
+        line-height: 1.45;
+        color: #e5ddff
+      }
+
+      .kit li:before {
+        content: "";
+        flex: 0 0 8px;
+        height: 8px;
+        margin-top: 8px;
+        border-radius: 50%;
+        background: var(--grad)
+      }
+
+      .pay {
+        padding: 36px;
+        border-radius: 24px;
+        background: linear-gradient(160deg, #2a1463, #150b35 60%);
+        border: 1.5px solid transparent;
+        background-clip: padding-box;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 22px
+      }
+
+      .pay:before {
+        content: "";
+        position: absolute;
+        inset: -1.5px;
+        border-radius: 25px;
+        background: var(--grad);
+        z-index: -1
+      }
+
+      .pay .lbl {
+        color: #c4b5fd;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: Unbounded
+      }
+
+      .pay .sum {
+        font-family: Unbounded;
+        font-weight: 800;
+        font-size: 44px;
+        line-height: 1
+      }
+
+      .pay .ok {
+        font-family: Unbounded;
+        font-size: 22px
+      }
+
+      .pay .ok span {
+        background: var(--grad);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent
+      }
+
+      .foot {
+        padding: 70px 64px 50px;
+        border-top: 1px solid #ffffff14
+      }
+
+      .foot .in {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap
+      }
+
+      .foot .ph {
+        font-family: Unbounded;
+        font-size: 26px
+      }
+
+      .foot small {
+        color: var(--mute);
+        font-size: 14px
+      }
+
+      @media (max-width:768px) {
+        .sec {
+          padding-top: 64px;
+        }
+
+        h2 {
+          font-size: 27px
+        }
+
+        .sub {
+          font-size: 16px
+        }
+
+        .grid {
+          /* margin-top: 28px; */
+          gap: 14px
+        }
+
+        .g2.g2,
+        .g3.g3,
+        .g4.g4 {
+          grid-template-columns: 1fr
+        }
+
+        .g5.g5 {
+          grid-template-columns: repeat(2, 1fr)
+        }
+
+
+        .price {
+          grid-template-columns: 1fr;
+          gap: 24px
+        }
+
+        .proj {
+          grid-template-columns: 1fr
+        }
+
+        .play {
+          width: 78px;
+          height: 78px
+        }
+
+        .play i {
+          border-left-width: 24px;
+          border-top-width: 15px;
+          border-bottom-width: 15px
+        }
+
+        .vcap {
+          font-size: 14px;
+          left: 18px;
+          bottom: 16px
+        }
+
+        .pay .sum {
+          font-size: 32px
+        }
+
+        .wide {
+          font-size: 16px;
+          padding: 22px
+        }
+
+        .foot {
+          padding: 44px 20px
+        }
+
+        .foot .ph {
+          font-size: 21px
+        }
+      }
+
+      .dome {
+        position: relative;
+        border-radius: 24px;
+        overflow: hidden;
+        border: 1px solid #ffffff1a
+      }
+
+      .dome img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        display: block;
+        border: 0;
+        border-radius: 0
+      }
+
+      @media(max-width: 576px) {
+        .dome {
+          height: 310px;
+        }
+      }
+
+      .mk {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: var(--grad);
+        display: grid;
+        place-items: center;
+        font-family: Unbounded;
+        font-weight: 800;
+        font-size: 16px;
+        box-shadow: 0 0 0 4px rgba(11, 6, 32, .6), 0 0 24px #ec489999
+      }
+
+      .dim {
+        position: absolute;
+        left: 18px;
+        top: 18px;
+        padding: 8px 14px;
+        border-radius: 999px;
+        background: rgba(11, 6, 32, .75);
+        border: 1px solid #ffffff30;
+        font-family: Unbounded;
+        font-size: 13px
+      }
+
+      /* телефон */
+      @media (max-width: 768px) {
+        .hdr {
+          padding-top: 18px;
+          padding-bottom: 18px;
+        }
+
+        .logo {
+          font-size: 18px;
+          gap: 4px;
+        }
+
+        .logo i {
+          width: 20px;
+          height: 20px;
+        }
+
+        .nav,
+        .hbtn {
+          display: none;
+        }
+
+        /* .hero {
+          background:
+            linear-gradient(0deg,
+              var(--bg) 8%,
+              rgba(11, 6, 32, 0.55) 45%,
+              rgba(11, 6, 32, 0.1) 70%),
+            var(--hero,
+              radial-gradient(ellipse at 70% 20%,
+                #7c3aed 0%,
+                #312e81 40%,
+                #0b0620 75%)) center 22%/cover no-repeat;
+          background-blend-mode: normal;
+        } */
+
+        /* На телефоне заказчик просил купол по центру, а космос ВНУТРИ купола,
+             поэтому вместо фото на весь экран рисуем сам купол с проекцией внутри. */
+
+        .tag {
+          font-size: 12.5px;
+          flex-wrap: wrap;
+        }
+
+        h1 {
+          font-size: 28px;
+          /* margin: 18px 0 14px; */
+        }
+
+        .lead {
+          font-size: 16px;
+          max-width: 100%;
+        }
+
+        .cta {
+          flex-direction: column;
+          /* margin-top: 26px; */
+        }
+
+        .btn {
+          text-align: center;
+          padding: 17px;
+        }
+
+        .facts {
+          gap: 18px;
+          justify-content: space-around;
+        }
+
+        .fact b {
+          font-size: 18px;
+        }
+
+        .fact span {
+          font-size: 12px;
+        }
+
+        /* .slides {
+          position: static;
+          padding: 0 20px 34px;
+          overflow: hidden;
+        } */
+
+        /* .sl {
+          flex: 0 0 72%;
+        } */
+
+        .groups .card,
+        .date .card {
+          height: 350px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .hero {
+          padding-bottom: 0;
+          flex-direction: column;
+          background:
+            linear-gradient(0deg,
+              var(--bg) 8%,
+              rgba(11, 6, 32, 0.55) 45%,
+              rgba(11, 6, 32, 0.1) 70%),
+            var(--hero,
+              radial-gradient(ellipse at 70% 20%,
+                #7c3aed 0%,
+                #312e81 40%,
+                #0b0620 75%)) center 22%/cover no-repeat;
+          background-blend-mode: normal;
+          background: var(--bg);
+        }
+
+        /* .hero {
+        } */
+
+        .hero::before {
+          content: "";
+          position: relative;
+          display: block;
+          width: 88%;
+          height: 178px;
+          margin: 0 auto 30px;
+          background: url(img/hero.jpg) no-repeat;
+          background-position: 115% 70%;
+          background-size: 150%;
+          border-radius: 50% 50% 16px 16px / 70% 70% 16px 16px;
+          border: 1px solid rgba(255, 255, 255, 0.22);
+          box-shadow:
+            0 0 70px rgba(124, 58, 237, 0.5),
+            inset 0 -40px 60px rgba(11, 6, 32, 0.8);
+        }
+
+        .tag {
+          border-radius: 25px;
+          padding: 10px 15px;
+        }
+      }
+
+      .modal__header {
+        display: none;
+      }
+
+      @media (max-width: 1024px) {
+        .burger {
+          display: grid;
+        }
+
+        .modal {
+          position: fixed;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 1000;
+          /* padding: 15px; */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          cursor: pointer;
+          overflow-y: auto;
+          overflow-x: hidden;
+          opacity: 0;
+          visibility: hidden;
+          -webkit-transition:
+            opacity 2s ease,
+            visibility 0.3s ease,
+            background-color 0.3s ease;
+          -o-transition:
+            opacity 2s ease,
+            visibility 0.3s ease,
+            background-color 0.3s ease;
+          transition:
+            opacity 2s ease,
+            visibility 0.3s ease,
+            background-color 0.3s ease;
+        }
+
+        .modal::before {
+          content: "";
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.7);
+          opacity: 0;
+          -webkit-transition:
+            opacity 0.3s ease,
+            background-color 0.3s ease;
+          -o-transition:
+            opacity 0.3s ease,
+            background-color 0.3s ease;
+          transition:
+            opacity 0.3s ease,
+            background-color 0.3s ease;
+        }
+
+        .modal__header {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          gap: 30px;
+          margin-bottom: 48px;
+        }
+
+        @media (max-width: 576px) {
+          .modal__header {
+            margin-bottom: 38px;
+          }
+        }
+
+        /* 
+        .modal__logo {
+          display: inline-block;
+          max-width: 140px;
+          width: 100%;
+        }
+
+        .modal__logo img {
+          width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+          object-fit: cover;
+        } */
+
+        /* @media (max-width: 576px) {
+          .modal__logo {
+            max-width: 100px;
+          }
+        } */
+
+        .modal__container {
+          display: inline-block;
+          position: relative;
+          width: 100%;
+          margin: auto;
+          padding: 32px 40px;
+          border-radius: 20px;
+          cursor: default;
+          text-align: left;
+          background-color: #0b0620;
+          -webkit-transform: scale(0);
+          -ms-transform: scale(0);
+          transform: scale(0);
+          -webkit-transition: -webkit-transform 0.3s ease;
+          transition: -webkit-transform 0.3s ease;
+          -o-transition: transform 0.3s ease;
+          transition: transform 0.3s ease;
+          transition:
+            transform 0.3s ease,
+            -webkit-transform 0.3s ease;
+        }
+
+        @media (max-width: 576px) {
+          .modal__container {
+            padding: 20px;
+          }
+        }
+
+        .modal__close {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          width: 40px;
+          height: 40px;
+          background-color: #f5f5f5;
+          border-radius: 50%;
+          position: relative;
+          cursor: pointer;
+          z-index: 10;
+        }
+
+        .modal__close::before,
+        .modal__close::after {
+          content: "";
+          width: 45%;
+          height: 2px;
+          border-radius: 2px;
+          background-color: #161616;
+          position: absolute;
+        }
+
+        .modal__close::before {
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+        }
+
+        .modal__close::after {
+          -webkit-transform: rotate(135deg);
+          -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+        }
+
+        @media (max-width: 576px) {
+          .modal__close {
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        .modal__content {
+          width: 100%;
+        }
+
+        .modal--burger .modal__container {
+          width: 100%;
+          min-height: 100%;
+          margin: 0;
+          margin-top: auto;
+          margin-bottom: auto;
+          margin-right: auto;
+          -webkit-transform: translateX(-200%);
+          -ms-transform: translateX(-200%);
+          transform: translateX(-200%);
+        }
+
+        .modal--visible {
+          opacity: 1;
+          visibility: visible;
+          -webkit-transition:
+            opacity 0.3s ease,
+            visibility 0.3s ease;
+          -o-transition:
+            opacity 0.3s ease,
+            visibility 0.3s ease;
+          transition:
+            opacity 0.3s ease,
+            visibility 0.3s ease;
+        }
+
+        .modal--visible::before {
+          opacity: 1;
+        }
+
+        .modal--visible .modal__container {
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          transform: scale(1);
+        }
+
+        @media (orientation: landscape) {
+          .modal {
+            padding-top: 55px;
+            padding-bottom: 30px;
+          }
+        }
+
+        .modal-result__row {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px;
+        }
+
+        .modal-result__box {
+          gap: 15px;
+        }
+
+      }
+
+      .hphone {
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: .3px;
+        white-space: nowrap
+      }
+
+      .burger-menu__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+        font-size: 15px;
+        color: var(--mute);
+      }
+
+      @media (max-width:1024px) {
+        .burger-menu__list {
+          flex-direction: column;
+          align-items: flex-start;
+          font-size: 23px;
+          flex-wrap: nowrap;
+        }
+      }
+
+      @media (max-width:768px) {
+        .hphone {
+          display: inline-block;
+          font-size: 12px;
+          letter-spacing: 0;
+        }
+      }
+
+
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class='body' id='body'>
+
+  <header class='hdr header'>
+    <div class="container">
+      <div class="flex items-center gap-10 justify-between max-md:gap-3">
+        <a class="logo grow" href="#"><i></i>FullDome</a>
+        <div class="modal modal--burger" data-modal="feedback">
+          <div class="modal__container" role="dialog" aria-modal="true">
+            <div class="modal__header">
+              <a class="logo grow" href="#" aria-label='Логотип'><i></i>FullDome</a>
+              <button class="modal__close" aria-label="Close modal window"></button>
+            </div>
+            <div class="modal__content burger-menu">
+              <nav class="burger-menu__nav">
+                <ul class="burger-menu__list">
+                  <li class="burger-menu__item">
+                    <a class="burger-menu__link burger-menu__link--active" href="#adv" data-scroll>
+                      Кинотеатр
+                    </a>
+                  </li>
+                  <li class="burger-menu__item">
+                    <a class="burger-menu__link" href="#tech" data-scroll>
+                      Технология
+                    </a>
+                  </li>
+                  <li class="burger-menu__item">
+                    <a class="burger-menu__link" href="#show" data-scroll>
+                      Шоу-программы
+                    </a>
+                  </li>
+                  <li class="burger-menu__item">
+                    <a class="burger-menu__link" href="#price" data-scroll>
+                      Окупаемость
+                    </a>
+                  </li>
+                  <li class="burger-menu__item">
+                    <a class="burger-menu__link" href="#price" data-scroll>
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- <nav>
+          <ul class='nav items-center'>
+            <li><a href="#">Кинотеатр</a></li>
+            <li><a href="#">Технология</a></li>
+            <li><a href="#">Шоу-программы</a></li>
+            <li><a href="#">Окупаемость</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav> -->
+        <a class="hphone" href="tel:+79525422224">+7 (952) 542-22-24</a>
+        <a class="hbtn" href="https://max.ru/u/f9LHodD0cOJyHUC3seDzSyk-CyH_WUBgV88XmrXvwD0lrS1574UAxt6jUTk"
+          target="_blank">Открыть в MAX</a>
+        <button class="burger" type='button' aria-label='Открыть/закрыть бургер меню'
+          data-modal="feedback"><i></i></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="hero" style="--hero: url(img/hero.jpg)">
+      <div class="container">
+        <div class='flex flex-col gap-8 items-start mb-12'>
+          <p class="tag"><b>НОВИНКА</b>Купольный кинотеатр-планетарий 360°</p>
+          <h1>Откройте <span>сферический</span> кинотеатр в&nbsp;своём городе</h1>
+          <p class="lead">
+            Кино, которое вдохновляет и просвещает. Мобильный купол легко
+            перевезти и поставить где угодно: площадь, школа, парк, ТЦ.
+          </p>
+          <div class="cta">
+            <a class="btn main" href="https://max.ru/u/f9LHodD0cOJyHUC3seDzSyk-CyH_WUBgV88XmrXvwD0lrS1574UAxt6jUTk"
+              target="_blank">Открыть приложение в MAX</a><a class="btn alt" href="#">Как устроен купол</a>
+          </div>
+        </div>
+        <div class="flex items-center justify-between gap-9 max-md:block">
+          <div class="facts max-md:mb-7">
+            <div class="fact"><b>7,2 м</b><span>диаметр купола</span></div>
+            <div class="fact"><b>3K</b><span>Ultra Full HD</span></div>
+            <div class="fact"><b>360°</b><span>звук Dolby Surround</span></div>
+          </div>
+          <div class="swiper hero__swiper">
+            <div class="swiper-wrapper hero__slider">
+              <div class="swiper-slide">
+                <div class="sl on">
+                  <small>01</small>Новинка: FullDome-кинотеатр в своём городе
+                  <!-- <div class="bar"><i></i></div> -->
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sl">
+                  <small>02</small>Ощущение бесконечного космоса: звёздное небо 360°
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sl"><small>03</small>Планетарий с эффектом присутствия</div>
+              </div>
+              <div class="swiper-slide">
+                <div class="sl"><small>04</small>Звёздный зал для семейного досуга</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <style>
+      
+    </style> -->
+    <!-- < !-- 2. Что увидят зрители: слайды 2-5 -->
+    <section class="show alt sec" id="show">
+      <div class="container">
+        <div class='flex flex-col gap-4 mb-8'>
+          <div class="kicker">Шоу-программы</div>
+          <h2>Кино, в котором <span>зритель внутри</span></h2>
+          <p class="sub">Изображение на весь купол над головой: космос,
+            океан,
+            полёт над Землёй. Зрители полулёжа смотрят вверх,
+            и картинка окружает со всех сторон.</p>
+        </div>
+        <ul class="grid g4 max-lg:grid-cols-2">
+          <li>
+            <div class="card">
+              <span class="num">01</span>
+              <div class='w-full max-md:h-[320px]'>
+                <img src="img/zal_solnce.jpg" alt="Картинка с детьми" width='280' height='230'>
+              </div>
+              <div class="px-6 py-5">
+                <h3>Бесконечный космос</h3>
+                <p>Реалистичное звёздное небо с обзором 360°. Полное погружение в космическое пространство.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <span class="num">02</span>
+              <div class='w-full max-md:h-[320px]'>
+                <img src="img/kit_deti1.jpg" alt="Картинка с детьми" width='280' height='230'>
+              </div>
+              <div class="px-6 py-5">
+                <h3>Эффект присутствия</h3>
+                <p>Завораживающий подводный мир и впечатления,
+                  как в большом планетарии.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <span class="num">03</span>
+              <div class="w-full max-md:h-[320px]">
+                <img src="img/zal_planeta.jpg" alt="Картинка с детьми" width='280' height='230'>
+              </div>
+              <div class="px-6 py-5">
+                <h3>Звёздный зал для семьи</h3>
+                <p>Развлечение и отдых для всех,
+                  от малышей до взрослых.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <span class="num">04</span>
+              <div class="w-full max-md:h-[320px]">
+                <img src="img/cherepaha2.jpg" alt="Картинка с детьми" width='280' height='230'>
+              </div>
+              <div class="px-6 py-5">
+                <h3>Зарабатывайте на эмоциях</h3>
+                <p>Доступ к эксклюзивным шоу от ведущих мировых студий. Шоу захватывают и приносят прибыль.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- < !-- 3. Как устроен -->
+    <section class="sec" id="tech">
+      <div class="container">
+        <div class='flex flex-col gap-2.5 mb-10'>
+          <div class="kicker">Технология</div>
+          <h2>Как устроен <span>кино-планетарий</span></h2>
+        </div>
+        <div class="tech max-lg:grid-cols-1 max-lg:gap-9">
+          <div class="dome">
+            <img src="img/dome_new.png" alt="Устройство купола" width='560' height='400'>
+          </div>
+          <ul class="specs">
+            <li>
+              <div class="spec">
+                <div class="ic">1</div>
+                <div><b>Оболочка купола</b><span>Водонепроницаемая,
+                    из негорючих материалов,
+                    есть сертификат МЧС России</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="spec">
+                <div class="ic">2</div>
+                <div><b>Алюминиевый каркас</b><span>Лёгкий и прочный геодезический каркас</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="spec">
+                <div class="ic">3</div>
+                <div><b>Вакуумный экран</b><span>Сферический экран на весь купол,
+                    картинка Ultra Full HD 3K</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="spec">
+                <div class="ic">4</div>
+                <div><b>Проекция и звук</b><span>Многопроекторная система и профессиональный объёмный звук Dolby
+                    Digital Surround</span></div>
+              </div>
+            </li>
+            <li>
+              <div class="spec">
+                <div class="ic">⌀</div>
+                <div><b>Купол d 7,
+                    2 м,
+                    h 4,
+                    3 м</b><span>Каркасно-вакуумный купол V-Dome</span></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- < !-- 4. Преимущества -->
+    <section class="sec alt" id="adv">
+      <div class="container">
+        <div class="flex flex-col gap-2.5 mb-10">
+          <div class="kicker">Преимущества</div>
+          <h2>Почему стоит открыть <span>FullDome</span></h2>
+        </div>
+        <ul class="grid g3 mb-5 max-lg:grid-cols-2">
+          <li>
+            <div class="adv">
+              <div class="ic">01</div>
+              <h3>Необычный опыт</h3>
+              <p>Сферическое кино с полным погружением,
+                которого нет у обычных кинотеатров.</p>
+            </div>
+          </li>
+          <li>
+            <div class="adv">
+              <div class="ic">02</div>
+              <h3>Мобильность</h3>
+              <p>Легко транспортируется и устанавливается в любом месте: на улице и в помещении.</p>
+            </div>
+          </li>
+          <li>
+            <div class="adv">
+              <div class="ic">03</div>
+              <h3>Качество изображения</h3>
+              <p>Не уступает стационарным крупноформатным планетариям.</p>
+            </div>
+          </li>
+          <li>
+            <div class="adv">
+              <div class="ic">04</div>
+              <h3>Простота</h3>
+              <p>Интуитивно понятная установка и эксплуатация.</p>
+            </div>
+          </li>
+          <li>
+            <div class="adv">
+              <div class="ic">05</div>
+              <h3>Выездные мероприятия</h3>
+              <p>Школы,
+                детские сады,
+                парки,
+                ДК,
+                торговые центры.</p>
+            </div>
+          </li>
+          <li>
+            <div class="adv">
+              <div class="ic">06</div>
+              <h3>Широкая аудитория</h3>
+              <p>Показы для взрослых и детей,
+                романтические свидания,
+                школьные и дошкольные группы.</p>
+            </div>
+          </li>
+        </ul>
+        <div class="wide">
+          <p>
+            Эксклюзивный доступ к зрелищным и познавательным шоу-программам от мировых видеостудий.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- < !-- 5. Школьные группы -->
+    <section class="groups sec" id="groups">
+      <div class="container">
+        <div class="flex flex-col gap-2.5 mb-10">
+          <div class="kicker">Для школ и детских садов</div>
+          <h2>Зрелищные показы <span>для школьных и дошкольных групп</span></h2>
+          <p class="sub">Целый класс или группа детского сада в одном зале: космос,
+            океан и планеты над головой.</p>
+        </div>
+        <div class="grid g3 max-lg:grid-cols-2">
+          <div class="card max-lg:col-span-2 max-md:col-auto">
+            <img src="img/cherepaha.jpg" alt="фото дошкольных групп" width='390' height='300'>
+          </div>
+          <div class="card">
+            <img src="img/astronavt_deti.jpg" alt="фото дошкольных групп" width='390' height='300'>
+          </div>
+          <div class="card">
+            <img src="img/kit_deti.jpg" alt="фото дошкольных групп" width='390' height='300'>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- < !-- 6. Космические свидания -->
+    <section class="date sec alt" id="date">
+      <div class="container">
+        <div class="flex flex-col gap-2.5 mb-10">
+          <div class="kicker">Для пар</div>
+          <h2>Космические <span>свидания</span></h2>
+          <p class="sub">Звёздное небо,
+            свечи и ужин под куполом для двоих.</p>
+        </div>
+        <div class="grid g3 max-lg:grid-cols-2">
+          <div class="card max-lg:col-span-2 max-md:col-auto">
+            <img src="img/svidanie_kupol.jpg" alt="фото свиданий" width='390' height='300'>
+          </div>
+          <div class="card">
+            <img src="img/svidanie_para.jpg" alt="фото свиданий" width='390' height='300'>
+          </div>
+          <div class="card">
+            <img src="img/svidanie_lepestki.jpg" alt="фото свиданий" width='390' height='300'>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- < !-- 7. Где установить -->
+    <section class="sec" id="where">
+      <div class="container">
+        <div class="flex flex-col gap-2.5 mb-10">
+          <div class="kicker">Площадки</div>
+          <h2>Кино-планетарий <span>можно установить</span></h2>
+        </div>
+        <div class="grid g5 max-lg:grid-cols-3">
+          <div class="loc">
+            <img src="img/shkola.jpg" alt="фото где можно установить кино-планетарий" width='225'
+              height='150'><b>Школа</b>
+          </div>
+          <div class="loc">
+            <img src="img/detsad.jpg" alt="фото где можно установить кино-планетарий" width='225'
+              height='150'><b>Детский сад</b>
+          </div>
+          <div class="loc">
+            <img src="img/tc.jpg" alt="фото где можно установить кино-планетарий" width='225' height='150'><b>Торговый
+              центр</b>
+          </div>
+          <div class="loc">
+            <img src="img/event.jpg" alt="фото где можно установить кино-планетарий" width='225'
+              height='150'><b>Ивент-мероприятия</b>
+          </div>
+          <div class="loc">
+            <img src="img/park.jpg" alt="фото где можно установить кино-планетарий" width='225' height='150'><b>Парк</b>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- < !-- 8. Видео и проекция -->
+    <section class="sec alt" id="video">
+      <div class="container">
+        <div class="flex flex-col gap-2.5 mb-10">
+          <div class="kicker">Видеопрезентация</div>
+          <h2>Посмотрите,
+            <span>как это выглядит</span>
+          </h2>
+        </div>
+        <div class="video">
+          <div class="play"><i></i></div>
+          <div class="vcap">Видеопрезентация FullDome</div>
+        </div>
+        <div class="proj">
+          <div><b>3K×3K</b><span>разрешение проекции,
+              10,
+              2 мегапикселя</span></div>
+          <div><b>8800</b><span>ANSI Lumen яркость</span></div>
+          <div><b>10000:1</b><span>контраст</span></div>
+        </div>
+      </div>
+    </section>
+    <!-- < !-- 9. Комплектация и стоимость -->
+    <section class="sec" id="price">
+      <div class="container">
+        <div class="flex flex-col gap-2.5 mb-10">
+          <div class="kicker">Окупаемость</div>
+          <h2>Комплектация и стоимость <span>кино-планетария</span></h2>
+        </div>
+        <div class="price">
+          <div class="kit">
+            <h3 style="font-family:Unbounded;font-size:19px;margin-bottom:14px">В комплект оборудования
+              входит</h3>
+            <ul>
+              <li>
+                <p>
+                  Медиасервер
+                </p>
+              </li>
+              <li>
+                <p>
+                  Программное обеспечение на USB-флеш носителе,
+                  1 комплект (ключ и ПО)
+                </p>
+              </li>
+              <li>
+                <p>
+                  4 проекционных модуля
+                </p>
+              </li>
+              <li>
+                <p>
+                  Калибровочная камера с Fisheye объективом,
+                  штативом и коммутацией,
+                  комплект в чехле
+                </p>
+              </li>
+              <li>
+                <p>
+                  Apple iPad mini
+                </p>
+              </li>
+              <li>
+                <p>
+                  Акустика
+                </p>
+              </li>
+              <li>
+                <p>
+                  Wi-Fi роутер
+                </p>
+              </li>
+              <li>
+                <p>
+                  Электротехническая и силовая коммутация,
+                  1 комплект
+                </p>
+              </li>
+              <li>
+                <p>
+                  Каркасно-вакуумный купол V-Dome диаметром 7 м и высотой 4,
+                  3 м
+                </p>
+              </li>
+              <li>
+                <p>
+                  Стартовый пакет фильмов
+                </p>
+              </li>
+              <li>
+                <p>
+                  Руководство пользователя
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="pay">
+            <div>
+              <div class="lbl">Стоимость комплекта</div>
+              <div class="sum">3 750 000 ₽</div>
+            </div>
+            <div class="ok">Окупаемость <span>9–12 месяцев</span></div><a class="btn main"
+              href="https://max.ru/u/f9LHodD0cOJyHUC3seDzSyk-CyH_WUBgV88XmrXvwD0lrS1574UAxt6jUTk" target="_blank"
+              style="text-align:center">Открыть приложение в MAX</a><a class="btn alt" href="tel:+79525422224"
+              style="text-align:center">+7 (952) 542-22-24</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="pt-28 max-md:pt-20">
+    <div class="pt-16 pb-12 border-t border-solid border-white/20 max-md:pt-12 max-md:pt-10">
+      <div class="container">
+        <div class='flex items-center justify-between gap-8 max-md:flex-col max-md:items-start'>
+          <a class="logo" href="#"><i></i>FullDome</a>
+          <div class='flex flex-col gap-1.5 items-center max-md:items-start'>
+            <a class="text-[26px] font-[Unbounded] max-md:text-[21px]" href='tel:+79525422224'>+7 (952) 542-22-24</a>
+            <small>сферический кино-планетарий в вашем городе</small>
+          </div>
+          <a class="hbtn" href="https://max.ru/u/f9LHodD0cOJyHUC3seDzSyk-CyH_WUBgV88XmrXvwD0lrS1574UAxt6jUTk"
+            target="_blank" style="display:inline-block">Открыть в MAX</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+
+</html>
